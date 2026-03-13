@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exhibitions | Ron English Catalogue Raisonné</title>
+
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#4b5563;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --bg:#ffffff;
+      --panel:#f8fafc;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:var(--bg);
+    }
+
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:22px;
+      margin-bottom:22px;
+    }
+
+    .nav-pill{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid #d6e1ff;
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .nav-pill:hover{
+      background:#f3f6ff;
+    }
+
+    .page-header{
+      max-width:1100px;
+      margin:0;
+      padding:0;
+      text-align:left;
+    }
+
+    .page-title{
+      margin:0 0 10px;
+      font-size:clamp(2rem,4vw,3rem);
+      letter-spacing:-.02em;
+      line-height:1.05;
+    }
+
+    .intro-text{
+      max-width:1100px;
+      margin:0 0 28px;
+      padding:0;
+      line-height:1.6;
+      text-align:left;
+    }
+
+    .intro-text p{
+      margin:0 0 14px;
+      max-width:72ch;
+      color:var(--muted);
+      font-size:18px;
+    }
+
+    .entry-grid{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:20px;
+    }
+
+    .entry{
+      display:block;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      text-decoration:none;
+      color:inherit;
+      background:#fff;
+      transition:transform .12s ease, box-shadow .12s ease;
+    }
+
+    .entry:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 40px rgba(0,0,0,.12);
+    }
+
+    .entry img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .entry-body{
+      padding:18px 18px 20px;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:8px;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#6b7280;
+    }
+
+    .entry h2{
+      margin:0 0 8px;
+      font-size:26px;
+      line-height:1.15;
+    }
+
+    .entry p{
+      margin:0;
+      color:var(--muted);
+      font-size:16px;
+      line-height:1.6;
+      max-width:58ch;
+    }
+
+    .cta{
+      margin-top:14px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:650;
+      color:#111;
+    }
+
+    .dot{
+      width:10px;
+      height:10px;
+      border-radius:999px;
+      background:#111;
+      display:inline-block;
+      flex:0 0 auto;
+    }
+
+    .notes{
+      margin-top:28px;
+      padding:20px 0 0;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.65;
+      max-width:72ch;
+    }
+
+    .notes strong{
+      color:#111;
+    }
+
+    footer{
+      margin-top:30px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width:900px){
+      .entry-grid{
+        grid-template-columns:1fr;
+      }
+
+      .entry img{
+        height:260px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="../../index.html">Main site</a>
+      <a class="nav-pill" href="../index.html">Catalogue home</a>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">Exhibitions</h1>
+    </header>
+
+    <section class="intro-text">
+      <p>
+        A guide to documented exhibitions featuring Ron English’s work.
+      </p>
+      <p>
+        This section is divided into solo exhibitions and group exhibitions for clearer navigation and reference. Listings may include venue, city, date range, and supporting documentation where that information has been confirmed.
+      </p>
+    </section>
+
+    <section class="entry-grid" aria-label="Exhibition navigation">
+
+      <a class="entry" href="solo/index.html">
+        <img src="../images/Exhibitions/solo-square.jpg" alt="Ron English solo exhibitions">
+        <div class="entry-body">
+          <span class="eyebrow">Exhibition history</span>
+          <h2>Solo Exhibitions</h2>
+          <p>
+            Exhibitions devoted to Ron English’s work, organized for clear chronological reference and citation.
+          </p>
+         
+        </div>
+      </a>
+
+      <a class="entry" href="group/index.html">
+        <img src="../images/Exhibitions/group-square.jpg" alt="Ron English group exhibitions">
+        <div class="entry-body">
+          <span class="eyebrow">Exhibition history</span>
+          <h2>Group Exhibitions</h2>
+          <p>
+            Group shows, themed exhibitions, and other multi-artist presentations in which Ron English’s work was included.
+          </p>
+        
+        </div>
+      </a>
+
+    </section>
+
+    <section class="notes" aria-label="Editorial note">
+      <strong>Editorial note:</strong> Exhibition entries may include title, venue, city, date range, and supporting documentation as available.
+    </section>
+
+    <footer>
+      Published via GitHub Pages for long-term public access.
+    </footer>
+  </main>
+</body>
+</html>

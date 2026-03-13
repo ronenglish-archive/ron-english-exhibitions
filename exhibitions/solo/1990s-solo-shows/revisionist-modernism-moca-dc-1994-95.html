@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Revisionist Modernism | Ron English Catalogue Raisonné</title>
+
+  <link rel="stylesheet" href="../../css/styles.css" />
+
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#4b5563;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --bg:#ffffff;
+      --panel:#f8fafc;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:var(--bg);
+    }
+
+    .wrap{
+      max-width:1000px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:22px;
+    }
+
+    .nav-pill{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid #d6e1ff;
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .nav-pill:hover{
+      background:#f3f6ff;
+    }
+
+    h1{
+      font-size:clamp(34px,5vw,54px);
+      margin:0 0 10px;
+      letter-spacing:-.02em;
+    }
+
+    .subtitle{
+      font-size:18px;
+      line-height:1.55;
+      color:var(--muted);
+      max-width:70ch;
+      margin:0;
+    }
+
+    .hero-grid{
+      margin-top:24px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+    }
+
+    .hero{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      background:#fff;
+    }
+
+    .hero img{
+      width:100%;
+      max-height:620px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .caption{
+      padding:12px 16px 16px;
+      font-size:14px;
+      line-height:1.5;
+      color:var(--muted);
+      border-top:1px solid var(--border);
+      background:#fff;
+    }
+
+    .meta-card,
+    .text-card,
+    .sources-card{
+      margin-top:24px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .card-head{
+      padding:16px 18px;
+      border-bottom:1px solid var(--border);
+      background:#fff;
+    }
+
+    .card-head h2{
+      margin:0;
+      font-size:22px;
+    }
+
+    .card-body{
+      padding:18px;
+    }
+
+    .meta-grid{
+      display:grid;
+      grid-template-columns:180px 1fr;
+      gap:12px 18px;
+    }
+
+    .meta-label{
+      font-size:13px;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      color:#6b7280;
+      font-weight:700;
+    }
+
+    .meta-value{
+      font-size:16px;
+      line-height:1.6;
+      color:#111;
+    }
+
+    .card-body p{
+      margin:0 0 14px;
+      font-size:16px;
+      line-height:1.7;
+      color:#1f2937;
+    }
+
+    .card-body p:last-child{
+      margin-bottom:0;
+    }
+
+    .works-list,
+    .sources-list{
+      margin:14px 0 0;
+      padding-left:20px;
+    }
+
+    .works-list li,
+    .sources-list li{
+      margin:0 0 8px;
+      font-size:16px;
+      line-height:1.6;
+      color:#1f2937;
+    }
+
+    .sources-list li:last-child{
+      margin-bottom:0;
+    }
+
+    footer{
+      margin-top:30px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width:800px){
+      .hero-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:700px){
+      .meta-grid{
+        grid-template-columns:1fr;
+        gap:6px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="../../index.html">Catalogue home</a>
+      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="../index.html">Solo exhibitions</a>
+      <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
+    </nav>
+
+    <header>
+      <h1><em>Revisionist Modernism</em></h1>
+      <p class="subtitle">
+        Museum of Contemporary Art, Washington, D.C., 1994–1995.
+      </p>
+    </header>
+
+    <section class="hero-grid" aria-label="Exhibition images">
+      <div class="hero">
+        <img src="../../images/Exhibitions/Solo/Revisionist-Modernism-2 copy.jpg" alt="Ron English — Revisionist Modernism, Museum of Contemporary Art Washington D.C., 1994–1995">
+        <div class="caption">
+          Exhibition image for <em>Revisionist Modernism</em>, Washington, D.C., 1994–1995.
+        </div>
+      </div>
+
+      <div class="hero">
+        <img src="../../images/Exhibitions/Solo/Revisionist-Modernism-1 copy.jpg" alt="Ron English — Revisionist Modernism, Museum of Contemporary Art Washington D.C., 1994–1995">
+        <div class="caption">
+          Additional exhibition image for <em>Revisionist Modernism</em>.
+        </div>
+      </div>
+    </section>
+
+    <section class="meta-card" aria-label="Exhibition details">
+      <div class="card-head">
+        <h2>Exhibition Details</h2>
+      </div>
+      <div class="card-body">
+        <div class="meta-grid">
+          <div class="meta-label">Year</div>
+          <div class="meta-value">1994–1995</div>
+
+          <div class="meta-label">Title</div>
+          <div class="meta-value"><em>Revisionist Modernism</em></div>
+
+          <div class="meta-label">Venue</div>
+          <div class="meta-value">The Museum of Contemporary Art</div>
+
+          <div class="meta-label">Location</div>
+          <div class="meta-value">Washington, D.C., USA</div>
+
+          <div class="meta-label">Dates</div>
+          <div class="meta-value">December 2, 1994 – January 1, 1995</div>
+
+          <div class="meta-label">Related venue note</div>
+          <div class="meta-value">Contemporary press coverage also places the exhibition at Clark &amp; Co., 1054 31st Street NW, Washington, D.C.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-card" aria-label="Notes">
+      <div class="card-head">
+        <h2>Notes</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          Ron English presented <em>Revisionist Modernism: New Works</em> in Washington, D.C., in late 1994 and early 1995. Contemporary coverage describes the exhibition as a body of work built through direct re-engagement with canonical modern and popular art. :contentReference[oaicite:1]{index=1}
+        </p>
+        <p>
+          Reviews from the period note works that referenced Manet, Jasper Johns, Warhol, Frida Kahlo, Picasso, Rothko, Miró, and Norman Rockwell, among others. Rather than parodying those sources from a distance, English used them as material for transformation, updating familiar compositions and icons through his own pop-cultural language. :contentReference[oaicite:2]{index=2}
+        </p>
+        <p>
+          The exhibition helps document a key mid-1990s stage in English’s development, when appropriation, revision, and visual collision became central to his gallery practice. :contentReference[oaicite:3]{index=3}
+        </p>
+
+        <ul class="works-list">
+          <li><em>Luncheon on the Grass</em></li>
+          <li><em>Money Is the Root of All Art</em></li>
+          <li><em>The Anti-Warhol</em></li>
+          <li><em>Ron in My Thoughts</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sources-card" aria-label="Sources">
+      <div class="card-head">
+        <h2>Sources</h2>
+      </div>
+      <div class="card-body">
+        <ul class="sources-list">
+          <li>Lee Fleming, “Galleries: Joshing With the Masters,” <em>The Washington Post</em>, January 6, 1995. :contentReference[oaicite:4]{index=4}</li>
+          <li>“Ron English &amp; Gale Fulton Ross,” <em>The Georgetowner</em>, December 9, 1994, p. 6. :contentReference[oaicite:5]{index=5}</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <a href="../1990s-solo-exhibitions.html#revisionist-modernism-moca-dc-1994-95-row">Back to 1990s solo exhibitions</a>
+    </footer>
+  </main>
+</body>
+</html>

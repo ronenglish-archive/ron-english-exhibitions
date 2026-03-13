@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vinyl Chord: A Revolutionary Record Store | Ron English Catalogue Raisonné</title>
+
+  <link rel="stylesheet" href="../../css/styles.css" />
+
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#4b5563;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --bg:#ffffff;
+      --panel:#f8fafc;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:var(--bg);
+    }
+
+    .wrap{
+      max-width:1000px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:22px;
+    }
+
+    .nav-pill{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid #d6e1ff;
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .nav-pill:hover{
+      background:#f3f6ff;
+    }
+
+    h1{
+      font-size:clamp(34px,5vw,54px);
+      margin:0 0 10px;
+      letter-spacing:-.02em;
+    }
+
+    .subtitle{
+      font-size:18px;
+      line-height:1.55;
+      color:var(--muted);
+      max-width:70ch;
+      margin:0;
+    }
+
+    .image-stack{
+      display:grid;
+      gap:18px;
+      margin-top:24px;
+    }
+
+    .hero{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      background:#fff;
+    }
+
+    .hero img{
+      width:100%;
+      max-height:620px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .caption{
+      padding:12px 16px 16px;
+      font-size:14px;
+      line-height:1.5;
+      color:var(--muted);
+      border-top:1px solid var(--border);
+      background:#fff;
+    }
+
+    .meta-card,
+    .text-card,
+    .sources-card,
+    .gallery-card{
+      margin-top:24px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .card-head{
+      padding:16px 18px;
+      border-bottom:1px solid var(--border);
+      background:#fff;
+    }
+
+    .card-head h2{
+      margin:0;
+      font-size:22px;
+    }
+
+    .card-body{
+      padding:18px;
+    }
+
+    .meta-grid{
+      display:grid;
+      grid-template-columns:180px 1fr;
+      gap:12px 18px;
+    }
+
+    .meta-label{
+      font-size:13px;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      color:#6b7280;
+      font-weight:700;
+    }
+
+    .meta-value{
+      font-size:16px;
+      line-height:1.6;
+      color:#111;
+    }
+
+    .card-body p{
+      margin:0 0 14px;
+      font-size:16px;
+      line-height:1.7;
+      color:#1f2937;
+    }
+
+    .card-body p:last-child{
+      margin-bottom:0;
+    }
+
+    .sources-card ul{
+      margin:0;
+      padding-left:20px;
+    }
+
+    .sources-card li{
+      font-size:16px;
+      line-height:1.7;
+      color:#1f2937;
+      overflow-wrap:anywhere;
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:16px;
+    }
+
+    .gallery-grid figure{
+      margin:0;
+    }
+
+    .gallery-grid img{
+      width:100%;
+      display:block;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:#fff;
+    }
+
+    .gallery-grid figcaption{
+      margin-top:8px;
+      font-size:13px;
+      line-height:1.5;
+      color:var(--muted);
+    }
+
+    footer{
+      margin-top:30px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width:700px){
+      .meta-grid{
+        grid-template-columns:1fr;
+        gap:6px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="../../index.html">Catalogue home</a>
+      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="../index.html">Solo exhibitions</a>
+      <a class="nav-pill" href="../2020s-solo-exhibitions.html">2020s</a>
+    </nav>
+
+    <header>
+      <h1><em>Vinyl Chord: A Revolutionary Record Store</em></h1>
+      <p class="subtitle">
+        Public Pool, Brooklyn, New York, US, 2023.
+      </p>
+    </header>
+
+    <section class="image-stack" aria-label="Featured exhibition images">
+      <section class="hero">
+        <img src="../../../images/Exhibitions/Solo/vinyl-chord.jpg" alt="Ron English — Vinyl Chord: A Revolutionary Record Store, Public Pool, Brooklyn, 2023">
+        <div class="caption">
+          Exhibition image for <em>Vinyl Chord: A Revolutionary Record Store</em>, Public Pool, 2023.
+        </div>
+      </section>
+    </section>
+
+    <section class="meta-card" aria-label="Exhibition details">
+      <div class="card-head">
+        <h2>Exhibition Details</h2>
+      </div>
+      <div class="card-body">
+        <div class="meta-grid">
+          <div class="meta-label">Year</div>
+          <div class="meta-value">2023</div>
+
+          <div class="meta-label">Title</div>
+          <div class="meta-value"><em>Vinyl Chord: A Revolutionary Record Store</em></div>
+
+          <div class="meta-label">Venue</div>
+          <div class="meta-value">Public Pool</div>
+
+          <div class="meta-label">Collaborators</div>
+          <div class="meta-value">In collaboration with Ethan Cohen Projects and Founders Lab NYC</div>
+
+          <div class="meta-label">Location</div>
+          <div class="meta-value">Brooklyn, New York, US</div>
+
+          <div class="meta-label">Dates</div>
+          <div class="meta-value">September 16 – October 1, 2023</div>
+
+          <div class="meta-label">Type</div>
+          <div class="meta-value">Solo exhibition / installation</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-card" aria-label="Notes">
+      <div class="card-head">
+        <h2>Notes</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          <em>Vinyl Chord: A Revolutionary Record Store</em> was an immersive pop-installation at Public Pool in Brooklyn, created in collaboration with Ethan Cohen Projects and Founders Lab NYC.
+        </p>
+        <p>
+          Presented as a conceptual record store, the project brought together vinyl artworks, customized record covers, POPaganda characters, and music-culture references, turning the space into a hybrid of gallery, store, and counter-culture archive.
+        </p>
+        <p>
+          As a 2023 Brooklyn presentation, the exhibition is a useful record of how Ron English extended his POPaganda language into music-adjacent installation, edition culture, and a retail-like environment built around collecting, parody, and display.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery-card" aria-label="Images from the exhibition">
+      <div class="card-head">
+        <h2>Images from the Exhibition</h2>
+      </div>
+      <div class="card-body">
+        <div class="gallery-grid">
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-01.jpg" alt="Vinyl Chord installation view 1">
+            <figcaption>Installation image 1</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-02.jpg" alt="Vinyl Chord installation view 2">
+            <figcaption>Installation image 2</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-03.jpg" alt="Vinyl Chord installation view 3">
+            <figcaption>Installation image 3</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-04.jpg" alt="Vinyl Chord installation view 4">
+            <figcaption>Installation image 4</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-05.jpg" alt="Vinyl Chord installation view 5">
+            <figcaption>Installation image 5</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-06.jpg" alt="Vinyl Chord installation view 6">
+            <figcaption>Installation image 6</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-07.jpg" alt="Vinyl Chord installation view 7">
+            <figcaption>Installation image 7</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-08.jpg" alt="Vinyl Chord installation view 8">
+            <figcaption>Installation image 8</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-09.jpg" alt="Vinyl Chord installation view 9">
+            <figcaption>Installation image 9</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-10.jpg" alt="Vinyl Chord installation view 10">
+            <figcaption>Installation image 10</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-11.jpg" alt="Vinyl Chord installation view 11">
+            <figcaption>Installation image 11</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-12.jpg" alt="Vinyl Chord installation view 12">
+            <figcaption>Installation image 12</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-13.jpg" alt="Vinyl Chord installation view 13">
+            <figcaption>Installation image 13</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-14.jpg" alt="Vinyl Chord installation view 14">
+            <figcaption>Installation image 14</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-15.jpg" alt="Vinyl Chord installation view 15">
+            <figcaption>Installation image 15</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-16.jpg" alt="Vinyl Chord installation view 16">
+            <figcaption>Installation image 16</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-17.jpg" alt="Vinyl Chord installation view 17">
+            <figcaption>Installation image 17</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-18.jpg" alt="Vinyl Chord installation view 18">
+            <figcaption>Installation image 18</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-19.jpg" alt="Vinyl Chord installation view 19">
+            <figcaption>Installation image 19</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/all_covers_flat-20.jpg" alt="Vinyl Chord installation view 20">
+            <figcaption>Installation image 20</figcaption>
+          </figure>
+
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_page_1-01.jpg" alt="Vinyl Chord album art 1">
+            <figcaption>Album art 1</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_page_1-02.jpg" alt="Vinyl Chord album art 2">
+            <figcaption>Album art 2</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_page_1-03.jpg" alt="Vinyl Chord album art 3">
+            <figcaption>Album art 3</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_page_1-04.jpg" alt="Vinyl Chord album art 4">
+            <figcaption>Album art 4</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_page_1-05.jpg" alt="Vinyl Chord album art 5">
+            <figcaption>Album art 5</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_page_1-06.jpg" alt="Vinyl Chord album art 6">
+            <figcaption>Album art 6</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_page_1-07.jpg" alt="Vinyl Chord album art 7">
+            <figcaption>Album art 7</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_page_1-08.jpg" alt="Vinyl Chord album art 8">
+            <figcaption>Album art 8</figcaption>
+          </figure>
+
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_2-01.jpg" alt="Vinyl Chord installation detail 21">
+            <figcaption>Installation image 21</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_2-02.jpg" alt="Vinyl Chord installation detail 22">
+            <figcaption>Installation image 22</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_2-03.jpg" alt="Vinyl Chord installation detail 23">
+            <figcaption>Installation image 23</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_2-04.jpg" alt="Vinyl Chord installation detail 24">
+            <figcaption>Installation image 24</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_2-05.jpg" alt="Vinyl Chord installation detail 25">
+            <figcaption>Installation image 25</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_2-06.jpg" alt="Vinyl Chord installation detail 26">
+            <figcaption>Installation image 26</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_2-07.jpg" alt="Vinyl Chord installation detail 27">
+            <figcaption>Installation image 27</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_2-08.jpg" alt="Vinyl Chord installation detail 28">
+            <figcaption>Installation image 28</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_2-09.jpg" alt="Vinyl Chord installation detail 29">
+            <figcaption>Installation image 29</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_2-10.jpg" alt="Vinyl Chord installation detail 30">
+            <figcaption>Installation image 30</figcaption>
+          </figure>
+
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-01.jpg" alt="Vinyl Chord installation detail 31">
+            <figcaption>Installation image 31</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-02.jpg" alt="Vinyl Chord installation detail 32">
+            <figcaption>Installation image 32</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-03.jpg" alt="Vinyl Chord installation detail 33">
+            <figcaption>Installation image 33</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-04.jpg" alt="Vinyl Chord installation detail 34">
+            <figcaption>Installation image 34</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-05.jpg" alt="Vinyl Chord installation detail 35">
+            <figcaption>Installation image 35</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-06.jpg" alt="Vinyl Chord installation detail 36">
+            <figcaption>Installation image 36</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-07.jpg" alt="Vinyl Chord installation detail 37">
+            <figcaption>Installation image 37</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-08.jpg" alt="Vinyl Chord installation detail 38">
+            <figcaption>Installation image 38</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-09.jpg" alt="Vinyl Chord installation detail 39">
+            <figcaption>Installation image 39</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-10.jpg" alt="Vinyl Chord installation detail 40">
+            <figcaption>Installation image 40</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-11.jpg" alt="Vinyl Chord installation detail 41">
+            <figcaption>Installation image 41</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-12.jpg" alt="Vinyl Chord installation detail 42">
+            <figcaption>Installation image 42</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-13.jpg" alt="Vinyl Chord installation detail 43">
+            <figcaption>Installation image 43</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-14.jpg" alt="Vinyl Chord installation detail 44">
+            <figcaption>Installation image 44</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-15.jpg" alt="Vinyl Chord installation detail 45">
+            <figcaption>Installation image 45</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-16.jpg" alt="Vinyl Chord installation detail 46">
+            <figcaption>Installation image 46</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-17.jpg" alt="Vinyl Chord installation detail 47">
+            <figcaption>Installation image 47</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-18.jpg" alt="Vinyl Chord installation detail 48">
+            <figcaption>Installation image 48</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-19.jpg" alt="Vinyl Chord installation detail 49">
+            <figcaption>Installation image 49</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-20.jpg" alt="Vinyl Chord installation detail 50">
+            <figcaption>Installation image 50</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-21.jpg" alt="Vinyl Chord installation detail 51">
+            <figcaption>Installation image 51</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-22.jpg" alt="Vinyl Chord installation detail 52">
+            <figcaption>Installation image 52</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-23.jpg" alt="Vinyl Chord installation detail 53">
+            <figcaption>Installation image 53</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-24.jpg" alt="Vinyl Chord installation detail 54">
+            <figcaption>Installation image 54</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/album_art_show_pg_3-25.jpg" alt="Vinyl Chord installation detail 55">
+            <figcaption>Installation image 55</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sources-card" aria-label="Sources">
+      <div class="card-head">
+        <h2>Sources</h2>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Ethan Cohen Fine Arts — exhibition page for <em>Vinyl Chord: A Revolutionary Record Store</em>.</li>
+          <li>Public Pool — exhibition page for <em>Vinyl Chord: A Revolutionary Record Store</em>.</li>
+          <li>Public Pool — exhibitions archive.</li>
+          <li>Artforum ArtGuide — exhibition listing.</li>
+          <li>StreetArtNews — coverage of <em>Vinyl Chord: A Revolutionary Record Store</em>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <a href="../2020s-solo-exhibitions.html#public-pool-vinyl-chord-2023-row">Back to 2020s solo exhibitions</a>
+    </footer>
+  </main>
+</body>
+</html>

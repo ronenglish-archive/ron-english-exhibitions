@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pop America | Ron English Catalogue Raisonné</title>
+
+  <link rel="stylesheet" href="../../css/styles.css" />
+
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#4b5563;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --bg:#ffffff;
+      --panel:#f8fafc;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:var(--bg);
+    }
+
+    .wrap{
+      max-width:1000px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:22px;
+    }
+
+    .nav-pill{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid #d6e1ff;
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .nav-pill:hover{
+      background:#f3f6ff;
+    }
+
+    h1{
+      font-size:clamp(34px,5vw,54px);
+      margin:0 0 10px;
+      letter-spacing:-.02em;
+    }
+
+    .subtitle{
+      font-size:18px;
+      line-height:1.55;
+      color:var(--muted);
+      max-width:70ch;
+      margin:0;
+    }
+
+    .hero-grid{
+      margin-top:24px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+    }
+
+    .hero{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      background:#fff;
+    }
+
+    .hero img{
+      width:100%;
+      max-height:620px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .caption{
+      padding:12px 16px 16px;
+      font-size:14px;
+      line-height:1.5;
+      color:var(--muted);
+      border-top:1px solid var(--border);
+      background:#fff;
+    }
+
+    .meta-card,
+    .text-card,
+    .sources-card{
+      margin-top:24px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .card-head{
+      padding:16px 18px;
+      border-bottom:1px solid var(--border);
+      background:#fff;
+    }
+
+    .card-head h2{
+      margin:0;
+      font-size:22px;
+    }
+
+    .card-body{
+      padding:18px;
+    }
+
+    .meta-grid{
+      display:grid;
+      grid-template-columns:180px 1fr;
+      gap:12px 18px;
+    }
+
+    .meta-label{
+      font-size:13px;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      color:#6b7280;
+      font-weight:700;
+    }
+
+    .meta-value{
+      font-size:16px;
+      line-height:1.6;
+      color:#111;
+    }
+
+    .card-body p{
+      margin:0 0 14px;
+      font-size:16px;
+      line-height:1.7;
+      color:#1f2937;
+    }
+
+    .card-body p:last-child{
+      margin-bottom:0;
+    }
+
+    .quotes-list,
+    .sources-list{
+      margin:14px 0 0;
+      padding-left:20px;
+    }
+
+    .quotes-list li,
+    .sources-list li{
+      margin:0 0 8px;
+      font-size:16px;
+      line-height:1.6;
+      color:#1f2937;
+    }
+
+    .sources-list li:last-child{
+      margin-bottom:0;
+    }
+
+    footer{
+      margin-top:30px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width:800px){
+      .hero-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:700px){
+      .meta-grid{
+        grid-template-columns:1fr;
+        gap:6px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="../../index.html">Catalogue home</a>
+      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="../index.html">Solo exhibitions</a>
+      <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
+    </nav>
+
+    <header>
+      <h1><em>Pop America</em></h1>
+      <p class="subtitle">
+        Thomas V. Robinson Galleries, Houston, 1992.
+      </p>
+    </header>
+
+    <section class="hero-grid" aria-label="Exhibition images">
+      <div class="hero">
+        <img src="../../images/Exhibitions/Solo/popamerica.jpg" alt="Ron English — Pop America, Robinson Galleries, 1992">
+        <div class="caption">
+          Exhibition image for <em>Pop America</em>, Thomas V. Robinson Galleries, Houston, 1992.
+        </div>
+      </div>
+
+      <div class="hero">
+        <img src="../../images/Exhibitions/Solo/pop-america-1.jpg" alt="Ron English — Pop America, Robinson Galleries, 1992">
+        <div class="caption">
+          Additional exhibition image for <em>Pop America</em>.
+        </div>
+      </div>
+    </section>
+
+    <section class="meta-card" aria-label="Exhibition details">
+      <div class="card-head">
+        <h2>Exhibition Details</h2>
+      </div>
+      <div class="card-body">
+        <div class="meta-grid">
+          <div class="meta-label">Year</div>
+          <div class="meta-value">1992</div>
+
+          <div class="meta-label">Title</div>
+          <div class="meta-value"><em>Pop America</em></div>
+
+          <div class="meta-label">Venue</div>
+          <div class="meta-value">Thomas V. Robinson Galleries</div>
+
+          <div class="meta-label">Location</div>
+          <div class="meta-value">3414 Lake Street, Houston, Texas, USA</div>
+
+          <div class="meta-label">Dates</div>
+          <div class="meta-value">February 8 – March 3, 1992</div>
+
+          <div class="meta-label">Opening reception</div>
+          <div class="meta-value">Saturday, February 8, 1992, 6:00–8:00 p.m.</div>
+
+          <div class="meta-label">Artist note</div>
+          <div class="meta-value">Artist present at the opening reception</div>
+
+          <div class="meta-label">Gallery hours</div>
+          <div class="meta-value">Tuesday–Friday, 10:00 a.m.–5:30 p.m.; Saturday, 10:00 a.m.–4:00 p.m.; or by appointment</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-card" aria-label="Notes">
+      <div class="card-head">
+        <h2>Notes</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          Ron English presented <em>Pop America</em> at Thomas V. Robinson Galleries in Houston in early 1992. A notice in <em>The Houston Post</em> identifies the exhibition as featuring both paintings and photographic works, placing it at a moment when English’s practice moved fluidly between constructed photography and increasingly visible painted imagery. :contentReference[oaicite:1]{index=1}
+        </p>
+        <p>
+          The exhibition’s promotional materials frame English as a sharp and difficult-to-categorize figure within contemporary American art, combining humor, aggression, technical control, and cultural critique. The surviving advertisement also gathers media quotations that position his work as provocative, cerebral, and confrontational. :contentReference[oaicite:2]{index=2}
+        </p>
+        <p>
+          <em>Pop America</em> helps document an early point in the emergence of English’s mature gallery language, when photographic illusion, media appropriation, and pop-cultural destabilization were coming together more clearly under the banner that would later evolve into POPaganda. :contentReference[oaicite:3]{index=3}
+        </p>
+
+        <ul class="quotes-list">
+          <li>“The world’s most notorious illegal artist” — <em>Morton Downey Jr.</em> :contentReference[oaicite:4]{index=4}</li>
+          <li>“Pushes super realism to new reality tests” — <em>The New York</em> :contentReference[oaicite:5]{index=5}</li>
+          <li>“The guy is clever, skilled and energetic, but what the hell do they mean?” — Paul Hester, <em>Spot</em> :contentReference[oaicite:6]{index=6}</li>
+          <li>“A cerebral cross-body blow” — <em>Hype Magazine</em> :contentReference[oaicite:7]{index=7}</li>
+          <li>“Ron English had arrived. Thank God. This man has imagination, balls, humor and skill. I’m a fan and proud of it.” — <em>Austin Chronicle</em> :contentReference[oaicite:8]{index=8}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sources-card" aria-label="Sources">
+      <div class="card-head">
+        <h2>Sources</h2>
+      </div>
+      <div class="card-body">
+        <ul class="sources-list">
+          <li>Robinson Galleries exhibition announcement, <em>Pop America</em>, Thomas V. Robinson Galleries, Houston, February 8 – March 3, 1992. :contentReference[oaicite:9]{index=9}</li>
+          <li><em>The Houston Post</em>, February 9, 1992, H-12, notice for <em>Pop America</em>. :contentReference[oaicite:10]{index=10}</li>
+          <li>Promotional advertisement for <em>Pop America</em>, Robinson Galleries, Houston. :contentReference[oaicite:11]{index=11}</li>
+          <li>Teresa Wong, “Ron English: Speaks a Language All His Own,” June 1992. :contentReference[oaicite:12]{index=12}</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <a href="../1990s-solo-exhibitions.html#robinson-galleries-pop-america-1992-row">Back to 1990s solo exhibitions</a>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TOYBOX: America in the Visuals | Ron English Catalogue Raisonné</title>
+
+  <link rel="stylesheet" href="../../css/styles.css" />
+
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#4b5563;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --bg:#ffffff;
+      --panel:#f8fafc;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:var(--bg);
+    }
+
+    .wrap{
+      max-width:1000px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:22px;
+    }
+
+    .nav-pill{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid #d6e1ff;
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .nav-pill:hover{
+      background:#f3f6ff;
+    }
+
+    h1{
+      font-size:clamp(34px,5vw,54px);
+      margin:0 0 10px;
+      letter-spacing:-.02em;
+    }
+
+    .subtitle{
+      font-size:18px;
+      line-height:1.55;
+      color:var(--muted);
+      max-width:70ch;
+      margin:0;
+    }
+
+    .image-stack{
+      display:grid;
+      gap:18px;
+      margin-top:24px;
+    }
+
+    .hero{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      background:#fff;
+    }
+
+    .hero img{
+      width:100%;
+      max-height:620px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .caption{
+      padding:12px 16px 16px;
+      font-size:14px;
+      line-height:1.5;
+      color:var(--muted);
+      border-top:1px solid var(--border);
+      background:#fff;
+    }
+
+    .meta-card,
+    .text-card,
+    .sources-card,
+    .gallery-card{
+      margin-top:24px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .card-head{
+      padding:16px 18px;
+      border-bottom:1px solid var(--border);
+      background:#fff;
+    }
+
+    .card-head h2{
+      margin:0;
+      font-size:22px;
+    }
+
+    .card-body{
+      padding:18px;
+    }
+
+    .meta-grid{
+      display:grid;
+      grid-template-columns:180px 1fr;
+      gap:12px 18px;
+    }
+
+    .meta-label{
+      font-size:13px;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      color:#6b7280;
+      font-weight:700;
+    }
+
+    .meta-value{
+      font-size:16px;
+      line-height:1.6;
+      color:#111;
+    }
+
+    .card-body p{
+      margin:0 0 14px;
+      font-size:16px;
+      line-height:1.7;
+      color:#1f2937;
+    }
+
+    .card-body p:last-child{
+      margin-bottom:0;
+    }
+
+    .sources-card ul{
+      margin:0;
+      padding-left:20px;
+    }
+
+    .sources-card li{
+      font-size:16px;
+      line-height:1.7;
+      color:#1f2937;
+      overflow-wrap:anywhere;
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:16px;
+    }
+
+    .gallery-grid figure{
+      margin:0;
+    }
+
+    .gallery-grid img{
+      width:100%;
+      display:block;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:#fff;
+    }
+
+    .gallery-grid figcaption{
+      margin-top:8px;
+      font-size:13px;
+      line-height:1.5;
+      color:var(--muted);
+    }
+
+    footer{
+      margin-top:30px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width:700px){
+      .meta-grid{
+        grid-template-columns:1fr;
+        gap:6px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="../../index.html">Catalogue home</a>
+      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="../index.html">Solo exhibitions</a>
+      <a class="nav-pill" href="../2010s-solo-exhibitions.html">2010s</a>
+    </nav>
+
+    <header>
+      <h1><em>TOYBOX: America in the Visuals</em></h1>
+      <p class="subtitle">
+        Corey Helford Gallery, Los Angeles, California, US, 2017.
+      </p>
+    </header>
+
+    <section class="image-stack" aria-label="Featured exhibition images">
+      <section class="hero">
+        <img src="../../../images/Exhibitions/Solo/toybox.jpg" alt="Ron English — TOYBOX: America in the Visuals, Corey Helford Gallery, Los Angeles, 2017">
+        <div class="caption">
+          Exhibition image for <em>TOYBOX: America in the Visuals</em>, Corey Helford Gallery, 2017.
+        </div>
+      </section>
+    </section>
+
+    <section class="meta-card" aria-label="Exhibition details">
+      <div class="card-head">
+        <h2>Exhibition Details</h2>
+      </div>
+      <div class="card-body">
+        <div class="meta-grid">
+          <div class="meta-label">Year</div>
+          <div class="meta-value">2017</div>
+
+          <div class="meta-label">Title</div>
+          <div class="meta-value"><em>TOYBOX: America in the Visuals</em></div>
+
+          <div class="meta-label">Venue</div>
+          <div class="meta-value">Corey Helford Gallery</div>
+
+          <div class="meta-label">Location</div>
+          <div class="meta-value">Los Angeles, California, US</div>
+
+          <div class="meta-label">Dates</div>
+          <div class="meta-value">December 2–30, 2017</div>
+
+          <div class="meta-label">Type</div>
+          <div class="meta-value">Solo exhibition</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-card" aria-label="Notes">
+      <div class="card-head">
+        <h2>Notes</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          <em>TOYBOX: America in the Visuals</em> transformed the United States into a symbolic toy box of mascots, cartoons, hybrid figures, and satirical brand parodies. The exhibition extended Ron English’s long-running POPaganda critique through large-format paintings and sculptural interventions.
+        </p>
+        <p>
+          Presented at Corey Helford Gallery in late 2017, the show pushed commercial imagery toward a sharper vision of national identity, media conditioning, and cultural fantasy. Familiar American icons appeared recast as unstable, exaggerated characters shaped by spectacle and consumer desire.
+        </p>
+        <p>
+          The surviving installation images make the exhibition especially useful for documenting the breadth of works shown and the dense visual rhythm of the gallery presentation.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery-card" aria-label="Images from the exhibition">
+      <div class="card-head">
+        <h2>Images from the Exhibition</h2>
+      </div>
+      <div class="card-body">
+        <div class="gallery-grid">
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX1.jpg" alt="TOYBOX — image 1">
+            <figcaption>Installation image 1</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX2.jpg" alt="TOYBOX — image 2">
+            <figcaption>Installation image 2</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX3.jpg" alt="TOYBOX — image 3">
+            <figcaption>Installation image 3</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX4.jpg" alt="TOYBOX — image 4">
+            <figcaption>Installation image 4</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX5.jpg" alt="TOYBOX — image 5">
+            <figcaption>Installation image 5</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX6.jpg" alt="TOYBOX — image 6">
+            <figcaption>Installation image 6</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX7.jpg" alt="TOYBOX — image 7">
+            <figcaption>Installation image 7</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX8.jpg" alt="TOYBOX — image 8">
+            <figcaption>Installation image 8</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX9.jpg" alt="TOYBOX — image 9">
+            <figcaption>Installation image 9</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX10.jpg" alt="TOYBOX — image 10">
+            <figcaption>Installation image 10</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX11.jpg" alt="TOYBOX — image 11">
+            <figcaption>Installation image 11</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX12.jpg" alt="TOYBOX — image 12">
+            <figcaption>Installation image 12</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX13.jpg" alt="TOYBOX — image 13">
+            <figcaption>Installation image 13</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX14.jpg" alt="TOYBOX — image 14">
+            <figcaption>Installation image 14</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX15.jpg" alt="TOYBOX — image 15">
+            <figcaption>Installation image 15</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX16.jpg" alt="TOYBOX — image 16">
+            <figcaption>Installation image 16</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX17.jpg" alt="TOYBOX — image 17">
+            <figcaption>Installation image 17</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX18.jpg" alt="TOYBOX — image 18">
+            <figcaption>Installation image 18</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX19.jpg" alt="TOYBOX — image 19">
+            <figcaption>Installation image 19</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX20.jpg" alt="TOYBOX — image 20">
+            <figcaption>Installation image 20</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX21.jpg" alt="TOYBOX — image 21">
+            <figcaption>Installation image 21</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX22.jpg" alt="TOYBOX — image 22">
+            <figcaption>Installation image 22</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX23.jpg" alt="TOYBOX — image 23">
+            <figcaption>Installation image 23</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX24.jpg" alt="TOYBOX — image 24">
+            <figcaption>Installation image 24</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX25.jpg" alt="TOYBOX — image 25">
+            <figcaption>Installation image 25</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX26.jpg" alt="TOYBOX — image 26">
+            <figcaption>Installation image 26</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX27.jpg" alt="TOYBOX — image 27">
+            <figcaption>Installation image 27</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX28.jpg" alt="TOYBOX — image 28">
+            <figcaption>Installation image 28</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX29.jpg" alt="TOYBOX — image 29">
+            <figcaption>Installation image 29</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX30.jpg" alt="TOYBOX — image 30">
+            <figcaption>Installation image 30</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX31.jpg" alt="TOYBOX — image 31">
+            <figcaption>Installation image 31</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX32.jpg" alt="TOYBOX — image 32">
+            <figcaption>Installation image 32</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX33.jpg" alt="TOYBOX — image 33">
+            <figcaption>Installation image 33</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX34.jpg" alt="TOYBOX — image 34">
+            <figcaption>Installation image 34</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX35.jpg" alt="TOYBOX — image 35">
+            <figcaption>Installation image 35</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX36.jpg" alt="TOYBOX — image 36">
+            <figcaption>Installation image 36</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX37.jpg" alt="TOYBOX — image 37">
+            <figcaption>Installation image 37</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX38.jpg" alt="TOYBOX — image 38">
+            <figcaption>Installation image 38</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../images/Exhibitions/Solo/TOYBOX39.jpg" alt="TOYBOX — image 39">
+            <figcaption>Installation image 39</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sources-card" aria-label="Sources">
+      <div class="card-head">
+        <h2>Sources</h2>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Corey Helford Gallery.</li>
+          <li>I Support Street Art.</li>
+          <li>LA Taco.</li>
+          <li>MutualArt.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <a href="../2010s-solo-exhibitions.html#corey-helford-toybox-2017-row">Back to 2010s solo exhibitions</a>
+    </footer>
+  </main>
+</body>
+</html>
