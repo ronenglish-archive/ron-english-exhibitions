@@ -78,13 +78,13 @@
       text-align:left;
     }
 
-.intro-text p{
-  margin:0 0 14px;
-  max-width:none;
-  width:100%;
-  color:var(--muted);
-  font-size:18px;
-}
+    .intro-text p{
+      margin:0 0 14px;
+      max-width:none;
+      width:100%;
+      color:var(--muted);
+      font-size:18px;
+    }
 
     .entry-grid{
       margin-top:28px;
@@ -178,9 +178,10 @@
       color:#111;
     }
 
-    footer{
+    .site-footer{
+      width:100%;
       margin-top:30px;
-      padding-top:16px;
+      padding:16px 18px;
       border-top:1px solid var(--border);
       color:var(--muted);
       font-size:14px;
@@ -201,8 +202,8 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/">Main site</a>
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/">Main site</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
     </nav>
 
     <header class="page-header">
@@ -228,7 +229,6 @@
           <p>
             Exhibitions devoted to Ron English’s work, organized for clear chronological reference and citation.
           </p>
-         
         </div>
       </a>
 
@@ -240,7 +240,6 @@
           <p>
             Group shows, themed exhibitions, and other multi-artist presentations in which Ron English’s work was included.
           </p>
-        
         </div>
       </a>
 
@@ -249,10 +248,10 @@
     <section class="notes" aria-label="Editorial note">
       <strong>Editorial note:</strong> Exhibition entries may include title, venue, city, date range, and supporting documentation as available.
     </section>
-
-    <footer>
-      Published via GitHub Pages for long-term public access.
-    </footer>
   </main>
+
+  <footer class="site-footer">
+    Published via GitHub Pages for long-term public access.
+  </footer>
 </body>
 </html>
