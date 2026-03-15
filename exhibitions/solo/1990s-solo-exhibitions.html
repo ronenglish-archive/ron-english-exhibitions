@@ -62,10 +62,11 @@
     }
 
     .subtitle{
+      width:100%;
+      max-width:none;
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:72ch;
       margin:0;
     }
 
@@ -78,11 +79,12 @@
     }
 
     .intro p{
+      width:100%;
+      max-width:none;
       margin:0;
       font-size:16px;
       line-height:1.65;
       color:#1f2937;
-      max-width:75ch;
     }
 
     .listing-wrap{
@@ -106,6 +108,8 @@
     }
 
     .listing-header p{
+      width:100%;
+      max-width:none;
       margin:0;
       color:var(--muted);
       font-size:15px;
@@ -152,17 +156,17 @@
       line-height:0;
     }
 
-.mural-thumb{
-  width:72px;
-  height:72px;
-  object-fit:contain;
-  object-position:center;
-  border-radius:10px;
-  border:1px solid var(--border);
-  display:block;
-  background:#f3f4f6;
-  padding:2px;
-}
+    .mural-thumb{
+      width:72px;
+      height:72px;
+      object-fit:contain;
+      object-position:center;
+      border-radius:10px;
+      border:1px solid var(--border);
+      display:block;
+      background:#f3f4f6;
+      padding:2px;
+    }
 
     .title-link{
       color:#111;
@@ -179,6 +183,8 @@
     }
 
     .notes{
+      width:100%;
+      max-width:none;
       margin-top:28px;
       padding-top:18px;
       border-top:1px solid var(--border);
@@ -187,9 +193,10 @@
       line-height:1.65;
     }
 
-    footer{
+    .site-footer{
+      width:100%;
       margin-top:30px;
-      padding-top:16px;
+      padding:16px 18px;
       border-top:1px solid var(--border);
       color:var(--muted);
       font-size:14px;
@@ -216,7 +223,7 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Exhibitions</a>
       <a class="nav-pill" href="index.html">Solo exhibitions</a>
     </nav>
@@ -511,10 +518,10 @@
     <section class="notes" aria-label="Editorial note">
       Listings on this page may be expanded as additional 1990s solo exhibitions are documented and verified.
     </section>
-
-    <footer>
-      Published via GitHub Pages for long-term public access.
-    </footer>
   </main>
+
+  <footer class="site-footer">
+    Published via GitHub Pages for long-term public access.
+  </footer>
 </body>
 </html>
