@@ -78,13 +78,13 @@
       text-align:left;
     }
 
-.intro-text p{
-  margin:0 0 14px;
-  max-width:none;
-  width:100%;
-  color:var(--muted);
-  font-size:18px;
-}
+    .intro-text p{
+      margin:0 0 14px;
+      max-width:none;
+      width:100%;
+      color:var(--muted);
+      font-size:18px;
+    }
 
     .entry-grid{
       margin-top:28px;
@@ -174,9 +174,10 @@
       max-width:72ch;
     }
 
-    footer{
+    .site-footer{
+      width:100%;
       margin-top:30px;
-      padding-top:16px;
+      padding:16px 18px;
       border-top:1px solid var(--border);
       color:var(--muted);
       font-size:14px;
@@ -197,7 +198,7 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Exhibitions</a>
     </nav>
 
@@ -222,7 +223,6 @@
           <span class="eyebrow">Group exhibitions</span>
           <h2>2020s</h2>
           <p>Documented group exhibitions from 2020 onward.</p>
-     
         </div>
       </a>
 
@@ -232,7 +232,6 @@
           <span class="eyebrow">Group exhibitions</span>
           <h2>2015–2019</h2>
           <p>Documented group exhibitions from 2015 through 2019.</p>
-      
         </div>
       </a>
 
@@ -242,7 +241,6 @@
           <span class="eyebrow">Group exhibitions</span>
           <h2>2010–2014</h2>
           <p>Documented group exhibitions from 2010 through 2014.</p>
-    
         </div>
       </a>
 
@@ -252,7 +250,6 @@
           <span class="eyebrow">Group exhibitions</span>
           <h2>2005–2009</h2>
           <p>Documented group exhibitions from 2005 through 2009.</p>
-    
         </div>
       </a>
 
@@ -262,7 +259,6 @@
           <span class="eyebrow">Group exhibitions</span>
           <h2>2000–2004</h2>
           <p>Documented group exhibitions from 2000 through 2004.</p>
-    
         </div>
       </a>
 
@@ -272,7 +268,6 @@
           <span class="eyebrow">Group exhibitions</span>
           <h2>1990s</h2>
           <p>Documented group exhibitions from 1990 through 1999.</p>
-   
         </div>
       </a>
 
@@ -282,7 +277,6 @@
           <span class="eyebrow">Group exhibitions</span>
           <h2>1980s</h2>
           <p>Early documented group exhibitions from the 1980s.</p>
-   
         </div>
       </a>
 
@@ -291,10 +285,10 @@
     <section class="notes" aria-label="Editorial note">
       Exhibition listings are arranged by period to support navigation, chronology, and future expansion.
     </section>
-
-    <footer>
-      Published via GitHub Pages for long-term public access.
-    </footer>
   </main>
+
+  <footer class="site-footer">
+    Published via GitHub Pages for long-term public access.
+  </footer>
 </body>
 </html>
