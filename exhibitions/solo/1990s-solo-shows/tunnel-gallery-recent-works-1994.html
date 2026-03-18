@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ron English: Recent Works | Ron English Catalogue Raisonné</title>
 
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
   <style>
     :root{
@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,45 +65,50 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
-    .hero{
+    .hero-grid{
       margin-top:24px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+    }
+
+    .hero,
+    .meta-card,
+    .works-card,
+    .text-card,
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
       background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero img{
       width:100%;
-      max-height:620px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .caption{
-      padding:12px 16px 16px;
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
       border-top:1px solid var(--border);
       background:#fff;
     }
 
     .meta-card,
+    .works-card,
     .text-card,
     .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -123,7 +128,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -171,10 +176,22 @@
       font-size:14px;
     }
 
-    @media (max-width:700px){
+    footer a{
+      color:inherit;
+    }
+
+    @media (max-width:760px){
+      .hero-grid{
+        grid-template-columns:1fr;
+      }
+
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
+      }
+
+      .hero img{
+        height:340px;
       }
     }
   </style>
@@ -183,8 +200,8 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
       <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
     </nav>
@@ -192,14 +209,16 @@
     <header>
       <h1><em>Ron English: Recent Works</em></h1>
       <p class="subtitle">
-        Tunnel Gallery, New York, 1994.
+        Tunnel, New York City, 1994.
       </p>
     </header>
 
-    <section class="hero" aria-label="Exhibition image">
-      <img src="../../images/Exhibitions/Solo/tunnel.jpg" alt="Ron English — Recent Works, Tunnel Gallery, 1994">
-      <div class="caption">
-        Show card for <em>Ron English: Recent Works</em>, Tunnel Gallery, New York, 1994.
+    <section class="hero-grid" aria-label="Showcard material">
+      <div class="hero">
+        <img src="../../../images/Exhibitions/Solo/tunnel.jpg" alt="Showcard for Ron English: Recent Works at Tunnel, New York City, 1994">
+        <div class="caption">
+          Showcard for <em>Ron English: Recent Works</em>, Tunnel, New York City, 1994.
+        </div>
       </div>
     </section>
 
@@ -216,31 +235,23 @@
           <div class="meta-value"><em>Ron English: Recent Works</em></div>
 
           <div class="meta-label">Venue</div>
-          <div class="meta-value">Tunnel Gallery</div>
+          <div class="meta-value">Tunnel</div>
 
           <div class="meta-label">Location</div>
-          <div class="meta-value">New York, New York, USA</div>
+          <div class="meta-value">27th Street at 12th Avenue, New York City, New York, USA</div>
 
-          <div class="meta-label">Dates</div>
-          <div class="meta-value">February 5 – March 19, 1994</div>
+          <div class="meta-label">Admission note</div>
+          <div class="meta-value">$10 with invitation, good for two; $20 without</div>
 
-          <div class="meta-label">Type</div>
-          <div class="meta-value">Solo exhibition</div>
+          <div class="meta-label">Entry note</div>
+          <div class="meta-value">Comp before midnight</div>
+
+          <div class="meta-label">Courtesy line</div>
+          <div class="meta-value">Courtesy of Kunshalter Gallery and Robinson Gallery</div>
+
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Showcard</div>
         </div>
-      </div>
-    </section>
-
-    <section class="text-card" aria-label="Notes">
-      <div class="card-head">
-        <h2>Notes</h2>
-      </div>
-      <div class="card-body">
-        <p>
-          This solo exhibition at Tunnel Gallery showcased a body of new paintings by Ron English during the early-to-mid 1990s. Promotional material emphasizes English’s growing notoriety for billboard interventions and politically pointed satire, including references to works such as <em>Jesus Christ on Family Values</em>. :contentReference[oaicite:1]{index=1}
-        </p>
-        <p>
-          Presented during a period when English was increasingly merging large-scale advertising aesthetics with art-historical quotation, the show reflected the sharper cultural critique that defined his 1990s output. The exhibition acted as a bridge between his early guerrilla practices and his evolving gallery presence. :contentReference[oaicite:2]{index=2}
-        </p>
       </div>
     </section>
 
@@ -250,7 +261,7 @@
       </div>
       <div class="card-body">
         <ul>
-          <li>Show card: <em>Ron English: Recent Works</em> (Tunnel Gallery, New York, February 5 – March 19, 1994). :contentReference[oaicite:3]{index=3}</li>
+          <li>Showcard for <em>Ron English: Recent Works</em>, Tunnel, 27th Street at 12th Avenue, New York City, including admission and courtesy information.</li>
         </ul>
       </div>
     </section>
