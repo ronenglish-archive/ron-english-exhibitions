@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pop America | Ron English Catalogue Raisonné</title>
 
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
   <style>
     :root{
@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,7 +65,6 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
@@ -76,40 +75,40 @@
       gap:18px;
     }
 
-    .hero{
+    .hero,
+    .meta-card,
+    .works-card,
+    .text-card,
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
       background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero img{
       width:100%;
-      max-height:620px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .caption{
-      padding:12px 16px 16px;
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
       border-top:1px solid var(--border);
       background:#fff;
     }
 
     .meta-card,
+    .works-card,
     .text-card,
     .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -129,7 +128,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -158,22 +157,81 @@
       margin-bottom:0;
     }
 
-    .quotes-list,
-    .sources-list{
-      margin:14px 0 0;
-      padding-left:20px;
-    }
-
-    .quotes-list li,
-    .sources-list li{
-      margin:0 0 8px;
-      font-size:16px;
-      line-height:1.6;
+    .works-note{
+      margin-bottom:16px;
       color:#1f2937;
     }
 
-    .sources-list li:last-child{
+    .works-gallery{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin-top:10px;
+    }
+
+    .work-card{
+      margin:0;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    .work-card img{
+      width:100%;
+      height:255px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .work-caption{
+      padding:8px 12px 9px;
+      border-top:1px solid var(--border);
+    }
+
+    .work-caption p{
+      margin:0;
+    }
+
+    .work-title{
+      font-size:15px;
+      line-height:1.25;
+      color:#111;
+    }
+
+    .work-year{
+      margin-top:0;
+      font-size:13px;
+      line-height:1.25;
+      color:var(--muted);
+    }
+
+    .card-body ul{
+      margin:0;
+      padding-left:20px;
+    }
+
+    .card-body li{
+      font-size:16px;
+      line-height:1.7;
+      color:#1f2937;
+      margin:0 0 8px;
+    }
+
+    .card-body li:last-child{
       margin-bottom:0;
+    }
+
+    .sources-card ul{
+      margin:0;
+      padding-left:20px;
+    }
+
+    .sources-card li{
+      font-size:16px;
+      line-height:1.7;
+      color:#1f2937;
     }
 
     footer{
@@ -184,16 +242,29 @@
       font-size:14px;
     }
 
-    @media (max-width:800px){
-      .hero-grid{
-        grid-template-columns:1fr;
+    footer a{
+      color:inherit;
+    }
+
+    @media (max-width:1000px){
+      .works-gallery{
+        grid-template-columns:repeat(2,minmax(0,1fr));
       }
     }
 
-    @media (max-width:700px){
+    @media (max-width:760px){
+      .hero-grid,
+      .works-gallery{
+        grid-template-columns:1fr;
+      }
+
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
+      }
+
+      .hero img{
+        height:340px;
       }
     }
   </style>
@@ -202,8 +273,8 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
       <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
     </nav>
@@ -211,22 +282,22 @@
     <header>
       <h1><em>Pop America</em></h1>
       <p class="subtitle">
-        Thomas V. Robinson Galleries, Houston, 1992.
+        Thomas V. Robinson / Robinson Galleries, Houston, 1992.
       </p>
     </header>
 
-    <section class="hero-grid" aria-label="Exhibition images">
+    <section class="hero-grid" aria-label="Archival exhibition material">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/popamerica.jpg" alt="Ron English — Pop America, Robinson Galleries, 1992">
+        <img src="../../../images/Exhibitions/Solo/popamerica.jpg" alt="Archival image associated with Pop America by Ron English at Thomas V. Robinson / Robinson Galleries, Houston, 1992">
         <div class="caption">
-          Exhibition image for <em>Pop America</em>, Thomas V. Robinson Galleries, Houston, 1992.
+          Archival exhibition material associated with <em>Pop America</em>, Thomas V. Robinson / Robinson Galleries, Houston, 1992.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/pop-america-1.jpg" alt="Ron English — Pop America, Robinson Galleries, 1992">
+        <img src="../../../images/Exhibitions/Solo/pop-america-1.jpg" alt="Additional archival image associated with Pop America by Ron English at Thomas V. Robinson / Robinson Galleries, Houston, 1992">
         <div class="caption">
-          Additional exhibition image for <em>Pop America</em>.
+          Additional archival material associated with <em>Pop America</em>.
         </div>
       </div>
     </section>
@@ -244,22 +315,76 @@
           <div class="meta-value"><em>Pop America</em></div>
 
           <div class="meta-label">Venue</div>
-          <div class="meta-value">Thomas V. Robinson Galleries</div>
+          <div class="meta-value">Thomas V. Robinson / Robinson Galleries</div>
 
           <div class="meta-label">Location</div>
-          <div class="meta-value">3414 Lake Street, Houston, Texas, USA</div>
+          <div class="meta-value">3414 Lake Street, Houston, Texas 77098, USA</div>
 
           <div class="meta-label">Dates</div>
-          <div class="meta-value">February 8 – March 3, 1992</div>
+          <div class="meta-value">February 8–March 4, 1992</div>
 
           <div class="meta-label">Opening reception</div>
           <div class="meta-value">Saturday, February 8, 1992, 6:00–8:00 p.m.</div>
 
           <div class="meta-label">Artist note</div>
-          <div class="meta-value">Artist present at the opening reception</div>
+          <div class="meta-value">The artist will be present at the opening reception</div>
 
           <div class="meta-label">Gallery hours</div>
-          <div class="meta-value">Tuesday–Friday, 10:00 a.m.–5:30 p.m.; Saturday, 10:00 a.m.–4:00 p.m.; or by appointment</div>
+          <div class="meta-value">Tuesday–Friday, 10:00 a.m.–5:30 p.m.; Saturday, 10:00 a.m.–4:00 p.m.; and by appointment</div>
+
+          <div class="meta-label">Telephone</div>
+          <div class="meta-value">(713) 526-0761</div>
+
+          <div class="meta-label">Fax</div>
+          <div class="meta-value">(713) 526-0763</div>
+
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Exhibition showcard, newspaper notices and advertisements, and surviving press/promotional clippings</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-card" aria-label="Documented works associated with the exhibition">
+      <div class="card-head">
+        <h2>Documented Works Associated with the Exhibition</h2>
+      </div>
+      <div class="card-body">
+        <p class="works-note">
+          The following works are documented in surviving showcard and press material associated with the exhibition; additional works may also have been included.
+        </p>
+
+        <div class="works-gallery">
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/Captain-AmericaL.jpg" alt="Captain America by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Captain America</em></p>
+              <p class="work-year">Reproduced in <em>The Houston Post</em>, February 9, 1992</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/The-Ascension-of-ElvisL.jpg" alt="The Ascension of Elvis by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>The Ascension of Elvis</em></p>
+              <p class="work-year">Reproduced in an unidentified Houston-area “Picks” press clipping</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/Givin'-the-Dog-a-BoneL.jpg" alt="Givin' the Dog a Bone by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Givin’ the Dog a Bone</em></p>
+              <p class="work-year">Documented in surviving exhibition material</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/Horny-Senatosaurus-IIL.jpg" alt="Horny Senatosaurus II by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Horny Senatosaurus II</em></p>
+              <p class="work-year">Advertised in <em>The Houston Post</em> on February 18, 1992 as “Horney Senatosaurus”</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -270,21 +395,35 @@
       </div>
       <div class="card-body">
         <p>
-          Ron English presented <em>Pop America</em> at Thomas V. Robinson Galleries in Houston in early 1992. A notice in <em>The Houston Post</em> identifies the exhibition as featuring both paintings and photographic works, placing it at a moment when English’s practice moved fluidly between constructed photography and increasingly visible painted imagery. :contentReference[oaicite:1]{index=1}
+          A notice in <em>The Houston Post</em> on Sunday, February 9, 1992, describes <em>Pop America</em> as “an exhibit featuring paintings and photo works by Ron English.”
         </p>
         <p>
-          The exhibition’s promotional materials frame English as a sharp and difficult-to-categorize figure within contemporary American art, combining humor, aggression, technical control, and cultural critique. The surviving advertisement also gathers media quotations that position his work as provocative, cerebral, and confrontational. :contentReference[oaicite:2]{index=2}
+          The surviving exhibition showcard gives the venue as Thomas V. Robinson / Robinson Galleries, 3414 Lake Street, Houston, and identifies the front image as <em>Batman &amp; Boy Wonder</em>, 1991, oil on canvas, 84 × 48 in.
         </p>
         <p>
-          <em>Pop America</em> helps document an early point in the emergence of English’s mature gallery language, when photographic illusion, media appropriation, and pop-cultural destabilization were coming together more clearly under the banner that would later evolve into POPaganda. :contentReference[oaicite:3]{index=3}
+          A <em>Houston Post</em> Business Day advertisement dated Tuesday, February 18, 1992 reproduces <em>Horny Senatosaurus II</em>, printed there as “Horney Senatosaurus,” with the caption “’92, Oil, 30&quot; × 24&quot;.”
         </p>
+        <p>
+          An unidentified “Picks” press clipping reproduces <em>The Ascension of Elvis</em> and notes that Ron English had relocated to New York, that the opening was on Saturday, and that the show remained on view through March 3.
+        </p>
+        <p>
+          The currently surviving promotional material shows a minor date discrepancy: the unidentified “Picks” clipping and one promotional strip give the exhibition through March 3, while <em>The Houston Post</em> material gives the closing date as March 4.
+        </p>
+      </div>
+    </section>
 
-        <ul class="quotes-list">
-          <li>“The world’s most notorious illegal artist” — <em>Morton Downey Jr.</em> :contentReference[oaicite:4]{index=4}</li>
-          <li>“Pushes super realism to new reality tests” — <em>The New York</em> :contentReference[oaicite:5]{index=5}</li>
-          <li>“The guy is clever, skilled and energetic, but what the hell do they mean?” — Paul Hester, <em>Spot</em> :contentReference[oaicite:6]{index=6}</li>
-          <li>“A cerebral cross-body blow” — <em>Hype Magazine</em> :contentReference[oaicite:7]{index=7}</li>
-          <li>“Ron English had arrived. Thank God. This man has imagination, balls, humor and skill. I’m a fan and proud of it.” — <em>Austin Chronicle</em> :contentReference[oaicite:8]{index=8}</li>
+    <section class="text-card" aria-label="Documented press quotes">
+      <div class="card-head">
+        <h2>Documented Press Quotes</h2>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>“The worlds most Notorious illegal artist” — Morton Downey Jr.</li>
+          <li>“Pushes super realism to new reality tests” — <em>The New York</em></li>
+          <li>“The guy is clever, skilled and energetic, but what the hell do they mean?” — Paul Hester, <em>Spot</em></li>
+          <li>“A cerebral cross-body blow” — <em>Hype Magazine</em></li>
+          <li>“I have no idea whether the artist has an international reputation — but he certainly deserves one.” — Bill Jay, <em>Book of Days</em></li>
+          <li>“Ron English had arrived. Thank God. This man has imagination, balls, humor and skill. I’m a fan and proud of it.” — <em>Austin Chronicle</em></li>
         </ul>
       </div>
     </section>
@@ -294,11 +433,12 @@
         <h2>Sources</h2>
       </div>
       <div class="card-body">
-        <ul class="sources-list">
-          <li>Robinson Galleries exhibition announcement, <em>Pop America</em>, Thomas V. Robinson Galleries, Houston, February 8 – March 3, 1992. :contentReference[oaicite:9]{index=9}</li>
-          <li><em>The Houston Post</em>, February 9, 1992, H-12, notice for <em>Pop America</em>. :contentReference[oaicite:10]{index=10}</li>
-          <li>Promotional advertisement for <em>Pop America</em>, Robinson Galleries, Houston. :contentReference[oaicite:11]{index=11}</li>
-          <li>Teresa Wong, “Ron English: Speaks a Language All His Own,” June 1992. :contentReference[oaicite:12]{index=12}</li>
+        <ul>
+          <li>Exhibition showcard for <em>Ron English: “Pop America”</em>, Thomas V. Robinson / Robinson Galleries, Houston, showing the front work as <em>Batman &amp; Boy Wonder</em>, 1991, oil on canvas, 84 × 48 in.</li>
+          <li><em>The Houston Post</em>, Sunday, February 9, 1992, p. H-12, notice for <em>Pop America</em> describing the exhibition as featuring paintings and photo works by Ron English.</li>
+          <li><em>The Houston Post</em>, Tuesday, February 18, 1992, Business Day, p. 14, advertisement for <em>Pop America</em> reproducing <em>Horny Senatosaurus II</em> as “Horney Senatosaurus.”</li>
+          <li>Unidentified Houston-area “Picks” press clipping, early February 1992, reproducing <em>The Ascension of Elvis</em> and describing <em>Pop America</em>.</li>
+          <li>Unidentified promotional clipping preserving press quotes and exhibition details for <em>Pop America</em>.</li>
         </ul>
       </div>
     </section>
