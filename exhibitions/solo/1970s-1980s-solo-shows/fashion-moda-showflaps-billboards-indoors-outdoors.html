@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Showflaps / Billboards — Ron English Indoors Outdoors | Ron English Catalogue Raisonné</title>
 
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
   <style>
     :root{
@@ -65,12 +65,12 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
     .hero{
       margin-top:24px;
+      padding:20px;
       border:1px solid var(--border);
       border-radius:var(--radius);
       overflow:hidden;
@@ -80,24 +80,21 @@
 
     .hero img{
       width:100%;
-      max-height:620px;
+      max-height:760px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
+      border-radius:12px;
     }
 
-    .caption{
-      padding:12px 16px 16px;
+    .hero-meta{
+      padding-top:14px;
       font-size:14px;
       line-height:1.5;
       color:var(--muted);
-      border-top:1px solid var(--border);
-      background:#fff;
     }
 
-    .meta-card,
-    .text-card,
-    .sources-card{
+    .detail-card{
       margin-top:24px;
       border:1px solid var(--border);
       border-radius:var(--radius);
@@ -123,7 +120,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -141,28 +138,6 @@
       color:#111;
     }
 
-    .card-body p{
-      margin:0 0 14px;
-      font-size:16px;
-      line-height:1.7;
-      color:#1f2937;
-    }
-
-    .card-body p:last-child{
-      margin-bottom:0;
-    }
-
-    .sources-card ul{
-      margin:0;
-      padding-left:20px;
-    }
-
-    .sources-card li{
-      font-size:16px;
-      line-height:1.7;
-      color:#1f2937;
-    }
-
     footer{
       margin-top:30px;
       padding-top:16px;
@@ -171,10 +146,18 @@
       font-size:14px;
     }
 
+    footer a{
+      color:inherit;
+    }
+
     @media (max-width:700px){
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
+      }
+
+      .hero{
+        padding:14px;
       }
     }
   </style>
@@ -183,87 +166,62 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
-      <a class="nav-pill" href="../1970s-1980s-solo-exhibitions.html">1970s & 1980s</a>
+      <a class="nav-pill" href="../1970s-1980s-solo-exhibitions.html">1970s &amp; 1980s</a>
     </nav>
 
     <header>
       <h1><em>Showflaps / Billboards — Ron English Indoors Outdoors</em></h1>
       <p class="subtitle">
-        The Salon, Fashion Moda, Bronx, New York, 1986.
+        The Salon, Fashion Moda, Bronx, New York.
       </p>
     </header>
 
-    <section class="hero" aria-label="Exhibition image">
-      <img src="../../images/Exhibitions/Solo/Salon-Indoors-Outdoors.jpg" alt="Ron English — Showflaps / Billboards — Ron English Indoors Outdoors, Fashion Moda, 1986">
-      <div class="caption">
-        Exhibition card for <em>Showflaps / Billboards — Ron English Indoors Outdoors</em>, presented at The Salon, Fashion Moda.
+    <section class="hero" aria-label="Exhibition card">
+      <img src="../../../images/Exhibitions/Solo/Salon-Indoors-Outdoors.jpg" alt="Exhibition card for Showflaps / Billboards — Ron English Indoors Outdoors at The Salon, Fashion Moda, Bronx">
+      <div class="hero-meta">
+        Exhibition card for <em>Showflaps / Billboards — Ron English Indoors Outdoors</em>, The Salon, Fashion Moda, Bronx.
       </div>
     </section>
 
-    <section class="meta-card" aria-label="Exhibition details">
+    <section class="detail-card" aria-label="Exhibition card details">
       <div class="card-head">
-        <h2>Exhibition Details</h2>
+        <h2>Exhibition Card Details</h2>
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1986</div>
+          <div class="meta-label">Object type</div>
+          <div class="meta-value">Exhibition card</div>
 
-          <div class="meta-label">Title</div>
+          <div class="meta-label">Title on card</div>
           <div class="meta-value"><em>Showflaps / Billboards — Ron English Indoors Outdoors</em></div>
 
+          <div class="meta-label">Artist</div>
+          <div class="meta-value">Ron English</div>
+
           <div class="meta-label">Venue</div>
-          <div class="meta-value">The Salon</div>
+          <div class="meta-value">The Salon, Fashion Moda</div>
 
           <div class="meta-label">Produced by</div>
           <div class="meta-value">Stefan Eins</div>
 
-          <div class="meta-label">Gallery</div>
-          <div class="meta-value">Fashion Moda</div>
+          <div class="meta-label">Address</div>
+          <div class="meta-value">2803 Third Avenue, Bronx, New York 10455</div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">2803 Third Avenue, Bronx, NY 10455</div>
-
-          <div class="meta-label">Dates</div>
+          <div class="meta-label">Documented dates</div>
           <div class="meta-value">September 13 – October 11, 1986</div>
 
-          <div class="meta-label">Reception</div>
-          <div class="meta-value">Saturday, September 13, 2–6 pm</div>
+          <div class="meta-label">Opening reception</div>
+          <div class="meta-value">Saturday, September 13, 2–6 p.m.</div>
 
           <div class="meta-label">Gallery hours</div>
-          <div class="meta-value">Tuesday–Saturday, 12–6 pm</div>
+          <div class="meta-value">Tuesday–Saturday, 12–6 p.m.</div>
+
+          <div class="meta-label">Year</div>
+          <div class="meta-value">1986</div>
         </div>
-      </div>
-    </section>
-
-    <section class="text-card" aria-label="Notes">
-      <div class="card-head">
-        <h2>Notes</h2>
-      </div>
-      <div class="card-body">
-        <p>
-          This 1986 exhibition at The Salon, produced by Stefan Eins and hosted by Fashion Moda, foregrounded Ron English’s engagement with billboard language, street intervention, and the movement of public imagery into an interior exhibition setting.
-        </p>
-        <p>
-          The title itself links showflaps, billboards, and the contrast between indoors and outdoors, pointing to the way English was already working across public space, gallery display, and advertising culture during this period.
-        </p>
-        <p>
-          Presented at Fashion Moda in the Bronx, the exhibition belongs to an important early phase in English’s career, when his work was developing through direct confrontation with urban visual systems and institutional boundaries.
-        </p>
-      </div>
-    </section>
-
-    <section class="sources-card" aria-label="Sources">
-      <div class="card-head">
-        <h2>Sources</h2>
-      </div>
-      <div class="card-body">
-        <ul>
-          <li>Exhibition card for <em>Showflaps / Billboards — Ron English Indoors Outdoors</em>, The Salon / Fashion Moda, September 13 – October 11, 1986.</li>
-        </ul>
       </div>
     </section>
 
