@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HEY! My Kid Could Do That! | Ron English Catalogue Raisonné</title>
 
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
   <style>
     :root{
@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,7 +65,6 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
@@ -76,40 +75,40 @@
       gap:18px;
     }
 
-    .hero{
+    .hero,
+    .meta-card,
+    .works-card,
+    .text-card,
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
       background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero img{
       width:100%;
-      max-height:620px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .caption{
-      padding:12px 16px 16px;
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
       border-top:1px solid var(--border);
       background:#fff;
     }
 
     .meta-card,
+    .works-card,
     .text-card,
     .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -129,7 +128,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -158,6 +157,72 @@
       margin-bottom:0;
     }
 
+    .works-note{
+      margin-bottom:16px;
+      color:#1f2937;
+    }
+
+    .works-gallery{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin-top:10px;
+    }
+
+    .work-card{
+      margin:0;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    .work-card img{
+      width:100%;
+      height:255px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .work-caption{
+      padding:8px 12px 9px;
+      border-top:1px solid var(--border);
+    }
+
+    .work-caption p{
+      margin:0;
+    }
+
+    .work-title{
+      font-size:15px;
+      line-height:1.25;
+      color:#111;
+    }
+
+    .work-year{
+      margin-top:0;
+      font-size:13px;
+      line-height:1.25;
+      color:var(--muted);
+    }
+
+    .card-body ul{
+      margin:0;
+      padding-left:20px;
+    }
+
+    .card-body li{
+      font-size:16px;
+      line-height:1.7;
+      color:#1f2937;
+      margin:0 0 8px;
+    }
+
+    .card-body li:last-child{
+      margin-bottom:0;
+    }
+
     .sources-card ul{
       margin:0;
       padding-left:20px;
@@ -169,10 +234,6 @@
       color:#1f2937;
     }
 
-    .sources-card a{
-      color:#111;
-    }
-
     footer{
       margin-top:30px;
       padding-top:16px;
@@ -181,16 +242,29 @@
       font-size:14px;
     }
 
-    @media (max-width:800px){
-      .hero-grid{
-        grid-template-columns:1fr;
+    footer a{
+      color:inherit;
+    }
+
+    @media (max-width:1000px){
+      .works-gallery{
+        grid-template-columns:repeat(2,minmax(0,1fr));
       }
     }
 
-    @media (max-width:700px){
+    @media (max-width:760px){
+      .hero-grid,
+      .works-gallery{
+        grid-template-columns:1fr;
+      }
+
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
+      }
+
+      .hero img{
+        height:340px;
       }
     }
   </style>
@@ -199,8 +273,8 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
       <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
     </nav>
@@ -208,22 +282,22 @@
     <header>
       <h1><em>HEY! My Kid Could Do That!</em></h1>
       <p class="subtitle">
-        Gallery Stendhal, New York, 1992.
+        Gallery Stendhal, New York City, 1992.
       </p>
     </header>
 
-    <section class="hero-grid" aria-label="Exhibition images">
+    <section class="hero-grid" aria-label="Showcard and archival material">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/mykid.jpg" alt="Ron English — HEY! My Kid Could Do That!, Gallery Stendhal, 1992">
+        <img src="../../../images/Exhibitions/Solo/mykid.jpg" alt="Showcard for HEY! My Kid Could Do That! by Ron English at Gallery Stendhal, New York City, 1992">
         <div class="caption">
-          Exhibition card for <em>HEY! My Kid Could Do That!</em>, Gallery Stendhal, New York, 1992.
+          Showcard for <em>HEY! My Kid Could Do That!</em>, Gallery Stendhal, New York City, 1992.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/My-kid-1.jpg" alt="Ron English — HEY! My Kid Could Do That!, Gallery Stendhal, 1992">
+        <img src="../../../images/Exhibitions/Solo/My-kid-1.jpg" alt="Additional archival image associated with HEY! My Kid Could Do That! by Ron English">
         <div class="caption">
-          Additional archival image for <em>HEY! My Kid Could Do That!</em>.
+          Additional archival material associated with <em>HEY! My Kid Could Do That!</em>.
         </div>
       </div>
     </section>
@@ -247,16 +321,166 @@
           <div class="meta-value">622–626 Broadway, 3rd Floor, New York, NY 10012, USA</div>
 
           <div class="meta-label">Dates</div>
-          <div class="meta-value">November 12 – December 12, 1992</div>
+          <div class="meta-value">November 12–December 12, 1992</div>
 
           <div class="meta-label">Opening reception</div>
-          <div class="meta-value">Thursday, November 12, 1992, 6:30–9:00 p.m.</div>
+          <div class="meta-value">November 12, 1992, 6:30–9:00 p.m.</div>
 
           <div class="meta-label">Co-sponsored by</div>
           <div class="meta-value">QP / Ian Alterman</div>
 
+          <div class="meta-label">Phone &amp; Fax</div>
+          <div class="meta-value">212-505-1201</div>
+
+          <div class="meta-label">Gallery hours</div>
+          <div class="meta-value">Tuesday–Saturday, 11:00 a.m.–6:00 p.m.</div>
+
           <div class="meta-label">Related note</div>
-          <div class="meta-value">Art purchases included a donation to the Learning Through Art / Guggenheim Children’s Program</div>
+          <div class="meta-value">All art purchases include a donation to Learning Through Art / Guggenheim Children’s Program</div>
+
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Exhibition showcard, contemporary magazine coverage, and associated documented works</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-card" aria-label="Documented works associated with the exhibition">
+      <div class="card-head">
+        <h2>Documented Works Associated with the Exhibition</h2>
+      </div>
+      <div class="card-body">
+        <p class="works-note">
+          The following works are documented in the associated exhibition image set. Additional works may also have been included.
+        </p>
+
+        <div class="works-gallery">
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--Baba-BatmanL.jpg" alt="Baba Batman by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Baba Batman</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--Batman-and-the-DinosaurL.jpg" alt="Batman and the Dinosaur by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Batman and the Dinosaur</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--Batman-RobinL.jpg" alt="Batman Robin by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Batman Robin</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--Blue-BatmanL.jpg" alt="Blue Batman by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Blue Batman</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--CrabL.jpg" alt="Crab by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Crab</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--Godzilla-BambiL.jpg" alt="Godzilla Bambi by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Godzilla Bambi</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--MickeyL.jpg" alt="Mickey by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Mickey</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--Momma-and-Baby-HorseL.jpg" alt="Momma and Baby Horse by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Momma and Baby Horse</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--Mother-and-ChildL.jpg" alt="Mother and Child by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Mother and Child</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--PterodactylL.jpg" alt="Pterodactyl by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Pterodactyl</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--Shooting-for-the-SunL.jpg" alt="Shooting for the Sun by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Shooting for the Sun</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--StegosaurusL.jpg" alt="Stegosaurus by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Stegosaurus</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--SunshineL.jpg" alt="Sunshine by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Sunshine</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--The-Red-Nosed-ReindeerL.jpg" alt="The Red-Nosed Reindeer by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>The Red-Nosed Reindeer</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--Turtle-BanditL.jpg" alt="Turtle Bandit by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Turtle Bandit</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/My-Kid-Could-Do-That--WhaleL.jpg" alt="Whale by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Whale</em></p>
+              <p class="work-year">Documented in associated exhibition image files</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -267,13 +491,19 @@
       </div>
       <div class="card-body">
         <p>
-          Ron English presented <em>HEY! My Kid Could Do That!</em> at Gallery Stendhal in late 1992. The exhibition title framed the show through a familiar dismissive phrase, then turned it into a pointed exploration of authorship, originality, and the visual language of childhood.
+          The exhibition showcard announces <em>HEY! My Kid Could Do That!</em> as a Ron English exhibition of new work at Gallery Stendhal, running from November 12 to December 12, 1992, with an opening reception on November 12 from 6:30 to 9:00 p.m.
         </p>
         <p>
-          Contemporary coverage describes the exhibition as featuring works derived from children’s drawings and family collaborations, with images then reworked by English. A later magazine reference characterizes the show as paintings and drawings created by preschool children and “remastered” by the artist, underscoring the exhibition’s challenge to assumptions about skill, ownership, and value.
+          The same card notes that all art purchases included a donation to the Learning Through Art / Guggenheim Children’s Program and lists the exhibition as co-sponsored by QP / Ian Alterman.
         </p>
         <p>
-          The documented materials also note that the show supported the Learning Through Art / Guggenheim Children’s Program, linking the exhibition’s theme to a broader educational and institutional context.
+          An <em>Absolute Collection</em> article from October 1992 describes English’s fall New York show as <em>My Kid Could Do That</em> and says it featured collaborations with his two nephews and a niece, as well as collaborations using early childhood works by his wife Tarsa and her two brothers.
+        </p>
+        <p>
+          The <em>Absolute Collection</em> article also emphasizes that Batmen and dinosaurs recur throughout the series, matching the subjects reflected in the documented exhibition image files.
+        </p>
+        <p>
+          A January 1993 notice in <em>Spy</em> refers to Gallery Stendhal’s recent exhibit of new works by Ron English, calling it <em>Hey! My Kid Could Do That!</em> and describing it as paintings and drawings created by preschool children and “remastered” by English.
         </p>
       </div>
     </section>
@@ -284,10 +514,10 @@
       </div>
       <div class="card-body">
         <ul>
-          <li>Gallery Stendhal exhibition showcard for <em>HEY! My Kid Could Do That!</em>, November 12 – December 12, 1992.</li>
-          <li><em>SunStorm Fine Art / Absolute Collection</em>, October 1992, article on English’s fall New York exhibition <em>My Kid Could Do That</em>.</li>
-          <li><em>Spy Magazine</em>, January 1993, reference to Gallery Stendhal’s <em>HEY! My Kid Could Do That!</em>.</li>
-          <li>Gallery 98 archive listing Gallery Stendhal material related to Ron English exhibitions.</li>
+          <li>Gallery Stendhal exhibition showcard for <em>HEY! My Kid Could Do That!</em>, November 12–December 12, 1992.</li>
+          <li><em>Absolute Collection</em>, October 1992, p. 10, article on Ron English’s fall New York exhibition <em>My Kid Could Do That</em>.</li>
+          <li><em>Spy</em>, January 1993, “The Ten Worst People and Events of 1992,” reference to Gallery Stendhal’s recent exhibit <em>Hey! My Kid Could Do That!</em>.</li>
+          <li>Associated exhibition image file set documenting individual works from the series.</li>
         </ul>
       </div>
     </section>
