@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Beyond the Groovy Planet — New Stuff by Ron English | Ron English Catalogue Raisonné</title>
 
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
   <style>
     :root{
@@ -65,12 +65,12 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
     .hero{
       margin-top:24px;
+      padding:20px;
       border:1px solid var(--border);
       border-radius:var(--radius);
       overflow:hidden;
@@ -80,24 +80,21 @@
 
     .hero img{
       width:100%;
-      max-height:620px;
+      max-height:760px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
+      border-radius:12px;
     }
 
-    .caption{
-      padding:12px 16px 16px;
+    .hero-meta{
+      padding-top:14px;
       font-size:14px;
       line-height:1.5;
       color:var(--muted);
-      border-top:1px solid var(--border);
-      background:#fff;
     }
 
-    .meta-card,
-    .text-card,
-    .sources-card{
+    .detail-card{
       margin-top:24px;
       border:1px solid var(--border);
       border-radius:var(--radius);
@@ -123,7 +120,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -141,28 +138,6 @@
       color:#111;
     }
 
-    .card-body p{
-      margin:0 0 14px;
-      font-size:16px;
-      line-height:1.7;
-      color:#1f2937;
-    }
-
-    .card-body p:last-child{
-      margin-bottom:0;
-    }
-
-    .sources-card ul{
-      margin:0;
-      padding-left:20px;
-    }
-
-    .sources-card li{
-      font-size:16px;
-      line-height:1.7;
-      color:#1f2937;
-    }
-
     footer{
       margin-top:30px;
       padding-top:16px;
@@ -171,10 +146,18 @@
       font-size:14px;
     }
 
+    footer a{
+      color:inherit;
+    }
+
     @media (max-width:700px){
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
+      }
+
+      .hero{
+        padding:14px;
       }
     }
   </style>
@@ -183,78 +166,59 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
-      <a class="nav-pill" href="../1970s-1980s-solo-exhibitions.html">1970s & 1980s</a>
+      <a class="nav-pill" href="../1970s-1980s-solo-exhibitions.html">1970s &amp; 1980s</a>
     </nav>
 
     <header>
       <h1><em>Beyond the Groovy Planet — New Stuff by Ron English</em></h1>
       <p class="subtitle">
-        Levlowe Gallery, New York, 1980.
+        Levlowe Gallery, New York, New York.
       </p>
     </header>
 
-    <section class="hero" aria-label="Exhibition image">
-      <img src="../../images/Exhibitions/Solo/Beyond-the-Groovy-Planet.jpg" alt="Ron English — Beyond the Groovy Planet, Levlowe Gallery, 1980">
-      <div class="caption">
+    <section class="hero" aria-label="Showcard ephemera">
+      <img src="../../../images/Exhibitions/Solo/Beyond-the-Groovy-Planet.jpg" alt="Exhibition postcard for Beyond the Groovy Planet — New Stuff by Ron English at Levlowe Gallery, New York">
+      <div class="hero-meta">
         Exhibition postcard for <em>Beyond the Groovy Planet — New Stuff by Ron English</em>, Levlowe Gallery, New York.
       </div>
     </section>
 
-    <section class="meta-card" aria-label="Exhibition details">
+    <section class="detail-card" aria-label="Showcard details">
       <div class="card-head">
-        <h2>Exhibition Details</h2>
+        <h2>Showcard Details</h2>
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1980</div>
+          <div class="meta-label">Object type</div>
+          <div class="meta-value">Exhibition postcard</div>
 
-          <div class="meta-label">Title</div>
+          <div class="meta-label">Title on postcard</div>
           <div class="meta-value"><em>Beyond the Groovy Planet — New Stuff by Ron English</em></div>
+
+          <div class="meta-label">Artist</div>
+          <div class="meta-value">Ron English</div>
 
           <div class="meta-label">Venue</div>
           <div class="meta-value">Levlowe Gallery</div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">200 East Third Street, New York, NY, USA</div>
+          <div class="meta-label">Address</div>
+          <div class="meta-value">200 East Third Street, New York, New York</div>
 
-          <div class="meta-label">Date</div>
+          <div class="meta-label">Documented event</div>
+          <div class="meta-value">Opening reception</div>
+
+          <div class="meta-label">Documented date</div>
           <div class="meta-value">Friday, November 28, 1980</div>
 
-          <div class="meta-label">Time</div>
+          <div class="meta-label">Documented time</div>
           <div class="meta-value">7–10 p.m.</div>
+
+          <div class="meta-label">Year</div>
+          <div class="meta-value">1980</div>
         </div>
-      </div>
-    </section>
-
-    <section class="text-card" aria-label="Notes">
-      <div class="card-head">
-        <h2>Notes</h2>
-      </div>
-      <div class="card-body">
-        <p>
-          <em>Beyond the Groovy Planet</em> is one of Ron English’s earliest documented solo exhibitions in New York. Held at Levlowe Gallery in 1980, the show was presented as “new stuff” by English.
-        </p>
-        <p>
-          The illustrated showcard suggests an early visual language built from surreal distortion, cartoon logic, and psychedelic imagery. Multi-headed figures, floating eyes, and exaggerated forms point toward themes that would later reappear in his more widely known Popaganda work.
-        </p>
-        <p>
-          The exhibition took place in the East Village on Friday, November 28, from 7 to 10 p.m., and the hand-drawn postcard reflects the underground downtown energy surrounding English’s early New York activity.
-        </p>
-      </div>
-    </section>
-
-    <section class="sources-card" aria-label="Sources">
-      <div class="card-head">
-        <h2>Sources</h2>
-      </div>
-      <div class="card-body">
-        <ul>
-          <li>Printed exhibition postcard for <em>Beyond the Groovy Planet — New Stuff by Ron English</em>, Levlowe Gallery, New York, November 28, 1980.</li>
-        </ul>
       </div>
     </section>
 
