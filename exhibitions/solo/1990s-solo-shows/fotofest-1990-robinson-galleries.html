@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ron English (FotoFest ’90) | Ron English Catalogue Raisonné</title>
 
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
   <style>
     :root{
@@ -65,7 +65,6 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
@@ -77,6 +76,7 @@
     }
 
     .hero{
+      padding:20px;
       border:1px solid var(--border);
       border-radius:var(--radius);
       overflow:hidden;
@@ -86,23 +86,21 @@
 
     .hero img{
       width:100%;
-      max-height:620px;
+      max-height:760px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
+      border-radius:12px;
     }
 
-    .caption{
-      padding:12px 16px 16px;
+    .hero-meta{
+      padding-top:14px;
       font-size:14px;
       line-height:1.5;
       color:var(--muted);
-      border-top:1px solid var(--border);
-      background:#fff;
     }
 
-    .meta-card,
-    .text-card,
+    .detail-card,
     .sources-card{
       margin-top:24px;
       border:1px solid var(--border);
@@ -129,7 +127,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -151,7 +149,7 @@
       margin:0 0 14px;
       font-size:16px;
       line-height:1.7;
-      color:#1f2937;
+      color:#111;
     }
 
     .card-body p:last-child{
@@ -166,7 +164,7 @@
     .sources-card li{
       font-size:16px;
       line-height:1.7;
-      color:#1f2937;
+      color:#111;
     }
 
     footer{
@@ -175,6 +173,10 @@
       border-top:1px solid var(--border);
       color:var(--muted);
       font-size:14px;
+    }
+
+    footer a{
+      color:inherit;
     }
 
     @media (max-width:800px){
@@ -188,6 +190,10 @@
         grid-template-columns:1fr;
         gap:6px 0;
       }
+
+      .hero{
+        padding:14px;
+      }
     }
   </style>
 </head>
@@ -195,8 +201,8 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
       <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
     </nav>
@@ -204,69 +210,106 @@
     <header>
       <h1><em>Ron English (FotoFest ’90)</em></h1>
       <p class="subtitle">
-        Thomas V. Robinson / Robinson Galleries, Houston, 1990.
+        Thomas V. Robinson / Robinson Galleries, Houston, Texas.
       </p>
     </header>
 
-    <section class="hero-grid" aria-label="Exhibition images">
+    <section class="hero-grid" aria-label="Showcard ephemera and documented work">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Fotofest-2 copy.jpg" alt="Ron English — FotoFest ’90 solo exhibition at Thomas V. Robinson / Robinson Galleries, Houston, 1990">
-        <div class="caption">
-          Exhibition card for <em>Ron English (FotoFest ’90)</em>, Thomas V. Robinson / Robinson Galleries, Houston, 1990.
+        <img src="../../../images/Exhibitions/Solo/Fotofest-2 copy.jpg" alt="Front of exhibition showcard for Ron English (FotoFest ’90) at Thomas V. Robinson / Robinson Galleries, Houston">
+        <div class="hero-meta">
+          Front of exhibition showcard for <em>Ron English (FotoFest ’90)</em>, Thomas V. Robinson / Robinson Galleries, Houston.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Fotofest-1.jpg" alt="Ron English — FotoFest ’90 solo exhibition at Thomas V. Robinson / Robinson Galleries, Houston, 1990">
-        <div class="caption">
-          Additional archival image for <em>Ron English (FotoFest ’90)</em>.
+        <img src="../../../images/Exhibitions/Solo/Fotofest-1.jpg" alt="Reverse of exhibition showcard for Ron English (FotoFest ’90) at Thomas V. Robinson / Robinson Galleries, Houston">
+        <div class="hero-meta">
+          Reverse of exhibition showcard for <em>Ron English (FotoFest ’90)</em>, Thomas V. Robinson / Robinson Galleries, Houston.
+        </div>
+      </div>
+
+      <div class="hero">
+        <img src="../../../images/Exhibitions/Solo/Poker.jpg" alt="Poker by Ron English, documented in the FotoFest ’90 catalogue">
+        <div class="hero-meta">
+          <em>Poker</em>, documented in the FotoFest ’90 catalogue.
         </div>
       </div>
     </section>
 
-    <section class="meta-card" aria-label="Exhibition details">
+    <section class="detail-card" aria-label="Exhibition details">
       <div class="card-head">
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1990</div>
+          <div class="meta-label">Object type</div>
+          <div class="meta-value">Exhibition showcard, catalogue entry, and documented exhibition photograph</div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Ron English (FotoFest ’90)</em></div>
+          <div class="meta-label">Title on showcard</div>
+          <div class="meta-value"><em>Ron English</em></div>
+
+          <div class="meta-label">Artist</div>
+          <div class="meta-value">Ron English</div>
 
           <div class="meta-label">Venue</div>
           <div class="meta-value">Thomas V. Robinson / Robinson Galleries</div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">3733 Westheimer, No. 7, Houston, Texas, USA</div>
+          <div class="meta-label">Address</div>
+          <div class="meta-value">3733 Westheimer, No. 7, Houston, Texas 77027</div>
 
-          <div class="meta-label">Dates</div>
+          <div class="meta-label">Telephone</div>
+          <div class="meta-value">(713) 961-5229</div>
+
+          <div class="meta-label">Entrance</div>
+          <div class="meta-value">Entrance on Westgrove Lane, one block east of Weslayan</div>
+
+          <div class="meta-label">Documented dates</div>
           <div class="meta-value">February 11 – March 3, 1990</div>
 
           <div class="meta-label">Opening reception</div>
           <div class="meta-value">Sunday, February 11, 1990, 1:00–6:00 p.m.</div>
 
+          <div class="meta-label">Artist present</div>
+          <div class="meta-value">Yes</div>
+
           <div class="meta-label">Gallery hours</div>
-          <div class="meta-value">Tuesday–Saturday, 10:00 a.m. – 5:30 p.m.</div>
+          <div class="meta-value">Tuesday–Saturday, 10:00 a.m.–5:30 p.m.</div>
+
+          <div class="meta-label">Festival context</div>
+          <div class="meta-value">FotoFest 90, The International Month of Photography</div>
+
+          <div class="meta-label">Image on showcard front</div>
+          <div class="meta-value"><em>Out Of The Frying Pan</em>, 1989, C print, 10 × 8 in.</div>
+
+          <div class="meta-label">Documented work in catalogue</div>
+          <div class="meta-value"><em>Poker</em></div>
+
+          <div class="meta-label">Year</div>
+          <div class="meta-value">1990</div>
         </div>
       </div>
     </section>
 
-    <section class="text-card" aria-label="Notes">
+    <section class="detail-card" aria-label="Notes">
       <div class="card-head">
         <h2>Notes</h2>
       </div>
       <div class="card-body">
         <p>
-          Ron English presented a photographic exhibition at Thomas V. Robinson / Robinson Galleries in Houston as part of FotoFest ’90. The documented materials identify the exhibition as opening on February 11, 1990, with the artist present.
+          The exhibition was presented at Thomas V. Robinson / Robinson Galleries in Houston as part of FotoFest 90, which the festival materials describe as “The International Month of Photography.”
         </p>
         <p>
-          Contemporary coverage describes English’s photographs as combining actual people, hand-drawn cardboard figures, and flattened spatial elements. The same coverage notes that the exhibition included his series <em>American Sideshows</em>, placing the show within a body of work that explored staged illusion and photographic construction.
+          The FotoFest 90 catalogue states that the month-long biennial festival ran from February 10 to March 10 and hosted more than ninety exhibitions from two dozen countries.
         </p>
         <p>
-          A <em>Houston Post</em> listing connected to the exhibition reproduces English’s 1989 C-print <em>Out of the Frying Pan</em>, helping confirm the venue and the public presentation of this work during FotoFest.
+          In the catalogue entry titled <em>Vicissitudes</em>, Ron English is described as working at the forefront of a fabricated-to-be-photographed approach, using photography to record rearrangements of reality through interventions such as painted billboards and hand-painted anamorphic cardboard figures.
+        </p>
+        <p>
+          The same catalogue text states that his work was held in collections including the Museum of Contemporary Art in Paris and the Whitney Museum in New York, and notes prior exhibitions in Houston, Dallas, New York, and Amsterdam.
+        </p>
+        <p>
+          The surviving showcard reproduces <em>Out Of The Frying Pan</em> on the front, while the FotoFest 90 catalogue documents <em>Poker</em>.
         </p>
       </div>
     </section>
@@ -278,6 +321,7 @@
       <div class="card-body">
         <ul>
           <li>Robinson Galleries exhibition announcement for <em>Ron English</em>, Thomas V. Robinson / Robinson Galleries, Houston, opening February 11, 1990.</li>
+          <li>FotoFest 90 catalogue, Houston, entry for <em>Vicissitudes</em>, Ron English.</li>
           <li>Margaret Daugherty, “For art’s sake,” <em>Houston: The Magazine for Business</em>, February 1990, p. 33.</li>
           <li><em>The Houston Post</em>, February 4, 1990, p. H-17, listing for Ron English’s <em>Out of the Frying Pan</em> at Robinson Galleries.</li>
         </ul>
