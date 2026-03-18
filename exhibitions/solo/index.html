@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Annus ... Mirabilis | Ron English Catalogue Raisonné</title>
+  <title>Solo Exhibitions | Ron English Catalogue Raisonné</title>
 
   <link rel="stylesheet" href="../../css/styles.css" />
 
@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -38,6 +38,7 @@
       display:flex;
       flex-wrap:wrap;
       gap:10px;
+      margin-top:22px;
       margin-bottom:22px;
     }
 
@@ -55,109 +56,122 @@
       background:#f3f6ff;
     }
 
-    h1{
-      font-size:clamp(34px,5vw,54px);
+    .page-header{
+      max-width:1100px;
+      margin:0;
+      padding:0;
+      text-align:left;
+    }
+
+    .page-title{
       margin:0 0 10px;
+      font-size:clamp(2rem,4vw,3rem);
       letter-spacing:-.02em;
+      line-height:1.05;
     }
 
-    .subtitle{
-      font-size:18px;
-      line-height:1.55;
-      color:var(--muted);
-      margin:0;
+    .intro-text{
+      max-width:1100px;
+      margin:0 0 28px;
+      padding:0;
+      line-height:1.6;
+      text-align:left;
     }
 
-    .hero{
-      margin-top:24px;
-      padding:20px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
-      background:#fff;
-    }
-
-    .hero img{
+    .intro-text p{
+      margin:0 0 14px;
+      max-width:none;
       width:100%;
-      max-height:760px;
-      object-fit:contain;
-      display:block;
-      background:#f3f4f6;
-      border-radius:12px;
-    }
-
-    .hero-meta{
-      padding-top:14px;
-      font-size:14px;
-      line-height:1.5;
       color:var(--muted);
+      font-size:18px;
     }
 
-    .detail-card{
-      margin-top:24px;
+    .entry-grid{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:20px;
+    }
+
+    .entry{
+      display:block;
       border:1px solid var(--border);
       border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
       overflow:hidden;
-    }
-
-    .card-head{
-      padding:16px 18px;
-      border-bottom:1px solid var(--border);
+      box-shadow:var(--shadow);
+      text-decoration:none;
+      color:inherit;
       background:#fff;
+      transition:transform .12s ease, box-shadow .12s ease;
+      padding:22px 20px;
     }
 
-    .card-head h2{
-      margin:0;
-      font-size:22px;
+    .entry:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 40px rgba(0,0,0,.12);
     }
 
-    .card-body{
-      padding:18px;
-    }
-
-    .meta-grid{
-      display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
-    }
-
-    .meta-label{
-      font-size:13px;
-      letter-spacing:.04em;
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:8px;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.08em;
       text-transform:uppercase;
       color:#6b7280;
-      font-weight:700;
     }
 
-    .meta-value{
+    .entry h2{
+      margin:0 0 8px;
+      font-size:26px;
+      line-height:1.15;
+    }
+
+    .entry p{
+      margin:0;
+      color:var(--muted);
       font-size:16px;
       line-height:1.6;
+      max-width:58ch;
+    }
+
+    .notes{
+      width:100%;
+      max-width:none;
+      margin-top:28px;
+      padding:20px 0 0;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.65;
+    }
+
+    .notes p{
+      margin:0 0 12px;
+      max-width:none;
+      width:100%;
+    }
+
+    .notes p:last-child{
+      margin-bottom:0;
+    }
+
+    .notes strong{
       color:#111;
     }
 
-    footer{
+    .site-footer{
+      width:100%;
       margin-top:30px;
-      padding-top:16px;
+      padding:16px 18px;
       border-top:1px solid var(--border);
       color:var(--muted);
       font-size:14px;
     }
 
-    footer a{
-      color:inherit;
-    }
-
-    @media (max-width:700px){
-      .meta-grid{
+    @media (max-width:900px){
+      .entry-grid{
         grid-template-columns:1fr;
-        gap:6px 0;
-      }
-
-      .hero{
-        padding:14px;
       }
     }
   </style>
@@ -166,68 +180,76 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/">Main site</a>
       <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Exhibitions</a>
-      <a class="nav-pill" href="index.html">Solo exhibitions</a>
-      <a class="nav-pill" href="../1970s-1980s-solo-exhibitions.html">1970s &amp; 1980s</a>
     </nav>
 
-    <header>
-      <h1><em>Annus ... Mirabilis</em></h1>
-      <p class="subtitle">
-        Kwikwash Gallery, Houston, Texas.
-      </p>
+    <header class="page-header">
+      <h1 class="page-title">Solo Exhibitions</h1>
     </header>
 
-    <section class="hero" aria-label="Showcard ephemera">
-      <img src="../../images/Exhibitions/Solo/annus-mirabilis-kwikwash-gallery-1979-1.jpg" alt="Showcard for Eye/Hand Coordination — Annus ... Mirabilis at Kwikwash Gallery, Houston">
-      <div class="hero-meta">
-        Showcard ephemera for <em>Eye/Hand Coordination — Annus ... Mirabilis</em>, Kwikwash Gallery, Houston.
-      </div>
+    <section class="intro-text">
+      <p>
+        A guide to documented solo exhibitions featuring Ron English’s work.
+      </p>
+      <p>
+        This section is organized by decade for clearer navigation and reference.
+      </p>
     </section>
 
-    <section class="detail-card" aria-label="Showcard details">
-      <div class="card-head">
-        <h2>Showcard Details</h2>
-      </div>
-      <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-label">Object type</div>
-          <div class="meta-value">Showcard ephemera</div>
+    <section class="entry-grid" aria-label="Solo exhibition decades">
 
-          <div class="meta-label">Title on showcard</div>
-          <div class="meta-value"><em>Eye/Hand Coordination — Annus ... Mirabilis</em></div>
+      <a class="entry" href="1970s-1980s-solo-exhibitions.html">
+        <span class="eyebrow">Solo exhibition history</span>
+        <h2>1970s &amp; 1980s</h2>
+        <p>
+          Early documented solo exhibitions from the 1970s and 1980s.
+        </p>
+      </a>
 
-          <div class="meta-label">Artist</div>
-          <div class="meta-value">Ron English</div>
+      <a class="entry" href="1990s-solo-exhibitions.html">
+        <span class="eyebrow">Solo exhibition history</span>
+        <h2>1990s</h2>
+        <p>
+          Documented solo exhibitions from the 1990s.
+        </p>
+      </a>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Kwikwash Gallery</div>
+      <a class="entry" href="2000s-solo-exhibitions.html">
+        <span class="eyebrow">Solo exhibition history</span>
+        <h2>2000s</h2>
+        <p>
+          Documented solo exhibitions from the 2000s.
+        </p>
+      </a>
 
-          <div class="meta-label">Address</div>
-          <div class="meta-value">3207 Montrose, Houston, Texas</div>
+      <a class="entry" href="2010s-solo-exhibitions.html">
+        <span class="eyebrow">Solo exhibition history</span>
+        <h2>2010s</h2>
+        <p>
+          Documented solo exhibitions from the 2010s.
+        </p>
+      </a>
 
-          <div class="meta-label">Documented event</div>
-          <div class="meta-value">Opening reception</div>
+      <a class="entry" href="2020s-solo-exhibitions.html">
+        <span class="eyebrow">Solo exhibition history</span>
+        <h2>2020s</h2>
+        <p>
+          Documented solo exhibitions from the 2020s.
+        </p>
+      </a>
 
-          <div class="meta-label">Documented date</div>
-          <div class="meta-value">December 7</div>
-
-          <div class="meta-label">Documented time</div>
-          <div class="meta-value">7–10 p.m.</div>
-
-          <div class="meta-label">Year</div>
-          <div class="meta-value">c. 1979 / 1980 dating to be confirmed</div>
-
-          <div class="meta-label">File</div>
-          <div class="meta-value">Solo/annus-mirabilis-kwikwash-gallery-1979-1.jpg</div>
-        </div>
-      </div>
     </section>
 
-    <footer>
-      <a href="../1970s-1980s-solo-exhibitions.html#annus-mirabilis-kwikwash-gallery-1979-row">Back to 1970s–1980s solo exhibitions</a>
-    </footer>
+    <section class="notes" aria-label="Editorial and rights notes">
+      <p><strong>Editorial note:</strong> Exhibition entries may include title, venue, city, date range, and supporting documentation as available.</p>
+      <p><strong>Rights Notice:</strong> This catalogue raisonné is intended as a scholarly and documentary resource. Showcard ephemera is included where relevant for purposes of identification, research, commentary, and historical record. If you are a rights holder and have questions or concerns about any material included here, please contact us through the Google form for prompt review.</p>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    Published via GitHub Pages for long-term public access.
+  </footer>
 </body>
 </html>
