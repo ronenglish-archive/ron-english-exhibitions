@@ -78,7 +78,13 @@
       background:#fff;
     }
 
-    .hero img{
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+
+    .hero-item img{
       width:100%;
       max-height:760px;
       object-fit:contain;
@@ -138,17 +144,6 @@
       color:#111;
     }
 
-    .sources-list{
-      margin:0;
-      padding-left:20px;
-    }
-
-    .sources-list li{
-      font-size:16px;
-      line-height:1.7;
-      color:#111;
-    }
-
     footer{
       margin-top:30px;
       padding-top:16px;
@@ -162,6 +157,10 @@
     }
 
     @media (max-width:700px){
+      .hero-grid{
+        grid-template-columns:1fr;
+      }
+
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
@@ -190,23 +189,34 @@
       </p>
     </header>
 
-    <section class="hero" aria-label="Exhibition card">
-      <img src="../../../images/Exhibitions/Solo/fotogalerie-Amsterdam-1988-1.jpg" alt="Exhibition card for Ron English at Fotogalerie Prinsengracht 356, Amsterdam">
-      <div class="hero-meta">
-        Exhibition card for <em>Ron English</em>, Fotogalerie Prinsengracht 356, Amsterdam.
+    <section class="hero" aria-label="Showcard ephemera">
+      <div class="hero-grid">
+        <div class="hero-item">
+          <img src="../../../images/Exhibitions/Solo/fotogalerie-Amsterdam-1988-1.jpg" alt="Front of exhibition showcard for Ron English at Fotogalerie Prinsengracht 356, Amsterdam">
+          <div class="hero-meta">
+            Front of exhibition showcard for <em>Ron English</em>, Fotogalerie Prinsengracht 356, Amsterdam.
+          </div>
+        </div>
+
+        <div class="hero-item">
+          <img src="../../../images/Exhibitions/Solo/Fotogalerie2.jpg" alt="Reverse of exhibition showcard for Ron English at Fotogalerie Prinsengracht 356, Amsterdam">
+          <div class="hero-meta">
+            Reverse of exhibition showcard for <em>Ron English</em>, Fotogalerie Prinsengracht 356, Amsterdam.
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="detail-card" aria-label="Exhibition card details">
+    <section class="detail-card" aria-label="Showcard details">
       <div class="card-head">
-        <h2>Exhibition Card Details</h2>
+        <h2>Showcard Details</h2>
       </div>
       <div class="card-body">
         <div class="meta-grid">
           <div class="meta-label">Object type</div>
-          <div class="meta-value">Exhibition card</div>
+          <div class="meta-value">Exhibition showcard</div>
 
-          <div class="meta-label">Title on card</div>
+          <div class="meta-label">Title on showcard</div>
           <div class="meta-value"><em>Ron English</em></div>
 
           <div class="meta-label">Artist</div>
@@ -215,8 +225,14 @@
           <div class="meta-label">Venue</div>
           <div class="meta-value">Fotogalerie Prinsengracht 356</div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">Amsterdam, Netherlands</div>
+          <div class="meta-label">Gallery name on showcard</div>
+          <div class="meta-value">2½ × 4½ Fotogalerie</div>
+
+          <div class="meta-label">Address</div>
+          <div class="meta-value">Prinsengracht 356, 1016 JA Amsterdam</div>
+
+          <div class="meta-label">Telephone</div>
+          <div class="meta-value">(020) 260757</div>
 
           <div class="meta-label">Documented dates</div>
           <div class="meta-value">11 August – 3 September 1988</div>
@@ -224,24 +240,12 @@
           <div class="meta-label">Opening</div>
           <div class="meta-value">Saturday, 13 August, 17:00–19:00</div>
 
-          <div class="meta-label">Gallery name variant</div>
-          <div class="meta-value">2¼ × 4½ / 2½ bij 4½ Fotogalerie</div>
+          <div class="meta-label">Gallery hours</div>
+          <div class="meta-value">Thursday–Friday, 14:00–18:00; Saturday, 12:00–17:00</div>
 
           <div class="meta-label">Year</div>
           <div class="meta-value">1988</div>
         </div>
-      </div>
-    </section>
-
-    <section class="detail-card" aria-label="Sources">
-      <div class="card-head">
-        <h2>Sources</h2>
-      </div>
-      <div class="card-body">
-        <ul class="sources-list">
-          <li><em>FOTO</em>, no. 5/88, exhibition notice for Fotogalerie 2¼ × 4½, Amsterdam.</li>
-          <li>Gallery listing for 2½ bij 4½ Fotogalerie, Prinsengracht 356, Amsterdam.</li>
-        </ul>
       </div>
     </section>
 
