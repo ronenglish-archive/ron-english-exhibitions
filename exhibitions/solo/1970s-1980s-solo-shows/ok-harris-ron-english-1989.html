@@ -65,7 +65,6 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
@@ -77,6 +76,7 @@
     }
 
     .hero{
+      padding:20px;
       border:1px solid var(--border);
       border-radius:var(--radius);
       overflow:hidden;
@@ -86,23 +86,21 @@
 
     .hero img{
       width:100%;
-      max-height:620px;
+      max-height:760px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
+      border-radius:12px;
     }
 
-    .caption{
-      padding:12px 16px 16px;
+    .hero-meta{
+      padding-top:14px;
       font-size:14px;
       line-height:1.5;
       color:var(--muted);
-      border-top:1px solid var(--border);
-      background:#fff;
     }
 
-    .meta-card,
-    .text-card,
+    .detail-card,
     .sources-card{
       margin-top:24px;
       border:1px solid var(--border);
@@ -129,7 +127,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -151,7 +149,7 @@
       margin:0 0 14px;
       font-size:16px;
       line-height:1.7;
-      color:#1f2937;
+      color:#111;
     }
 
     .card-body p:last-child{
@@ -166,7 +164,7 @@
     .sources-card li{
       font-size:16px;
       line-height:1.7;
-      color:#1f2937;
+      color:#111;
     }
 
     .sources-card a{
@@ -181,6 +179,10 @@
       font-size:14px;
     }
 
+    footer a{
+      color:inherit;
+    }
+
     @media (max-width:800px){
       .hero-grid{
         grid-template-columns:1fr;
@@ -192,6 +194,10 @@
         grid-template-columns:1fr;
         gap:6px 0;
       }
+
+      .hero{
+        padding:14px;
+      }
     }
   </style>
 </head>
@@ -199,72 +205,81 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
-      <a class="nav-pill" href="../1970s-1980s-solo-exhibitions.html">1970s & 1980s</a>
+      <a class="nav-pill" href="../1970s-1980s-solo-exhibitions.html">1970s &amp; 1980s</a>
     </nav>
 
     <header>
       <h1><em>Ron English</em></h1>
       <p class="subtitle">
-        OK Harris Works of Art, New York, 1989.
+        OK Harris Works of Art, New York, New York.
       </p>
     </header>
 
-    <section class="hero-grid" aria-label="Exhibition images">
+    <section class="hero-grid" aria-label="Showcard ephemera">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/trompe-l'oeil-ok-harris-1989-1.jpg" alt="Ron English solo exhibition at OK Harris Works of Art, 1989">
-        <div class="caption">
-          Exhibition card for <em>Ron English</em>, OK Harris Works of Art, New York, 1989.
+        <img src="../../images/Exhibitions/Solo/trompe-l'oeil-ok-harris-1989-1.jpg" alt="Exhibition card for Ron English at OK Harris Works of Art, New York">
+        <div class="hero-meta">
+          Exhibition card for <em>Ron English</em>, OK Harris Works of Art, New York.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/OK-Harris-1.jpg" alt="Ron English solo exhibition material for OK Harris Works of Art, 1989">
-        <div class="caption">
-          Additional exhibition material for <em>Ron English</em>, OK Harris Works of Art, 1989.
+        <img src="../../images/Exhibitions/Solo/OK-Harris-1.jpg" alt="Additional exhibition material for Ron English at OK Harris Works of Art, New York">
+        <div class="hero-meta">
+          Additional exhibition material for <em>Ron English</em>, OK Harris Works of Art, New York.
         </div>
       </div>
     </section>
 
-    <section class="meta-card" aria-label="Exhibition details">
+    <section class="detail-card" aria-label="Exhibition details">
       <div class="card-head">
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1989</div>
+          <div class="meta-label">Object type</div>
+          <div class="meta-value">Exhibition card and related ephemera</div>
 
-          <div class="meta-label">Title</div>
+          <div class="meta-label">Title on card</div>
           <div class="meta-value"><em>Ron English</em></div>
+
+          <div class="meta-label">Artist</div>
+          <div class="meta-value">Ron English</div>
 
           <div class="meta-label">Venue</div>
           <div class="meta-value">OK Harris Works of Art</div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">New York, New York, USA</div>
+          <div class="meta-label">Address</div>
+          <div class="meta-value">383 West Broadway, New York, New York 10012</div>
 
-          <div class="meta-label">Dates</div>
+          <div class="meta-label">Documented dates</div>
           <div class="meta-value">March 4–25, 1989</div>
+
+          <div class="meta-label">Medium listed in schedule</div>
+          <div class="meta-value">Photographs</div>
+
+          <div class="meta-label">Year</div>
+          <div class="meta-value">1989</div>
         </div>
       </div>
     </section>
 
-    <section class="text-card" aria-label="Notes">
+    <section class="detail-card" aria-label="Notes">
       <div class="card-head">
         <h2>Notes</h2>
       </div>
       <div class="card-body">
         <p>
-          This solo exhibition at Ivan Karp’s OK Harris Works of Art presented Ron English’s early photographic pieces and illusionistic staged scenes. The show extended his investigation into constructed reality through tableaux built in the studio and photographed as direct images rather than darkroom manipulations.
+          The surviving exhibition card documents a March 1989 Ron English exhibition at OK Harris Works of Art.
         </p>
         <p>
-          The exhibition placed these works in dialogue with the gallery’s reputation for conceptual and photo-based work. It also helps document an early moment when English’s interest in illusion, staged perception, and media language entered a more formal gallery context in New York.
+          The OK Harris exhibition schedule for 1988–1989 lists Ron English under “Photographs” for March 4–25, 1989.
         </p>
         <p>
-          As one of his first documented New York solo exhibitions, the show marks an important step in the development of ideas that would later surface in billboard interventions, POPaganda imagery, and large-scale painting.
+          Together, the card and the gallery schedule identify this as a documented solo exhibition of photographs at OK Harris Works of Art in New York.
         </p>
       </div>
     </section>
