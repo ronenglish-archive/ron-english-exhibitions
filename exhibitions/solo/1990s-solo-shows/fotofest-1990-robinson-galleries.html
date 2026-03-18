@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -75,39 +75,40 @@
       gap:18px;
     }
 
-    .hero{
-      padding:20px;
+    .hero,
+    .meta-card,
+    .works-card,
+    .text-card,
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
       background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero img{
       width:100%;
-      max-height:760px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
-      border-radius:12px;
     }
 
-    .hero-meta{
-      padding-top:14px;
+    .caption{
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
+      border-top:1px solid var(--border);
+      background:#fff;
     }
 
-    .detail-card,
+    .meta-card,
+    .works-card,
+    .text-card,
     .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -149,11 +150,61 @@
       margin:0 0 14px;
       font-size:16px;
       line-height:1.7;
-      color:#111;
+      color:#1f2937;
     }
 
     .card-body p:last-child{
       margin-bottom:0;
+    }
+
+    .works-note{
+      margin-bottom:16px;
+      color:#1f2937;
+    }
+
+    .works-gallery{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin-top:10px;
+    }
+
+    .work-card{
+      margin:0;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    .work-card img{
+      width:100%;
+      height:255px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .work-caption{
+      padding:8px 12px 9px;
+      border-top:1px solid var(--border);
+    }
+
+    .work-caption p{
+      margin:0;
+    }
+
+    .work-title{
+      font-size:15px;
+      line-height:1.25;
+      color:#111;
+    }
+
+    .work-year{
+      margin-top:0;
+      font-size:13px;
+      line-height:1.25;
+      color:var(--muted);
     }
 
     .sources-card ul{
@@ -164,7 +215,7 @@
     .sources-card li{
       font-size:16px;
       line-height:1.7;
-      color:#111;
+      color:#1f2937;
     }
 
     footer{
@@ -179,20 +230,25 @@
       color:inherit;
     }
 
-    @media (max-width:800px){
-      .hero-grid{
-        grid-template-columns:1fr;
+    @media (max-width:1000px){
+      .works-gallery{
+        grid-template-columns:repeat(2,minmax(0,1fr));
       }
     }
 
-    @media (max-width:700px){
+    @media (max-width:760px){
+      .hero-grid,
+      .works-gallery{
+        grid-template-columns:1fr;
+      }
+
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
       }
 
-      .hero{
-        padding:14px;
+      .hero img{
+        height:340px;
       }
     }
   </style>
@@ -210,60 +266,57 @@
     <header>
       <h1><em>Ron English (FotoFest ’90)</em></h1>
       <p class="subtitle">
-        Thomas V. Robinson / Robinson Galleries, Houston, Texas.
+        Thomas V. Robinson / Robinson Galleries, Houston, Texas, 1990.
       </p>
     </header>
 
-    <section class="hero-grid" aria-label="Showcard ephemera, documented works, and periodical reproductions">
+    <section class="hero-grid" aria-label="Showcard ephemera and related printed material">
       <div class="hero">
-        <img src="../../../images/Exhibitions/Solo/Fotofest-2 copy.jpg" alt="Front of exhibition showcard for Ron English at Thomas V. Robinson / Robinson Galleries, Houston">
-        <div class="hero-meta">
-          Front of exhibition showcard for <em>Ron English</em>, Thomas V. Robinson / Robinson Galleries, Houston. Name of work: Out of the Frying Pan.
+        <img src="../../../images/Exhibitions/Solo/Fotofest-2 copy.jpg" alt="Front of exhibition showcard for Ron English at Thomas V. Robinson / Robinson Galleries, Houston, 1990">
+        <div class="caption">
+          Front of exhibition showcard for <em>Ron English</em>, Thomas V. Robinson / Robinson Galleries, Houston, 1990. The image on the front is <em>Out of the Frying Pan</em>, 1989, C print, 10 × 8 in.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../../images/Exhibitions/Solo/Fotofest-1.jpg" alt="Reverse of exhibition showcard for Ron English at Thomas V. Robinson / Robinson Galleries, Houston">
-        <div class="hero-meta">
-          Reverse of exhibition showcard for <em>Ron English</em>, Thomas V. Robinson / Robinson Galleries, Houston.
+        <img src="../../../images/Exhibitions/Solo/Fotofest-1.jpg" alt="Reverse side of the exhibition showcard for Ron English at Thomas V. Robinson / Robinson Galleries, Houston, 1990">
+        <div class="caption">
+          Reverse side of the exhibition showcard for <em>Ron English</em>.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../../images/Exhibitions/Solo/Poker.jpg" alt="Poker by Ron English, documented in the FotoFest 90 catalogue">
-        <div class="hero-meta">
-          <em>Poker</em>, documented in the FotoFest 90 catalogue.
+        <img src="../../../images/Exhibitions/Solo/frying-pan.jpg" alt="Houston Post reproduction of Out of the Frying Pan by Ron English, February 4, 1990">
+        <div class="caption">
+          <em>The Houston Post</em>, February 4, 1990, reproducing <em>Out of the Frying Pan</em> in advance of the Robinson Galleries exhibition.
         </div>
       </div>
 
-         <div class="hero">
-        <img src="../../../images/Exhibitions/Solo/high-five.jpg" alt="High Five Three by Ron English, reproduced in Houston: The Magazine for Business, February 1990">
-        <div class="hero-meta">
-          <em>High Five Three</em>, reproduced in <em>Houston: The Magazine for Business</em>, February 1990.
+      <div class="hero">
+        <img src="../../../images/Exhibitions/Solo/high-five.jpg" alt="Houston: The Magazine for Business reproduction of High Five Three by Ron English, February 1990">
+        <div class="caption">
+          <em>Houston: The Magazine for Business</em>, February 1990, reproducing <em>High Five Three</em> in Margaret Daugherty’s “For art’s sake.”
         </div>
       </div>
     </section>
 
-    <section class="detail-card" aria-label="Exhibition details">
+    <section class="meta-card" aria-label="Exhibition details">
       <div class="card-head">
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Object type</div>
-          <div class="meta-value">Exhibition showcard, catalogue entry, and periodical reproductions</div>
+          <div class="meta-label">Year</div>
+          <div class="meta-value">1990</div>
 
-          <div class="meta-label">Title on showcard</div>
-          <div class="meta-value"><em>Ron English</em></div>
-
-          <div class="meta-label">Artist</div>
-          <div class="meta-value">Ron English</div>
+          <div class="meta-label">Title</div>
+          <div class="meta-value"><em>Ron English (FotoFest ’90)</em></div>
 
           <div class="meta-label">Venue</div>
           <div class="meta-value">Thomas V. Robinson / Robinson Galleries</div>
 
-          <div class="meta-label">Address</div>
-          <div class="meta-value">3733 Westheimer, No. 7, Houston, Texas 77027</div>
+          <div class="meta-label">Location</div>
+          <div class="meta-value">3733 Westheimer, No. 7, Houston, Texas 77027, USA</div>
 
           <div class="meta-label">Telephone</div>
           <div class="meta-value">(713) 961-5229</div>
@@ -271,55 +324,83 @@
           <div class="meta-label">Entrance</div>
           <div class="meta-value">Entrance on Westgrove Lane, one block east of Weslayan</div>
 
-          <div class="meta-label">Documented dates</div>
-          <div class="meta-value">February 11 – March 3, 1990</div>
+          <div class="meta-label">Dates</div>
+          <div class="meta-value">February 11–March 3, 1990</div>
 
           <div class="meta-label">Opening reception</div>
           <div class="meta-value">Sunday, February 11, 1990, 1:00–6:00 p.m.</div>
 
-          <div class="meta-label">Artist present</div>
-          <div class="meta-value">Yes</div>
-
           <div class="meta-label">Gallery hours</div>
-          <div class="meta-value">Tuesday–Saturday, 10:00 a.m.–5:30 p.m.</div>
+          <div class="meta-value">Tuesday–Saturday, 10:00 a.m. to 5:30 p.m.</div>
 
           <div class="meta-label">Festival context</div>
-          <div class="meta-value">FotoFest 90, The International Month of Photography</div>
+          <div class="meta-value">FotoFest ’90, The International Month of Photography</div>
 
-          <div class="meta-label">Image on showcard front</div>
-          <div class="meta-value"><em>Out of the Frying Pan</em>, 1989, C print, 10 × 8 in.</div>
-
-          <div class="meta-label">Documented works</div>
-          <div class="meta-value"><em>Poker</em>; <em>Out of the Frying Pan</em>; <em>High Five Three</em></div>
-
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1990</div>
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Exhibition showcard (front and reverse), periodical reproductions, catalogue entry, and documented works associated with the exhibition</div>
         </div>
       </div>
     </section>
 
-    <section class="detail-card" aria-label="Notes">
+    <section class="works-card" aria-label="Documented works associated with the exhibition">
+      <div class="card-head">
+        <h2>Documented Works Associated with the Exhibition</h2>
+      </div>
+      <div class="card-body">
+        <p class="works-note">
+          The following works are documented in connection with the exhibition; additional works may also have been included.
+        </p>
+
+        <div class="works-gallery">
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/Poker.jpg" alt="Poker by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Poker</em></p>
+              <p class="work-year">Documented in the FotoFest ’90 catalogue</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/frying-pan.jpg" alt="Out of the Frying Pan by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Out of the Frying Pan</em></p>
+              <p class="work-year">1989; reproduced on the front of the showcard and in <em>The Houston Post</em></p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/high-five.jpg" alt="High Five Three by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>High Five Three</em></p>
+              <p class="work-year">Reproduced in <em>Houston: The Magazine for Business</em>, February 1990</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-card" aria-label="Notes">
       <div class="card-head">
         <h2>Notes</h2>
       </div>
       <div class="card-body">
         <p>
-          The exhibition was presented at Thomas V. Robinson / Robinson Galleries in Houston as part of FotoFest 90, described in the festival materials as “The International Month of Photography.”
+          The exhibition was presented at Thomas V. Robinson / Robinson Galleries in Houston as part of FotoFest ’90, described in the festival materials as “The International Month of Photography.”
         </p>
         <p>
-          The FotoFest 90 catalogue states that the month-long biennial festival ran from February 10 to March 10 and hosted more than ninety exhibitions from two dozen countries.
+          The FotoFest ’90 catalogue states that the month-long biennial festival ran from February 10 to March 10 and hosted more than ninety exhibitions from two dozen countries.
         </p>
         <p>
           In the catalogue entry titled <em>Vicissitudes</em>, Ron English is described as working at the forefront of a fabricated-to-be-photographed approach, using photography to record rearrangements of reality through interventions such as painted billboards and hand-painted anamorphic cardboard figures.
         </p>
         <p>
-          The same catalogue text notes prior exhibitions in Houston, Dallas, New York, and Amsterdam, and states that his work was in collections including the Museum of Contemporary Art in Paris and the Whitney Museum in New York.
+          The same catalogue text notes prior exhibitions in Houston, Dallas, New York, and Amsterdam, and states that his work was held in collections including the Museum of Contemporary Art in Paris and the Whitney Museum in New York.
         </p>
         <p>
-          <em>Houston: The Magazine for Business</em> reproduces <em>High Five Three</em> and describes English’s photographs as merging actual persons and places, his own hand-drawn cardboard figures, and a flattening of space. The article also notes the inclusion of <em>American Sideshows</em>.
+          Margaret Daugherty’s “For art’s sake,” published in <em>Houston: The Magazine for Business</em>, describes English’s photographs as merging actual persons and places, his own hand-drawn cardboard figures, and a flattening of space. The article also notes the inclusion of <em>American Sideshows</em>.
         </p>
         <p>
-          <em>The Houston Post</em> reproduces <em>Out of the Frying Pan</em> in its February 4, 1990 listing for the Robinson Galleries exhibition.
+          The front of the surviving showcard reproduces <em>Out of the Frying Pan</em>, while the FotoFest ’90 catalogue documents <em>Poker</em>, and contemporaneous magazine coverage reproduces <em>High Five Three</em>.
         </p>
       </div>
     </section>
@@ -331,7 +412,7 @@
       <div class="card-body">
         <ul>
           <li>Robinson Galleries exhibition announcement for <em>Ron English</em>, Thomas V. Robinson / Robinson Galleries, Houston, opening February 11, 1990.</li>
-          <li>FotoFest 90 catalogue, Houston, entry for <em>Vicissitudes</em>, Ron English.</li>
+          <li>FotoFest ’90 catalogue, Houston, entry for <em>Vicissitudes</em>, Ron English.</li>
           <li>Margaret Daugherty, “For art’s sake,” <em>Houston: The Magazine for Business</em>, February 1990, p. 33.</li>
           <li><em>The Houston Post</em>, February 4, 1990, p. H-17, listing for Ron English’s <em>Out of the Frying Pan</em> at Robinson Galleries.</li>
         </ul>
