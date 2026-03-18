@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ron English | Fotogalerie Prinsengracht 356 | Ron English Catalogue Raisonné</title>
 
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
   <style>
     :root{
@@ -65,12 +65,12 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
     .hero{
       margin-top:24px;
+      padding:20px;
       border:1px solid var(--border);
       border-radius:var(--radius);
       overflow:hidden;
@@ -80,24 +80,21 @@
 
     .hero img{
       width:100%;
-      max-height:620px;
+      max-height:760px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
+      border-radius:12px;
     }
 
-    .caption{
-      padding:12px 16px 16px;
+    .hero-meta{
+      padding-top:14px;
       font-size:14px;
       line-height:1.5;
       color:var(--muted);
-      border-top:1px solid var(--border);
-      background:#fff;
     }
 
-    .meta-card,
-    .text-card,
-    .sources-card{
+    .detail-card{
       margin-top:24px;
       border:1px solid var(--border);
       border-radius:var(--radius);
@@ -123,7 +120,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -141,26 +138,15 @@
       color:#111;
     }
 
-    .card-body p{
-      margin:0 0 14px;
-      font-size:16px;
-      line-height:1.7;
-      color:#1f2937;
-    }
-
-    .card-body p:last-child{
-      margin-bottom:0;
-    }
-
-    .sources-card ul{
+    .sources-list{
       margin:0;
       padding-left:20px;
     }
 
-    .sources-card li{
+    .sources-list li{
       font-size:16px;
       line-height:1.7;
-      color:#1f2937;
+      color:#111;
     }
 
     footer{
@@ -171,10 +157,18 @@
       font-size:14px;
     }
 
+    footer a{
+      color:inherit;
+    }
+
     @media (max-width:700px){
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
+      }
+
+      .hero{
+        padding:14px;
       }
     }
   </style>
@@ -183,37 +177,40 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-   <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
-      <a class="nav-pill" href="../1970s-1980s-solo-exhibitions.html">1970s & 1980s</a>
+      <a class="nav-pill" href="../1970s-1980s-solo-exhibitions.html">1970s &amp; 1980s</a>
     </nav>
 
     <header>
       <h1><em>Ron English</em></h1>
       <p class="subtitle">
-        Fotogalerie Prinsengracht 356, Amsterdam, Netherlands, 1988.
+        Fotogalerie Prinsengracht 356, Amsterdam, Netherlands.
       </p>
     </header>
 
-    <section class="hero" aria-label="Exhibition image">
-      <img src="../../images/Exhibitions/Solo/fotogalerie-Amsterdam-1988-1.jpg" alt="Ron English solo exhibition at Fotogalerie Prinsengracht 356, Amsterdam, 1988">
-      <div class="caption">
-        Exhibition card for <em>Ron English</em>, Fotogalerie Prinsengracht 356, Amsterdam, 1988.
+    <section class="hero" aria-label="Exhibition card">
+      <img src="../../../images/Exhibitions/Solo/fotogalerie-Amsterdam-1988-1.jpg" alt="Exhibition card for Ron English at Fotogalerie Prinsengracht 356, Amsterdam">
+      <div class="hero-meta">
+        Exhibition card for <em>Ron English</em>, Fotogalerie Prinsengracht 356, Amsterdam.
       </div>
     </section>
 
-    <section class="meta-card" aria-label="Exhibition details">
+    <section class="detail-card" aria-label="Exhibition card details">
       <div class="card-head">
-        <h2>Exhibition Details</h2>
+        <h2>Exhibition Card Details</h2>
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1988</div>
+          <div class="meta-label">Object type</div>
+          <div class="meta-value">Exhibition card</div>
 
-          <div class="meta-label">Title</div>
+          <div class="meta-label">Title on card</div>
           <div class="meta-value"><em>Ron English</em></div>
+
+          <div class="meta-label">Artist</div>
+          <div class="meta-value">Ron English</div>
 
           <div class="meta-label">Venue</div>
           <div class="meta-value">Fotogalerie Prinsengracht 356</div>
@@ -221,7 +218,7 @@
           <div class="meta-label">Location</div>
           <div class="meta-value">Amsterdam, Netherlands</div>
 
-          <div class="meta-label">Dates</div>
+          <div class="meta-label">Documented dates</div>
           <div class="meta-value">11 August – 3 September 1988</div>
 
           <div class="meta-label">Opening</div>
@@ -229,34 +226,19 @@
 
           <div class="meta-label">Gallery name variant</div>
           <div class="meta-value">2¼ × 4½ / 2½ bij 4½ Fotogalerie</div>
+
+          <div class="meta-label">Year</div>
+          <div class="meta-value">1988</div>
         </div>
       </div>
     </section>
 
-    <section class="text-card" aria-label="Notes">
-      <div class="card-head">
-        <h2>Notes</h2>
-      </div>
-      <div class="card-body">
-        <p>
-          Ron English presented a photographic exhibition at Fotogalerie Prinsengracht 356 in Amsterdam in August 1988. The documented dates run from 11 August through 3 September, with a public opening on 13 August.
-        </p>
-        <p>
-          The exhibition announcement describes the work as engaging two aspects of photography at once: its ability to record reality and its ability to produce illusion. It also notes that the photographs were made without darkroom manipulation and presents the work as “straight” photography.
-        </p>
-        <p>
-          This show is an important record of English’s photographic practice during the late 1980s and helps document his exhibition activity in Europe during that period.
-        </p>
-      </div>
-    </section>
-
-    <section class="sources-card" aria-label="Sources">
+    <section class="detail-card" aria-label="Sources">
       <div class="card-head">
         <h2>Sources</h2>
       </div>
       <div class="card-body">
-        <ul>
-          <li>Exhibition showcard for <em>Ron English</em>, Fotogalerie Prinsengracht 356, Amsterdam, 11 August – 3 September 1988, opening 13 August, 17:00–19:00.</li>
+        <ul class="sources-list">
           <li><em>FOTO</em>, no. 5/88, exhibition notice for Fotogalerie 2¼ × 4½, Amsterdam.</li>
           <li>Gallery listing for 2½ bij 4½ Fotogalerie, Prinsengracht 356, Amsterdam.</li>
         </ul>
