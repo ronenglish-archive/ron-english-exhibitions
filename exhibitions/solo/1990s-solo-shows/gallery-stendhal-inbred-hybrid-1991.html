@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Inbred/Hybrid | Ron English Catalogue Raisonné</title>
 
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
   <style>
     :root{
@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,28 +65,31 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
     .hero-grid{
       margin-top:24px;
       display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
+      grid-template-columns:repeat(3,minmax(0,1fr));
       gap:18px;
     }
 
-    .hero{
+    .hero,
+    .meta-card,
+    .text-card,
+    .sources-card,
+    .works-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
       background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero img{
       width:100%;
-      max-height:620px;
+      height:360px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
@@ -102,14 +105,10 @@
     }
 
     .meta-card,
+    .works-card,
     .text-card,
     .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -129,7 +128,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -158,16 +157,50 @@
       margin-bottom:0;
     }
 
-    .works-list{
-      margin:14px 0 0;
-      padding-left:20px;
+    .works-note{
+      margin-bottom:18px;
+      color:#1f2937;
     }
 
-    .works-list li{
-      margin:0 0 8px;
+    .works-gallery{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:18px;
+      margin-top:12px;
+    }
+
+    .work-card{
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    .work-card img{
+      width:100%;
+      height:280px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .work-caption{
+      padding:12px 14px 14px;
+      border-top:1px solid var(--border);
+    }
+
+    .work-title{
+      margin:0 0 4px;
       font-size:16px;
-      line-height:1.6;
-      color:#1f2937;
+      line-height:1.4;
+      color:#111;
+    }
+
+    .work-year{
+      margin:0;
+      font-size:14px;
+      line-height:1.5;
+      color:var(--muted);
     }
 
     .sources-card ul{
@@ -193,13 +226,23 @@
       font-size:14px;
     }
 
-    @media (max-width:800px){
-      .hero-grid{
-        grid-template-columns:1fr;
+    footer a{
+      color:inherit;
+    }
+
+    @media (max-width:1000px){
+      .hero-grid,
+      .works-gallery{
+        grid-template-columns:repeat(2,minmax(0,1fr));
       }
     }
 
     @media (max-width:700px){
+      .hero-grid,
+      .works-gallery{
+        grid-template-columns:1fr;
+      }
+
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
@@ -211,8 +254,8 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
       <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
     </nav>
@@ -224,23 +267,23 @@
       </p>
     </header>
 
-    <section class="hero-grid" aria-label="Exhibition images">
+    <section class="hero-grid" aria-label="Showcard ephemera">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/inbred.jpg" alt="Ron English — Inbred/Hybrid, Gallery Stendhal, 1991">
+        <img src="../../../images/Exhibitions/Solo/inbred.jpg" alt="Exhibition card for Inbred/Hybrid, Gallery Stendhal, New York, 1991">
         <div class="caption">
           Exhibition card for <em>Inbred/Hybrid</em>, Gallery Stendhal, New York, 1991.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Inbred-Hybred-1.jpg" alt="Ron English — Inbred/Hybrid, Gallery Stendhal, 1991">
+        <img src="../../../images/Exhibitions/Solo/Inbred-Hybred-1.jpg" alt="Alternate exhibition card for Inbred/Hybrid">
         <div class="caption">
-          Additional archival image for <em>Inbred/Hybrid</em>.
+          Alternate exhibition card for <em>Inbred/Hybrid</em>.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/inbred-hybred.jpg" alt="Ron English — Inbred/Hybrid, Gallery Stendhal, 1991">
+        <img src="../../../images/Exhibitions/Solo/inbred-hybred.jpg" alt="Archival reproduction associated with Inbred/Hybrid">
         <div class="caption">
           Archival reproduction associated with <em>Inbred/Hybrid</em>.
         </div>
@@ -266,7 +309,79 @@
           <div class="meta-value">626 Broadway, 3rd Floor, New York, New York, USA</div>
 
           <div class="meta-label">Dates</div>
-          <div class="meta-value">September 14 – October 13, 1991</div>
+          <div class="meta-value">September 14–October 13, 1991</div>
+
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Showcard ephemera, archival reproductions, and confirmed works exhibited</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-card" aria-label="Confirmed works exhibited">
+      <div class="card-head">
+        <h2>Confirmed Works Documented in the Exhibition</h2>
+      </div>
+      <div class="card-body">
+        <p class="works-note">
+          The following works are confirmed as exhibited; additional works may also have been included.
+        </p>
+
+        <div class="works-gallery">
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/Paintings/sybil-war-1990.jpg" alt="Sybil War by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Sybil War</em></p>
+              <p class="work-year">1990</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/Paintings/shark-infested-waters-1991.jpg" alt="Shark Infested Waters by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Shark Infested Waters</em></p>
+              <p class="work-year">1991</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/Paintings/giving-a-dog-a-bone-1991.jpg" alt="Giving a Dog a Bone by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Giving a Dog a Bone</em></p>
+              <p class="work-year">1991</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/Paintings/give-the-rabbit-some-tricks-1991.jpg" alt="Give the Rabbit Some Tricks by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Give the Rabbit Some Tricks</em></p>
+              <p class="work-year">1991</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/Paintings/bear-and-the-bull-1991.jpg" alt="Bear and the Bull by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Bear and the Bull</em></p>
+              <p class="work-year">1991</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/Paintings/soupreman-1991.jpg" alt="Soupreman by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Soupreman</em></p>
+              <p class="work-year">1991</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/Paintings/the-politics-of-creation-1991.jpg" alt="The Politics of Creation by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>The Politics of Creation</em></p>
+              <p class="work-year">1991</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -277,24 +392,14 @@
       </div>
       <div class="card-body">
         <p>
-          <em>Inbred/Hybrid</em> marked a defining early-1990s presentation of Ron English’s transition from billboard interventionist to gallery-exhibited painter. The exhibition foregrounded a studio language built from hybridized American cultural icons, mass-media imagery, and art-historical references. :contentReference[oaicite:1]{index=1}
+          <em>Inbred/Hybrid</em> was presented at Gallery Stendhal in New York from September 14 through October 13, 1991.
         </p>
         <p>
-          A contemporary feature in <em>HYPE Magazine</em> described the works from this exhibition as operating on multiple conceptual levels at once and emphasized English’s construction of “meta-characters” through layered pop-cultural symbols. The same source noted his practice of painting directly over signed or numbered prints by artists such as Haring, Kostabi, and Warhol, framing this as an aggressive intervention rather than passive appropriation. :contentReference[oaicite:2]{index=2}
+          A contemporary feature in <em>HYPE Magazine</em> discussed the exhibition in relation to English’s use of layered pop-cultural imagery and noted his practice of painting over signed or numbered prints by artists including Haring, Kostabi, and Warhol.
         </p>
         <p>
-          The exhibition helps document an early phase in the formation of English’s later POPaganda language, when hybrid figures, cultural collision, and painterly détournement became central to his gallery work. :contentReference[oaicite:3]{index=3}
+          The works shown here are confirmed as part of the exhibition, though the full checklist may have included additional paintings.
         </p>
-
-        <ul class="works-list">
-          <li><em>Sybil War</em> (1990)</li>
-          <li><em>Shark Infested Waters</em> (1991)</li>
-          <li><em>Giving a Dog a Bone</em> (1991)</li>
-          <li><em>Give the Rabbit Some Tricks</em> (1991)</li>
-          <li><em>Bear and the Bull</em> (1991)</li>
-          <li><em>Soupreman</em> (1991)</li>
-          <li><em>The Politics of Creation</em> (1991)</li>
-        </ul>
       </div>
     </section>
 
@@ -305,7 +410,6 @@
       <div class="card-body">
         <ul>
           <li><em>HYPE Magazine</em>, “applying ENGLISH to POP ART,” text by Mutant, October 1991.</li>
-          <li>Gallery Stendhal invitation card for <em>Inbred/Hybrid</em>, September 14 – October 13, 1991.</li>
           <li>Gallery 98, <em>Ron English: Inbred/Hybrid (Gallery Stendhal Card, 1991)</em>.</li>
         </ul>
       </div>
