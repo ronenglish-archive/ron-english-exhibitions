@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pavlov’s Dog: The Last Supper and Other Paintings | Ron English Catalogue Raisonné</title>
 
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
   <style>
     :root{
@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,7 +65,6 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
@@ -76,40 +75,40 @@
       gap:18px;
     }
 
-    .hero{
+    .hero,
+    .meta-card,
+    .works-card,
+    .text-card,
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
       background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero img{
       width:100%;
-      max-height:620px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .caption{
-      padding:12px 16px 16px;
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
       border-top:1px solid var(--border);
       background:#fff;
     }
 
     .meta-card,
+    .works-card,
     .text-card,
     .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -129,7 +128,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -158,6 +157,56 @@
       margin-bottom:0;
     }
 
+    .works-note{
+      margin-bottom:16px;
+      color:#1f2937;
+    }
+
+    .works-gallery{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin-top:10px;
+    }
+
+    .work-card{
+      margin:0;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    .work-card img{
+      width:100%;
+      height:255px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .work-caption{
+      padding:8px 12px 9px;
+      border-top:1px solid var(--border);
+    }
+
+    .work-caption p{
+      margin:0;
+    }
+
+    .work-title{
+      font-size:15px;
+      line-height:1.25;
+      color:#111;
+    }
+
+    .work-year{
+      margin-top:0;
+      font-size:13px;
+      line-height:1.25;
+      color:var(--muted);
+    }
+
     .sources-card ul{
       margin:0;
       padding-left:20px;
@@ -177,16 +226,29 @@
       font-size:14px;
     }
 
-    @media (max-width:800px){
-      .hero-grid{
-        grid-template-columns:1fr;
+    footer a{
+      color:inherit;
+    }
+
+    @media (max-width:1000px){
+      .works-gallery{
+        grid-template-columns:repeat(2,minmax(0,1fr));
       }
     }
 
-    @media (max-width:700px){
+    @media (max-width:760px){
+      .hero-grid,
+      .works-gallery{
+        grid-template-columns:1fr;
+      }
+
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
+      }
+
+      .hero img{
+        height:340px;
       }
     }
   </style>
@@ -195,8 +257,8 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
       <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
     </nav>
@@ -208,16 +270,16 @@
       </p>
     </header>
 
-    <section class="hero-grid" aria-label="Exhibition images">
+    <section class="hero-grid" aria-label="Invitation card">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Pavlov's-Dog-Red-Zone-1990-1.jpg" alt="Invitation for Pavlov’s Dog: The Last Supper and Other Paintings by Ron English at Red Zone, 1990">
+        <img src="../../../images/Exhibitions/Solo/Pavlov's-Dog-Red-Zone-1990-1.jpg" alt="Front of invitation card for Pavlov’s Dog: The Last Supper and Other Paintings by Ron English at Red Zone, New York City, 1990">
         <div class="caption">
-          Invitation card for <em>Pavlov’s Dog: The Last Supper and Other Paintings</em>, Red Zone, New York City, 1990.
+          Front of invitation card for <em>Pavlov’s Dog: The Last Supper and Other Paintings</em>, Red Zone, New York City, 1990.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Pavlov's-Dog-Red-Zone-1990-2.jpg" alt="Reverse side of invitation for Pavlov’s Dog: The Last Supper and Other Paintings by Ron English at Red Zone, 1990">
+        <img src="../../../images/Exhibitions/Solo/Pavlov's-Dog-Red-Zone-1990-2.jpg" alt="Reverse side of invitation card for Pavlov’s Dog: The Last Supper and Other Paintings by Ron English at Red Zone, New York City, 1990">
         <div class="caption">
           Reverse side of the invitation card for <em>Pavlov’s Dog: The Last Supper and Other Paintings</em>.
         </div>
@@ -249,25 +311,88 @@
           <div class="meta-value">Fred Rothbell-Mista</div>
 
           <div class="meta-label">Admission note</div>
-          <div class="meta-value">$5 admission option noted on invitation</div>
+          <div class="meta-value">$5 admission option noted on the invitation</div>
+
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Invitation card (front and reverse) and documented works reproduced on the show card</div>
         </div>
       </div>
     </section>
 
-    <section class="text-card" aria-label="Notes">
+    <section class="works-card" aria-label="Documented works associated with the exhibition">
       <div class="card-head">
-        <h2>Notes</h2>
+        <h2>Documented Works Associated with the Exhibition</h2>
       </div>
       <div class="card-body">
-        <p>
-          This nightclub exhibition of <em>Pavlov’s Dog: The Last Supper and Other Paintings</em> took place at Red Zone in New York City in 1990. The invitation card places the event within the club’s regular nightlife programming rather than a conventional gallery setting. :contentReference[oaicite:1]{index=1}
+        <p class="works-note">
+          The following works are documented on the invitation/show card; additional works were likely included, but are not documented here.
         </p>
-        <p>
-          The printed materials note the opening on Friday, May 25, hosted by Fred Rothbell-Mista, and include both a dress-code note and a five-dollar admission option. Those details help situate the exhibition within the downtown club scene that shaped part of Ron English’s public presentation during the period. :contentReference[oaicite:2]{index=2}
-        </p>
-        <p>
-          By presenting the <em>Pavlov’s Dog</em> imagery alongside other paintings in this setting, the event linked English’s work to a nightlife audience and to alternative spaces where art, music, fashion, and spectacle overlapped. :contentReference[oaicite:3]{index=3}
-        </p>
+
+        <div class="works-gallery">
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/The-Stealth-Bomber-Priority-Panel1L.jpg" alt="Pavlov’s Dog: The Last Supper, The Stealth Bomber Priority, panel 1 by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Pavlov’s Dog: The Last Supper</em> (<em>The Stealth Bomber Priority</em>, panel 1)</p>
+              <p class="work-year">Documented on the invitation/show card</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/The-Stealth-Bomber-Priority-Panel2L.jpg" alt="Pavlov’s Dog: The Last Supper, The Stealth Bomber Priority, panel 2 by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Pavlov’s Dog: The Last Supper</em> (<em>The Stealth Bomber Priority</em>, panel 2)</p>
+              <p class="work-year">Documented on the invitation/show card</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/The-Stealth-Bomber-Priority-Panel3L.jpg" alt="Pavlov’s Dog: The Last Supper, The Stealth Bomber Priority, panel 3 by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Pavlov’s Dog: The Last Supper</em> (<em>The Stealth Bomber Priority</em>, panel 3)</p>
+              <p class="work-year">Documented on the invitation/show card</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/TransmissionL.jpg" alt="Transmission by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Transmission</em></p>
+              <p class="work-year">Documented on the invitation/show card</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/The Anti Warhol Version Panel 1L.jpg" alt="In the Future Everyone Will Be Dead for 15 Minutes, officially The Anti Warhol, panel 1 by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>In the Future Everyone Will Be Dead for 15 Minutes</em> (officially <em>The Anti Warhol</em>, panel 1)</p>
+              <p class="work-year">Documented on the invitation/show card</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/The Anti Warhol Version Panel 2L.jpg" alt="In the Future Everyone Will Be Dead for 15 Minutes, officially The Anti Warhol, panel 2 by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>In the Future Everyone Will Be Dead for 15 Minutes</em> (officially <em>The Anti Warhol</em>, panel 2)</p>
+              <p class="work-year">Documented on the invitation/show card</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/The Anti Warhol Version Panel 3L.jpg" alt="In the Future Everyone Will Be Dead for 15 Minutes, officially The Anti Warhol, panel 3 by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>In the Future Everyone Will Be Dead for 15 Minutes</em> (officially <em>The Anti Warhol</em>, panel 3)</p>
+              <p class="work-year">Documented on the invitation/show card</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/The Anti Warhol Version Panel 4L.jpg" alt="In the Future Everyone Will Be Dead for 15 Minutes, officially The Anti Warhol, panel 4 by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>In the Future Everyone Will Be Dead for 15 Minutes</em> (officially <em>The Anti Warhol</em>, panel 4)</p>
+              <p class="work-year">Documented on the invitation/show card</p>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -277,7 +402,7 @@
       </div>
       <div class="card-body">
         <ul>
-          <li>Invitation card: <em>Pavlov’s Dog: The Last Supper and Other Paintings by Ron English</em>, Red Zone, 440 W 54th St, New York City, hosted by Fred Rothbell-Mista, opening Friday, May 25, 1990. :contentReference[oaicite:4]{index=4}</li>
+          <li>Invitation/show card for <em>Pavlov’s Dog: The Last Supper and Other Paintings</em>, Red Zone, 440 W 54th St, New York City, opening Friday, May 25, 1990, hosted by Fred Rothbell-Mista.</li>
         </ul>
       </div>
     </section>
