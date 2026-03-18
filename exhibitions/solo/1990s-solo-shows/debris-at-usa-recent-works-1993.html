@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Recent Works by Ron English | Ron English Catalogue Raisonné</title>
 
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
   <style>
     :root{
@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,7 +65,6 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
@@ -76,40 +75,40 @@
       gap:18px;
     }
 
-    .hero{
+    .hero,
+    .meta-card,
+    .works-card,
+    .text-card,
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
       background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero img{
       width:100%;
-      max-height:620px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .caption{
-      padding:12px 16px 16px;
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
       border-top:1px solid var(--border);
       background:#fff;
     }
 
     .meta-card,
+    .works-card,
     .text-card,
     .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -129,7 +128,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -177,16 +176,22 @@
       font-size:14px;
     }
 
-    @media (max-width:800px){
+    footer a{
+      color:inherit;
+    }
+
+    @media (max-width:760px){
       .hero-grid{
         grid-template-columns:1fr;
       }
-    }
 
-    @media (max-width:700px){
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
+      }
+
+      .hero img{
+        height:340px;
       }
     }
   </style>
@@ -195,8 +200,8 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="../index.html">Exhibitions</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
       <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
     </nav>
@@ -204,22 +209,22 @@
     <header>
       <h1><em>Recent Works by Ron English</em></h1>
       <p class="subtitle">
-        Debris at USA / Big Bottom Lounge, New York, 1993.
+        Debris at USA / Big Bottom Lounge, New York City, 1993.
       </p>
     </header>
 
-    <section class="hero-grid" aria-label="Exhibition images">
+    <section class="hero-grid" aria-label="Showcard and archival material">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/debris.jpg" alt="Ron English — Recent Works, Debris at USA, 1993">
+        <img src="../../../images/Exhibitions/Solo/debris.jpg" alt="Showcard for Recent Works by Ron English at Debris at USA / Big Bottom Lounge, New York City, 1993">
         <div class="caption">
-          Show card for <em>Recent Works by Ron English</em>, Debris at USA / Big Bottom Lounge, 1993.
+          Showcard for <em>Recent Works by Ron English</em>, Debris at USA / Big Bottom Lounge, New York City, March 24, 1993.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Debris-1.jpg" alt="Ron English — Recent Works, Debris at USA, 1993">
+        <img src="../../../images/Exhibitions/Solo/Debris-1.jpg" alt="Additional archival image associated with Recent Works by Ron English at Debris at USA / Big Bottom Lounge, New York City, 1993">
         <div class="caption">
-          Additional archival image for <em>Recent Works by Ron English</em>.
+          Additional archival material associated with <em>Recent Works by Ron English</em>.
         </div>
       </div>
     </section>
@@ -237,34 +242,17 @@
           <div class="meta-value"><em>Recent Works by Ron English</em></div>
 
           <div class="meta-label">Venue</div>
-          <div class="meta-value">Debris at USA (Big Bottom Lounge)</div>
+          <div class="meta-value">Debris at USA / Big Bottom Lounge</div>
 
           <div class="meta-label">Location</div>
-          <div class="meta-value">New York, New York, USA</div>
+          <div class="meta-value">New York City, New York, USA</div>
 
           <div class="meta-label">Date</div>
           <div class="meta-value">March 24, 1993</div>
 
-          <div class="meta-label">Type</div>
-          <div class="meta-value">Solo exhibition</div>
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Showcard and additional archival image</div>
         </div>
-      </div>
-    </section>
-
-    <section class="text-card" aria-label="Notes">
-      <div class="card-head">
-        <h2>Notes</h2>
-      </div>
-      <div class="card-body">
-        <p>
-          Staged inside the Big Bottom Lounge at Debris at Club USA in Times Square, this one-night presentation gathered a focused selection of Ron English’s early-1990s paintings under the title <em>Recent Works by Ron English</em>.
-        </p>
-        <p>
-          The event blurred the line between nightclub and gallery. English’s canvases, already shaped by billboard aesthetics, cartoon distortion, and pop-cultural critique, were shown in a nightlife setting rather than a traditional white cube.
-        </p>
-        <p>
-          The surviving show card positions the evening as a concentrated snapshot of English’s practice at the time, capturing a moment when his Popaganda language was gaining visibility in New York’s downtown and club scenes.
-        </p>
       </div>
     </section>
 
@@ -274,7 +262,7 @@
       </div>
       <div class="card-body">
         <ul>
-          <li>Show card: <em>Recent Works by Ron English — Debris at USA</em> (Debris at USA, Big Bottom Lounge, New York, March 24, 1993).</li>
+          <li>Showcard for <em>Recent Works by Ron English</em>, Debris at USA / Big Bottom Lounge, New York City, March 24, 1993.</li>
         </ul>
       </div>
     </section>
