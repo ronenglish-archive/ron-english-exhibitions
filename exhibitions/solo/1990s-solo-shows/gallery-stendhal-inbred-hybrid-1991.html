@@ -71,15 +71,15 @@
     .hero-grid{
       margin-top:24px;
       display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
+      grid-template-columns:repeat(2,minmax(0,1fr));
       gap:18px;
     }
 
     .hero,
     .meta-card,
+    .works-card,
     .text-card,
-    .sources-card,
-    .works-card{
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
       background:#fff;
@@ -89,16 +89,16 @@
 
     .hero img{
       width:100%;
-      height:360px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .caption{
-      padding:12px 16px 16px;
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
       border-top:1px solid var(--border);
       background:#fff;
@@ -158,18 +158,19 @@
     }
 
     .works-note{
-      margin-bottom:18px;
+      margin-bottom:16px;
       color:#1f2937;
     }
 
     .works-gallery{
       display:grid;
       grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:18px;
-      margin-top:12px;
+      gap:16px;
+      margin-top:10px;
     }
 
     .work-card{
+      margin:0;
       border:1px solid var(--border);
       border-radius:16px;
       overflow:hidden;
@@ -178,28 +179,28 @@
 
     .work-card img{
       width:100%;
-      height:280px;
+      height:255px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .work-caption{
-      padding:12px 14px 14px;
+      padding:9px 12px 10px;
       border-top:1px solid var(--border);
     }
 
     .work-title{
-      margin:0 0 4px;
-      font-size:16px;
-      line-height:1.4;
+      margin:0 0 2px;
+      font-size:15px;
+      line-height:1.3;
       color:#111;
     }
 
     .work-year{
       margin:0;
-      font-size:14px;
-      line-height:1.5;
+      font-size:13px;
+      line-height:1.35;
       color:var(--muted);
     }
 
@@ -231,13 +232,12 @@
     }
 
     @media (max-width:1000px){
-      .hero-grid,
       .works-gallery{
         grid-template-columns:repeat(2,minmax(0,1fr));
       }
     }
 
-    @media (max-width:700px){
+    @media (max-width:760px){
       .hero-grid,
       .works-gallery{
         grid-template-columns:1fr;
@@ -246,6 +246,10 @@
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
+      }
+
+      .hero img{
+        height:340px;
       }
     }
   </style>
@@ -267,18 +271,18 @@
       </p>
     </header>
 
-    <section class="hero-grid" aria-label="Showcard ephemera">
+    <section class="hero-grid" aria-label="Showcard ephemera and related printed material">
       <div class="hero">
-        <img src="../../../images/Exhibitions/Solo/inbred.jpg" alt="Exhibition card for Inbred/Hybrid, Gallery Stendhal, New York, 1991">
+        <img src="../../../images/Exhibitions/Solo/inbred.jpg" alt="Front of exhibition card for Inbred/Hybrid, Gallery Stendhal, New York, 1991">
         <div class="caption">
-          Exhibition card for <em>Inbred/Hybrid</em>, Gallery Stendhal, New York, 1991.
+          Front of exhibition card for <em>Inbred/Hybrid</em>, Gallery Stendhal, New York, 1991.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../../images/Exhibitions/Solo/Inbred-Hybred-1.jpg" alt="Alternate exhibition card for Inbred/Hybrid">
+        <img src="../../../images/Exhibitions/Solo/Inbred-Hybred-1.jpg" alt="Reverse side of the exhibition card for Inbred/Hybrid">
         <div class="caption">
-          Alternate exhibition card for <em>Inbred/Hybrid</em>.
+          Reverse side of the exhibition card for <em>Inbred/Hybrid</em>.
         </div>
       </div>
 
@@ -286,6 +290,13 @@
         <img src="../../../images/Exhibitions/Solo/inbred-hybred.jpg" alt="Archival reproduction associated with Inbred/Hybrid">
         <div class="caption">
           Archival reproduction associated with <em>Inbred/Hybrid</em>.
+        </div>
+      </div>
+
+      <div class="hero">
+        <img src="../../../images/Exhibitions/Solo/inbred-hybrid%20cover%20mag%20ad.jpg" alt="Cover magazine September 1991 page 9 full-page advertisement for Inbred/Hybrid">
+        <div class="caption">
+          <em>Cover</em> magazine, September 1991, page 9, full-page advertisement for <em>Inbred/Hybrid</em>.
         </div>
       </div>
     </section>
@@ -312,7 +323,7 @@
           <div class="meta-value">September 14–October 13, 1991</div>
 
           <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Showcard ephemera, archival reproductions, and confirmed works exhibited</div>
+          <div class="meta-value">Exhibition card (front and reverse), archival reproduction, printed advertisement, and confirmed works exhibited</div>
         </div>
       </div>
     </section>
@@ -368,17 +379,17 @@
           </figure>
 
           <figure class="work-card">
-            <img src="../../../images/Exhibitions/Solo/Paintings/soupreman-1991.jpg" alt="Soupreman by Ron English">
+            <img src="../../../images/Exhibitions/Solo/Paintings/soupreman-1991.jpg" alt="Postmodern Still Life by Ron English">
             <figcaption class="work-caption">
-              <p class="work-title"><em>Soupreman</em></p>
+              <p class="work-title"><em>Postmodern Still Life</em></p>
               <p class="work-year">1991</p>
             </figcaption>
           </figure>
 
           <figure class="work-card">
-            <img src="../../../images/Exhibitions/Solo/Paintings/the-politics-of-creation-1991.jpg" alt="The Politics of Creation by Ron English">
+            <img src="../../../images/Exhibitions/Solo/Paintings/the-politics-of-creation-1991.jpg" alt="Politics of Creation II by Ron English">
             <figcaption class="work-caption">
-              <p class="work-title"><em>The Politics of Creation</em></p>
+              <p class="work-title"><em>Politics of Creation II</em></p>
               <p class="work-year">1991</p>
             </figcaption>
           </figure>
@@ -386,22 +397,22 @@
       </div>
     </section>
 
- <section class="text-card" aria-label="Notes">
-  <div class="card-head">
-    <h2>Notes</h2>
-  </div>
-  <div class="card-body">
-    <p>
-      <em>Inbred/Hybrid</em> was presented at Gallery Stendhal in New York from September 14 through October 13, 1991. A contemporary feature in <em>HYPE Magazine</em>, written by Mutant, discussed the exhibition in relation to Ron English’s use of familiar American cultural icons and layered visual juxtapositions.
-    </p>
-    <p>
-      The article describes English’s paintings as constructing “meta-characters” through the overlap of recognizable figures and symbols, and it compares this additive method to a calligraphic form of cultural commentary. It also notes that, in this period, English sometimes painted over signed or numbered prints by artists including Haring, Kostabi, and Warhol.
-    </p>
-    <p>
-      The feature reproduces and discusses a group of works associated with the exhibition, including <em>Sybil War</em> (1990), <em>Shark Infested Waters</em> (1991), <em>Giving a Dog a Bone</em> (1991), <em>Give the Rabbit Some Tricks</em> (1991), <em>Bear and The Bull</em> (1991), <em>Souperman</em> (1991), and <em>The Politics of Creation</em> (1991). The works shown here are confirmed as part of the exhibition, though the full checklist may have included additional paintings.
-    </p>
-  </div>
-</section>
+    <section class="text-card" aria-label="Notes">
+      <div class="card-head">
+        <h2>Notes</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          <em>Inbred/Hybrid</em> was presented at Gallery Stendhal in New York from September 14 through October 13, 1991. A contemporary feature in <em>HYPE Magazine</em>, written by Mutant, discussed the exhibition in relation to Ron English’s use of familiar American cultural icons and layered visual juxtapositions.
+        </p>
+        <p>
+          The article describes English’s paintings as constructing “meta-characters” through the overlap of recognizable figures and symbols, and it compares this additive method to a calligraphic form of cultural commentary. It also notes that, in this period, English sometimes painted over signed or numbered prints by artists including Haring, Kostabi, and Warhol.
+        </p>
+        <p>
+          The works shown here are confirmed as part of the exhibition, though the full checklist may have included additional paintings. Some titles used in the contemporary article differ from the titles currently used for the works identified here.
+        </p>
+      </div>
+    </section>
 
     <section class="sources-card" aria-label="Sources">
       <div class="card-head">
