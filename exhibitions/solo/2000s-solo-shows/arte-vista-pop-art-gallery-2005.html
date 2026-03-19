@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,31 +65,36 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
+    }
+
+    .hero,
+    .meta-card,
+    .text-card,
+    .sources-card{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
-      background:#fff;
     }
 
     .hero img{
       width:100%;
-      max-height:620px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .caption{
-      padding:12px 16px 16px;
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
       border-top:1px solid var(--border);
       background:#fff;
@@ -99,11 +104,6 @@
     .text-card,
     .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -121,23 +121,38 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:grid;
-      grid-template-columns:180px 1fr;
-      gap:12px 18px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-label{
-      font-size:13px;
-      letter-spacing:.04em;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
+    }
+
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.6;
+      line-height:1.55;
       color:#111;
     }
 
@@ -171,10 +186,13 @@
       font-size:14px;
     }
 
-    @media (max-width:700px){
-      .meta-grid{
-        grid-template-columns:1fr;
-        gap:6px 0;
+    footer a{
+      color:inherit;
+    }
+
+    @media (max-width:760px){
+      .hero img{
+        height:340px;
       }
     }
   </style>
@@ -183,7 +201,7 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
       <a class="nav-pill" href="../2000s-solo-exhibitions.html">2000s</a>
@@ -208,28 +226,42 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">2005</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">2005</dd>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Ron English Exhibition</em></div>
+          <div class="detail-item">
+            <dt class="detail-label">Title</dt>
+            <dd class="detail-value"><em>Ron English Exhibition</em></dd>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Arte Vista — The Pop-Art Gallery</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">Arte Vista — The Pop-Art Gallery</dd>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">Badhoevedorp, Netherlands</div>
+          <div class="detail-item">
+            <dt class="detail-label">Location</dt>
+            <dd class="detail-value">Badhoevedorp, Netherlands</dd>
+          </div>
 
-          <div class="meta-label">Dates</div>
-          <div class="meta-value">27–28 March 2005</div>
+          <div class="detail-item">
+            <dt class="detail-label">Dates</dt>
+            <dd class="detail-value">27–28 March 2005</dd>
+          </div>
 
-          <div class="meta-label">Opening</div>
-          <div class="meta-value">Sunday, 27 March 2005, 13:00</div>
+          <div class="detail-item">
+            <dt class="detail-label">Opening</dt>
+            <dd class="detail-value">Sunday, 27 March 2005, 13:00</dd>
+          </div>
 
-          <div class="meta-label">Type</div>
-          <div class="meta-value">Solo exhibition</div>
-        </div>
+          <div class="detail-item">
+            <dt class="detail-label">Type</dt>
+            <dd class="detail-value">Solo exhibition</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
