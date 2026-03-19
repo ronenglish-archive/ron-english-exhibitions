@@ -75,7 +75,11 @@
       gap:18px;
     }
 
-    .hero, .meta-card, .works-card, .text-card, .sources-card{
+    .hero,
+    .meta-card,
+    .works-card,
+    .text-card,
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
       background:#fff;
@@ -100,7 +104,10 @@
       background:#fff;
     }
 
-    .meta-card, .works-card, .text-card, .sources-card{
+    .meta-card,
+    .works-card,
+    .text-card,
+    .sources-card{
       margin-top:24px;
     }
 
@@ -119,23 +126,38 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-label{
-      font-size:13px;
-      letter-spacing:.04em;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
+    }
+
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.6;
+      line-height:1.55;
       color:#111;
     }
 
@@ -230,13 +252,9 @@
     }
 
     @media (max-width:760px){
-      .hero-grid, .works-gallery{
+      .hero-grid,
+      .works-gallery{
         grid-template-columns:1fr;
-      }
-
-      .meta-grid{
-        grid-template-columns:1fr;
-        gap:6px 0;
       }
 
       .hero img{
@@ -280,40 +298,62 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1994–1995</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">1994–1995</dd>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Revisionist Modernism</em></div>
+          <div class="detail-item">
+            <dt class="detail-label">Title</dt>
+            <dd class="detail-value"><em>Revisionist Modernism</em></dd>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">The Museum of Contemporary Art in D.C.</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">The Museum of Contemporary Art in D.C.</dd>
+          </div>
 
-          <div class="meta-label">Alternative venue styling in press</div>
-          <div class="meta-value">Clark &amp; Company’s Museum of Contemporary Art; Clark &amp; Co.</div>
+          <div class="detail-item">
+            <dt class="detail-label">Alternative venue styling in press</dt>
+            <dd class="detail-value">Clark &amp; Company’s Museum of Contemporary Art; Clark &amp; Co.</dd>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">1054 31st N.W., Georgetown, Washington, D.C., USA</div>
+          <div class="detail-item">
+            <dt class="detail-label">Location</dt>
+            <dd class="detail-value">1054 31st N.W., Georgetown, Washington, D.C., USA</dd>
+          </div>
 
-          <div class="meta-label">Telephone</div>
-          <div class="meta-value">(202) 342-6230</div>
+          <div class="detail-item">
+            <dt class="detail-label">Telephone</dt>
+            <dd class="detail-value">(202) 342-6230</dd>
+          </div>
 
-          <div class="meta-label">Dates on exhibition card</div>
-          <div class="meta-value">December 2, 1994–January 1, 1995</div>
+          <div class="detail-item">
+            <dt class="detail-label">Dates on exhibition card</dt>
+            <dd class="detail-value">December 2, 1994–January 1, 1995</dd>
+          </div>
 
-          <div class="meta-label">Opening on exhibition card</div>
-          <div class="meta-value">December 2, 1994, 6:00–9:00 p.m.</div>
+          <div class="detail-item">
+            <dt class="detail-label">Opening on exhibition card</dt>
+            <dd class="detail-value">December 2, 1994, 6:00–9:00 p.m.</dd>
+          </div>
 
-          <div class="meta-label">Gallery hours on exhibition card</div>
-          <div class="meta-value">Wednesday–Saturday, 1:00–7:00 p.m.</div>
+          <div class="detail-item">
+            <dt class="detail-label">Gallery hours on exhibition card</dt>
+            <dd class="detail-value">Wednesday–Saturday, 1:00–7:00 p.m.</dd>
+          </div>
 
-          <div class="meta-label">Additional dates in press</div>
-          <div class="meta-value"><em>Where Washington</em> lists a reception on December 1, 1994, 6:00–9:00 p.m.; <em>The Georgetowner</em> states that the exhibition continued through December 31, 1994.</div>
+          <div class="detail-item">
+            <dt class="detail-label">Additional dates in press</dt>
+            <dd class="detail-value"><em>Where Washington</em> lists a reception on December 1, 1994, 6:00–9:00 p.m.; <em>The Georgetowner</em> states that the exhibition continued through December 31, 1994.</dd>
+          </div>
 
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Exhibition card and contemporary press coverage naming works shown in the exhibition.</div>
-        </div>
+          <div class="detail-item">
+            <dt class="detail-label">Material documented here</dt>
+            <dd class="detail-value">Exhibition card and contemporary press coverage naming works shown in the exhibition.</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -326,71 +366,73 @@
           The following titles are directly documented in the surviving exhibition card and contemporary press coverage. The exhibition card explicitly identifies <em>Color Corrected</em> as oil on canvas; the reviews name the other exhibited works without giving medium.
         </p>
 
-   <div class="works-gallery">
-  <figure class="work-card">
-    <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-1-L.jpg" alt="The Anti-Warhol, Panel 1 by Ron English">
-    <figcaption class="work-caption">
-      <p class="work-title"><em>The Anti-Warhol</em>, Panel 1</p>
-      <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
-    </figcaption>
-  </figure>
+        <div class="works-gallery">
+          <figure class="work-card">
+            <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-1-L.jpg" alt="The Anti-Warhol, Panel 1 by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>The Anti-Warhol</em>, Panel 1</p>
+              <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
+            </figcaption>
+          </figure>
 
-  <figure class="work-card">
-    <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-2-L.jpg" alt="The Anti-Warhol, Panel 2 by Ron English">
-    <figcaption class="work-caption">
-      <p class="work-title"><em>The Anti-Warhol</em>, Panel 2</p>
-      <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
-    </figcaption>
-  </figure>
+          <figure class="work-card">
+            <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-2-L.jpg" alt="The Anti-Warhol, Panel 2 by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>The Anti-Warhol</em>, Panel 2</p>
+              <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
+            </figcaption>
+          </figure>
 
-  <figure class="work-card">
-    <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-3-L.jpg" alt="The Anti-Warhol, Panel 3 by Ron English">
-    <figcaption class="work-caption">
-      <p class="work-title"><em>The Anti-Warhol</em>, Panel 3</p>
-      <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
-    </figcaption>
-  </figure>
+          <figure class="work-card">
+            <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-3-L.jpg" alt="The Anti-Warhol, Panel 3 by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>The Anti-Warhol</em>, Panel 3</p>
+              <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
+            </figcaption>
+          </figure>
 
-  <figure class="work-card">
-    <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-4-L.jpg" alt="The Anti-Warhol, Panel 4 by Ron English">
-    <figcaption class="work-caption">
-      <p class="work-title"><em>The Anti-Warhol</em>, Panel 4</p>
-      <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
-    </figcaption>
-  </figure>
+          <figure class="work-card">
+            <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-4-L.jpg" alt="The Anti-Warhol, Panel 4 by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>The Anti-Warhol</em>, Panel 4</p>
+              <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
+            </figcaption>
+          </figure>
 
-  <figure class="work-card">
-    <img src="../../images/Exhibitions/Solo/Paintings/Hot-Artist.jpg" alt="Hot Artist by Ron English">
-    <figcaption class="work-caption">
-      <p class="work-title"><em>Hot Artist</em></p>
-      <p class="work-year">Named in <em>The Georgetowner</em>, December 9, 1994</p>
-    </figcaption>
-  </figure>
+          <figure class="work-card">
+            <img src="../../images/Exhibitions/Solo/Paintings/Hot-Artist.jpg" alt="Hot Artist by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Hot Artist</em></p>
+              <p class="work-year">Named in <em>The Georgetowner</em>, December 9, 1994</p>
+            </figcaption>
+          </figure>
 
-  <figure class="work-card">
-    <img src="../../images/Exhibitions/Solo/Paintings/Blue-Period-Action-Painting.jpg" alt="Blue Period Action Painting by Ron English">
-    <figcaption class="work-caption">
-      <p class="work-title"><em>Blue Period Action Painting</em></p>
-      <p class="work-year">Related file supplied for the work discussed in period coverage as <em>Action Painting</em></p>
-    </figcaption>
-  </figure>
+          <figure class="work-card">
+            <img src="../../images/Exhibitions/Solo/Paintings/Blue-Period-Action-Painting.jpg" alt="Blue Period Action Painting by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Blue Period Action Painting</em></p>
+              <p class="work-year">Related file supplied for the work discussed in period coverage as <em>Action Painting</em></p>
+            </figcaption>
+          </figure>
 
-  <figure class="work-card">
-    <img src="../../images/Exhibitions/Solo/Paintings/Harmonic-Scream.jpg" alt="Harmonic Scream by Ron English">
-    <figcaption class="work-caption">
-      <p class="work-title"><em>Harmonic Scream</em></p>
-      <p class="work-year">Included from supplied exhibition painting files</p>
-    </figcaption>
-  </figure>
+          <figure class="work-card">
+            <img src="../../images/Exhibitions/Solo/Paintings/Harmonic-Scream.jpg" alt="Harmonic Scream by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Harmonic Scream</em></p>
+              <p class="work-year">Included from supplied exhibition painting files</p>
+            </figcaption>
+          </figure>
 
-  <figure class="work-card">
-    <img src="../../images/Exhibitions/Solo/Paintings/Literal-Cubism.jpg" alt="Literal Cubism by Ron English">
-    <figcaption class="work-caption">
-      <p class="work-title"><em>Literal Cubism</em></p>
-      <p class="work-year">Included from supplied exhibition painting files</p>
-    </figcaption>
-  </figure>
-</div>
+          <figure class="work-card">
+            <img src="../../images/Exhibitions/Solo/Paintings/Literal-Cubism.jpg" alt="Literal Cubism by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Literal Cubism</em></p>
+              <p class="work-year">Included from supplied exhibition painting files</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
     <section class="text-card" aria-label="Notes">
       <div class="card-head">
