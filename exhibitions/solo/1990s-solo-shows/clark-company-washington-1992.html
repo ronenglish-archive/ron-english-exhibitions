@@ -127,23 +127,33 @@
     }
 
     .meta-grid{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .meta-row{
       display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+      grid-template-columns:max-content 1fr;
+      gap:18px;
+      align-items:start;
     }
 
     .meta-label{
       font-size:13px;
+      line-height:1.45;
       letter-spacing:.04em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
+      white-space:nowrap;
     }
 
     .meta-value{
       font-size:16px;
-      line-height:1.6;
+      line-height:1.45;
       color:#111;
+      min-width:0;
     }
 
     .card-body p{
@@ -242,9 +252,13 @@
         grid-template-columns:1fr;
       }
 
-      .meta-grid{
+      .meta-row{
         grid-template-columns:1fr;
-        gap:6px 0;
+        gap:4px;
+      }
+
+      .meta-label{
+        white-space:normal;
       }
 
       .hero img{
@@ -285,29 +299,45 @@
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1992</div>
+          <div class="meta-row">
+            <div class="meta-label">Year</div>
+            <div class="meta-value">1992</div>
+          </div>
 
-          <div class="meta-label">Title used here</div>
-          <div class="meta-value"><em>Ron English at Clark &amp; Company</em></div>
+          <div class="meta-row">
+            <div class="meta-label">Title used here</div>
+            <div class="meta-value"><em>Ron English at Clark &amp; Company</em></div>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Clark &amp; Company / Galleries 1054</div>
+          <div class="meta-row">
+            <div class="meta-label">Venue</div>
+            <div class="meta-value">Clark &amp; Company / Galleries 1054</div>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">Washington, D.C., USA</div>
+          <div class="meta-row">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">Washington, D.C., USA</div>
+          </div>
 
-          <div class="meta-label">Published notice</div>
-          <div class="meta-value"><em>The Georgetowner</em>, November 19–December 2, 1992, p. 15</div>
+          <div class="meta-row">
+            <div class="meta-label">Published notice</div>
+            <div class="meta-value"><em>The Georgetowner</em>, November 19–December 2, 1992, p. 15</div>
+          </div>
 
-          <div class="meta-label">Closing date</div>
-          <div class="meta-value">On view until December 17, 1992</div>
+          <div class="meta-row">
+            <div class="meta-label">Closing date</div>
+            <div class="meta-value">On view until December 17, 1992</div>
+          </div>
 
-          <div class="meta-label">Gallery hours</div>
-          <div class="meta-value">11:00 a.m.–5:00 p.m., Tuesday through Saturday</div>
+          <div class="meta-row">
+            <div class="meta-label">Gallery hours</div>
+            <div class="meta-value">11:00 a.m.–5:00 p.m., Tuesday through Saturday</div>
+          </div>
 
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Published exhibition notice and documented painting associated with the exhibition</div>
+          <div class="meta-row">
+            <div class="meta-label">Material documented here</div>
+            <div class="meta-value">Published exhibition notice and documented painting associated with the exhibition</div>
+          </div>
         </div>
       </div>
     </section>
