@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Agit-Pop America | Ron English Catalogue Raisonné</title>
+  <title>Ron English (FotoFest ’90) | Ron English Catalogue Raisonné</title>
 
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
   <style>
     :root{
@@ -75,7 +75,11 @@
       gap:18px;
     }
 
-    .hero, .meta-card, .works-card, .text-card, .sources-card{
+    .hero,
+    .meta-card,
+    .works-card,
+    .text-card,
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
       background:#fff;
@@ -100,7 +104,10 @@
       background:#fff;
     }
 
-    .meta-card, .works-card, .text-card, .sources-card{
+    .meta-card,
+    .works-card,
+    .text-card,
+    .sources-card{
       margin-top:24px;
     }
 
@@ -120,23 +127,33 @@
     }
 
     .meta-grid{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .meta-row{
       display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+      grid-template-columns:max-content 1fr;
+      gap:18px;
+      align-items:start;
     }
 
     .meta-label{
       font-size:13px;
+      line-height:1.45;
       letter-spacing:.04em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
+      white-space:nowrap;
     }
 
     .meta-value{
       font-size:16px;
-      line-height:1.6;
+      line-height:1.45;
       color:#111;
+      min-width:0;
     }
 
     .card-body p{
@@ -230,13 +247,18 @@
     }
 
     @media (max-width:760px){
-      .hero-grid, .works-gallery{
+      .hero-grid,
+      .works-gallery{
         grid-template-columns:1fr;
       }
 
-      .meta-grid{
+      .meta-row{
         grid-template-columns:1fr;
-        gap:6px 0;
+        gap:4px;
+      }
+
+      .meta-label{
+        white-space:normal;
       }
 
       .hero img{
@@ -245,46 +267,35 @@
     }
   </style>
 </head>
+
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
       <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="../index.html">Exhibitions</a>
-      <a class="nav-pill" href="index.html">Solo exhibitions</a>
-      <a class="nav-pill" href="1990s-solo-exhibitions.html">1990s</a>
+      <a class="nav-pill" href="../../index.html">Exhibitions</a>
+      <a class="nav-pill" href="../index.html">Solo exhibitions</a>
+      <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
     </nav>
 
     <header>
-      <h1><em>Agit-Pop America</em></h1>
-      <p class="subtitle">Gallery Stendhal, New York, New York, 1997.</p>
+      <h1><em>Ron English (FotoFest ’90)</em></h1>
+      <p class="subtitle">
+        Thomas V. Robinson / Robinson Galleries, Houston, Texas, 1990.
+      </p>
     </header>
 
-    <section class="hero-grid" aria-label="Showcard, after-party flyer, review spread, and related printed material">
+    <section class="hero-grid" aria-label="Showcard ephemera and related printed material">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Agit-Pop-1.jpg" alt="Invitation card for Agit-Pop America, New Works by Ron English, Gallery Stendhal, New York, 1997">
+        <img src="../../../images/Exhibitions/Solo/Fotofest-2 copy.jpg" alt="Front of exhibition showcard for Ron English at Thomas V. Robinson / Robinson Galleries, Houston, 1990">
         <div class="caption">
-          Invitation card for <em>Agit-Pop America: New Works by Ron English</em>, announcing the exhibition dates of April 3 to April 30, 1997, and a cocktail reception on Thursday, April 3, from 6 p.m. to 9 p.m.
+          Front of exhibition showcard for <em>Ron English</em>, Thomas V. Robinson / Robinson Galleries, Houston, 1990. The image on the front is <em>Out of the Frying Pan</em>, 1989, C print, 10 × 8 in.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Agit-pop-after-party.jpg" alt="Official after-party flyer for Ron English, Agit-Pop America, Gallery Stendhal, 1997">
+        <img src="../../../images/Exhibitions/Solo/Fotofest-1.jpg" alt="Reverse side of the exhibition showcard for Ron English at Thomas V. Robinson / Robinson Galleries, Houston, 1990">
         <div class="caption">
-          Official after-party flyer for <em>Agit-Pop America</em>, held Thursday, April 3, 1997, at Opera, 539 W 21st St., New York.
-        </div>
-      </div>
-
-      <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Agit-Pop-a2.jpg" alt="Printed promotional piece for Agit-Pop America, New Works by Ron English, featuring Culture Wars">
-        <div class="caption">
-          Printed promotional piece for <em>Agit-Pop America</em> featuring a reproduction of <em>Culture Wars</em>, 1996, 40 × 90 in., oil on canvas.
-        </div>
-      </div>
-
-      <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Agit-Pop America, 1997.jpg" alt="Review spread titled Agit-Pop America by Tarssa Yazdani">
-        <div class="caption">
-          Review spread titled <em>Agit-Pop America</em> by Tarssa Yazdani. The publication title and date are not identified here.
+          Reverse side of the exhibition showcard for <em>Ron English</em>.
         </div>
       </div>
     </section>
@@ -295,41 +306,60 @@
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1997</div>
+          <div class="meta-row">
+            <div class="meta-label">Year</div>
+            <div class="meta-value">1990</div>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Agit-Pop America</em></div>
+          <div class="meta-row">
+            <div class="meta-label">Title</div>
+            <div class="meta-value"><em>Ron English (FotoFest ’90)</em></div>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Gallery Stendhal</div>
+          <div class="meta-row">
+            <div class="meta-label">Venue</div>
+            <div class="meta-value">Thomas V. Robinson / Robinson Galleries</div>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">386 West Broadway, 2nd floor, New York, NY 10012, USA</div>
+          <div class="meta-row">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">3733 Westheimer, No. 7, Houston, Texas 77027, USA</div>
+          </div>
 
-          <div class="meta-label">Dates</div>
-          <div class="meta-value">April 3–April 30, 1997</div>
+          <div class="meta-row">
+            <div class="meta-label">Telephone</div>
+            <div class="meta-value">(713) 961-5229</div>
+          </div>
 
-          <div class="meta-label">Opening reception</div>
-          <div class="meta-value">Thursday, April 3, 1997, 6 p.m. to 9 p.m.</div>
+          <div class="meta-row">
+            <div class="meta-label">Entrance</div>
+            <div class="meta-value">Entrance on Westgrove Lane, one block east of Weslayan</div>
+          </div>
 
-          <div class="meta-label">Telephone</div>
-          <div class="meta-value">212.334.4649</div>
+          <div class="meta-row">
+            <div class="meta-label">Dates</div>
+            <div class="meta-value">February 11–March 3, 1990</div>
+          </div>
 
-          <div class="meta-label">Fax</div>
-          <div class="meta-value">212.334.4609</div>
+          <div class="meta-row">
+            <div class="meta-label">Opening reception</div>
+            <div class="meta-value">Sunday, February 11, 1990, 1:00–6:00 p.m.</div>
+          </div>
 
-          <div class="meta-label">E-mail</div>
-          <div class="meta-value">Stendhal@NetworkAmerica.com</div>
+          <div class="meta-row">
+            <div class="meta-label">Gallery hours</div>
+            <div class="meta-value">Tuesday–Saturday, 10:00 a.m. to 5:30 p.m.</div>
+          </div>
 
-          <div class="meta-label">Related event</div>
-          <div class="meta-value">Official after-party at Opera, 539 W 21st St. (between 10th &amp; 11th), New York, Thursday, April 3, 1997</div>
+          <div class="meta-row">
+            <div class="meta-label">Festival context</div>
+            <div class="meta-value">FotoFest ’90, The International Month of Photography</div>
+          </div>
 
-          <div class="meta-label">After-party hosts</div>
-          <div class="meta-value">Reuben Rubin and Lee Klein</div>
-
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Invitation card, after-party flyer, printed promotional piece, and review spread</div>
+          <div class="meta-row">
+            <div class="meta-label">Material documented here</div>
+            <div class="meta-value">Exhibition showcard (front and reverse), periodical reproductions, catalogue entry, and documented works associated with the exhibition</div>
+          </div>
         </div>
       </div>
     </section>
@@ -340,15 +370,23 @@
       </div>
       <div class="card-body">
         <p class="works-note">
-          The following work is identified in the printed promotional material associated with the exhibition.
+          The following works are documented in connection with the exhibition; additional works may also have been included.
         </p>
 
         <div class="works-gallery">
           <figure class="work-card">
-            <img src="../../images/Exhibitions/Solo/Paintings/Culture-Wars.jpg" alt="Culture Wars by Ron English">
+            <img src="../../../images/Exhibitions/Solo/Poker.jpg" alt="Poker by Ron English">
             <figcaption class="work-caption">
-              <p class="work-title"><em>Culture Wars</em></p>
-              <p class="work-year">1996, 40 × 90 in., oil on canvas</p>
+              <p class="work-title"><em>Poker</em></p>
+              <p class="work-year">Documented in the FotoFest ’90 catalogue</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="../../../images/Exhibitions/Solo/high-five.jpg" alt="High Five Three by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>High Five Three</em></p>
+              <p class="work-year">Reproduced in <em>Houston: The Magazine for Business</em>, February 1990</p>
             </figcaption>
           </figure>
         </div>
@@ -361,19 +399,22 @@
       </div>
       <div class="card-body">
         <p>
-          The invitation card identifies <em>Agit-Pop America</em> as an exhibition of new works by Ron English at Gallery Stendhal, running from April 3 to April 30, 1997.
+          The exhibition was presented at Thomas V. Robinson / Robinson Galleries in Houston as part of FotoFest ’90, described in the festival materials as “The International Month of Photography.”
         </p>
         <p>
-          The same card invites viewers to a cocktail reception on Thursday, April 3, from 6 p.m. to 9 p.m., and gives the gallery address as 386 West Broadway, 2nd floor, New York, NY 10012.
+          The FotoFest ’90 catalogue states that the month-long biennial festival ran from February 10 to March 10 and hosted more than ninety exhibitions from two dozen countries.
         </p>
         <p>
-          A related after-party flyer documents an official opening-night event at Opera, 539 W 21st St., with complimentary admission and drinks from 10 to 11, hosted by Reuben Rubin and Lee Klein.
+          In the catalogue entry titled <em>Vicissitudes</em>, Ron English is described as working at the forefront of a fabricated-to-be-photographed approach, using photography to record rearrangements of reality through interventions such as painted billboards and hand-painted anamorphic cardboard figures.
         </p>
         <p>
-          A printed promotional piece for the exhibition reproduces <em>Culture Wars</em> and identifies it as a 1996 oil on canvas measuring 40 × 90 in.
+          The same catalogue text notes prior exhibitions in Houston, Dallas, New York, and Amsterdam, and states that his work was held in collections including the Museum of Contemporary Art in Paris and the Whitney Museum in New York.
         </p>
         <p>
-          A review spread titled <em>Agit-Pop America</em> credits Tarssa Yazdani and lists New York, USA, but the publication title and date are not established here.
+          Margaret Daugherty’s “For art’s sake,” published in <em>Houston: The Magazine for Business</em>, February 1990, describes English’s photographs as merging actual persons and places, his own hand-drawn cardboard figures, and a flattening of space. The article also notes the inclusion of <em>American Sideshows</em>.
+        </p>
+        <p>
+          The front of the surviving showcard reproduces <em>Out of the Frying Pan</em>, while the FotoFest ’90 catalogue documents <em>Poker</em>, and contemporaneous magazine coverage reproduces <em>High Five Three</em>.
         </p>
       </div>
     </section>
@@ -384,16 +425,16 @@
       </div>
       <div class="card-body">
         <ul>
-          <li>Invitation card for <em>Agit-Pop America: New Works by Ron English</em>, Gallery Stendhal, New York, April 3–30, 1997.</li>
-          <li>Official after-party flyer for Ron English, <em>Agit-Pop America</em>, Thursday, April 3, 1997.</li>
-          <li>Printed promotional piece for <em>Agit-Pop America</em> reproducing <em>Culture Wars</em>, 1996.</li>
-          <li>Review spread titled <em>Agit-Pop America</em> by Tarssa Yazdani.</li>
+          <li>Robinson Galleries exhibition announcement for <em>Ron English</em>, Thomas V. Robinson / Robinson Galleries, Houston, opening February 11, 1990.</li>
+          <li>FotoFest ’90 catalogue, Houston, entry for <em>Vicissitudes</em>, Ron English.</li>
+          <li>Margaret Daugherty, “For art’s sake,” <em>Houston: The Magazine for Business</em>, February 1990, p. 33.</li>
+          <li><em>The Houston Post</em>, February 4, 1990, p. H-17, listing for Ron English’s <em>Out of the Frying Pan</em> at Robinson Galleries.</li>
         </ul>
       </div>
     </section>
 
     <footer>
-      <a href="1990s-solo-exhibitions.html#agit-pop-america-stendhal-1997-row">Back to 1990s solo exhibitions</a>
+      <a href="../1990s-solo-exhibitions.html#fotofest-1990-robinson-galleries-row">Back to 1990s solo exhibitions</a>
     </footer>
   </main>
 </body>
