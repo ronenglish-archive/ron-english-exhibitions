@@ -121,23 +121,38 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:grid;
-      grid-template-columns:180px 1fr;
-      gap:12px 18px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-label{
-      font-size:13px;
-      letter-spacing:.04em;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
+    }
+
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.6;
+      line-height:1.55;
       color:#111;
     }
 
@@ -171,11 +186,8 @@
       font-size:14px;
     }
 
-    @media (max-width:700px){
-      .meta-grid{
-        grid-template-columns:1fr;
-        gap:6px 0;
-      }
+    footer a{
+      color:inherit;
     }
   </style>
 </head>
@@ -183,7 +195,7 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
       <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
@@ -208,31 +220,47 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">c. 1990s</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">c. 1990s</dd>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Sheer Magniloquent Pas</em> (grand opening featuring the art of Ron English)</div>
+          <div class="detail-item">
+            <dt class="detail-label">Title</dt>
+            <dd class="detail-value"><em>Sheer Magniloquent Pas</em> (grand opening featuring the art of Ron English)</dd>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Sheer Magniloquent Pas Gallery</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">Sheer Magniloquent Pas Gallery</dd>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">142 W. 26th St, New York City, New York, USA</div>
+          <div class="detail-item">
+            <dt class="detail-label">Location</dt>
+            <dd class="detail-value">142 W. 26th St, New York City, New York, USA</dd>
+          </div>
 
-          <div class="meta-label">Date</div>
-          <div class="meta-value">New Year’s Eve, Monday, December 31</div>
+          <div class="detail-item">
+            <dt class="detail-label">Date</dt>
+            <dd class="detail-value">New Year’s Eve, Monday, December 31</dd>
+          </div>
 
-          <div class="meta-label">Hours</div>
-          <div class="meta-value">6:30–9:00 p.m.</div>
+          <div class="detail-item">
+            <dt class="detail-label">Hours</dt>
+            <dd class="detail-value">6:30–9:00 p.m.</dd>
+          </div>
 
-          <div class="meta-label">Host</div>
-          <div class="meta-value">Baird Jones</div>
+          <div class="detail-item">
+            <dt class="detail-label">Host</dt>
+            <dd class="detail-value">Baird Jones</dd>
+          </div>
 
-          <div class="meta-label">Phone</div>
-          <div class="meta-value">212-929-2010</div>
-        </div>
+          <div class="detail-item">
+            <dt class="detail-label">Phone</dt>
+            <dd class="detail-value">212-929-2010</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -242,13 +270,13 @@
       </div>
       <div class="card-body">
         <p>
-          This invitation documents the grand opening of <em>Sheer Magniloquent Pas</em>, described on the card as “the evening art space in Chelsea,” at 142 West 26th Street in Manhattan. The event was scheduled for New Year’s Eve and featured the art of Ron English. :contentReference[oaicite:1]{index=1}
+          This invitation documents the grand opening of <em>Sheer Magniloquent Pas</em>, described on the card as “the evening art space in Chelsea,” at 142 West 26th Street in Manhattan. The event was scheduled for New Year’s Eve and featured the art of Ron English.
         </p>
         <p>
-          The surviving card places the presentation within a nightlife-oriented exhibition setting rather than a conventional daytime gallery model. It also credits Baird Jones as host, linking the event to the downtown art and club network that shaped part of English’s public exhibition history during the 1990s. :contentReference[oaicite:2]{index=2}
+          The surviving card places the presentation within a nightlife-oriented exhibition setting rather than a conventional daytime gallery model. It also credits Baird Jones as host, linking the event to the downtown art and club network that shaped part of English’s public exhibition history during the 1990s.
         </p>
         <p>
-          The Chelsea address and the description of the venue as an evening art space help situate this presentation within the neighborhood’s broader late-twentieth-century studio and gallery scene. :contentReference[oaicite:3]{index=3}
+          The Chelsea address and the description of the venue as an evening art space help situate this presentation within the neighborhood’s broader late-twentieth-century studio and gallery scene.
         </p>
       </div>
     </section>
@@ -259,7 +287,7 @@
       </div>
       <div class="card-body">
         <ul>
-          <li>Invitation card for the grand opening of <em>Sheer Magniloquent Pas</em>, featuring the art of Ron English, New Year’s Eve, December 31, 6:30–9:00 p.m., Sheer Magniloquent Pas Gallery, 142 W. 26th St, New York City. :contentReference[oaicite:4]{index=4}</li>
+          <li>Invitation card for the grand opening of <em>Sheer Magniloquent Pas</em>, featuring the art of Ron English, New Year’s Eve, December 31, 6:30–9:00 p.m., Sheer Magniloquent Pas Gallery, 142 W. 26th St, New York City.</li>
         </ul>
       </div>
     </section>
