@@ -126,34 +126,46 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:flex;
-      flex-direction:column;
-      gap:12px;
+    .meta-table{
+      width:100%;
+      border-collapse:collapse;
+      table-layout:fixed;
     }
 
-    .meta-row{
-      display:grid;
-      grid-template-columns:max-content 1fr;
-      gap:18px;
-      align-items:start;
+    .meta-table th,
+    .meta-table td{
+      padding:10px 0;
+      vertical-align:top;
+      text-align:left;
+      border-bottom:1px solid #f1f5f9;
     }
 
-    .meta-label{
+    .meta-table tr:first-child th,
+    .meta-table tr:first-child td{
+      padding-top:0;
+    }
+
+    .meta-table tr:last-child th,
+    .meta-table tr:last-child td{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .meta-table th{
+      width:190px;
+      padding-right:18px;
       font-size:13px;
       line-height:1.45;
       letter-spacing:.04em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
-      white-space:nowrap;
     }
 
-    .meta-value{
+    .meta-table td{
       font-size:16px;
       line-height:1.45;
       color:#111;
-      min-width:0;
     }
 
     .card-body p{
@@ -252,13 +264,36 @@
         grid-template-columns:1fr;
       }
 
-      .meta-row{
-        grid-template-columns:1fr;
-        gap:4px;
+      .meta-table,
+      .meta-table tbody,
+      .meta-table tr,
+      .meta-table th,
+      .meta-table td{
+        display:block;
+        width:100%;
       }
 
-      .meta-label{
-        white-space:normal;
+      .meta-table tr{
+        padding:0 0 10px;
+        margin:0 0 10px;
+        border-bottom:1px solid #f1f5f9;
+      }
+
+      .meta-table tr:last-child{
+        padding-bottom:0;
+        margin-bottom:0;
+        border-bottom:none;
+      }
+
+      .meta-table th,
+      .meta-table td{
+        border-bottom:none;
+        padding:0;
+      }
+
+      .meta-table th{
+        margin-bottom:4px;
+        padding-right:0;
       }
 
       .hero img{
@@ -305,62 +340,54 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-row">
-            <div class="meta-label">Year</div>
-            <div class="meta-value">1990</div>
-          </div>
-
-          <div class="meta-row">
-            <div class="meta-label">Title</div>
-            <div class="meta-value"><em>Ron English (FotoFest ’90)</em></div>
-          </div>
-
-          <div class="meta-row">
-            <div class="meta-label">Venue</div>
-            <div class="meta-value">Thomas V. Robinson / Robinson Galleries</div>
-          </div>
-
-          <div class="meta-row">
-            <div class="meta-label">Location</div>
-            <div class="meta-value">3733 Westheimer, No. 7, Houston, Texas 77027, USA</div>
-          </div>
-
-          <div class="meta-row">
-            <div class="meta-label">Telephone</div>
-            <div class="meta-value">(713) 961-5229</div>
-          </div>
-
-          <div class="meta-row">
-            <div class="meta-label">Entrance</div>
-            <div class="meta-value">Entrance on Westgrove Lane, one block east of Weslayan</div>
-          </div>
-
-          <div class="meta-row">
-            <div class="meta-label">Dates</div>
-            <div class="meta-value">February 11–March 3, 1990</div>
-          </div>
-
-          <div class="meta-row">
-            <div class="meta-label">Opening reception</div>
-            <div class="meta-value">Sunday, February 11, 1990, 1:00–6:00 p.m.</div>
-          </div>
-
-          <div class="meta-row">
-            <div class="meta-label">Gallery hours</div>
-            <div class="meta-value">Tuesday–Saturday, 10:00 a.m. to 5:30 p.m.</div>
-          </div>
-
-          <div class="meta-row">
-            <div class="meta-label">Festival context</div>
-            <div class="meta-value">FotoFest ’90, The International Month of Photography</div>
-          </div>
-
-          <div class="meta-row">
-            <div class="meta-label">Material documented here</div>
-            <div class="meta-value">Exhibition showcard (front and reverse), periodical reproductions, catalogue entry, and documented works associated with the exhibition</div>
-          </div>
-        </div>
+        <table class="meta-table">
+          <tbody>
+            <tr>
+              <th scope="row">Year</th>
+              <td>1990</td>
+            </tr>
+            <tr>
+              <th scope="row">Title</th>
+              <td><em>Ron English (FotoFest ’90)</em></td>
+            </tr>
+            <tr>
+              <th scope="row">Venue</th>
+              <td>Thomas V. Robinson / Robinson Galleries</td>
+            </tr>
+            <tr>
+              <th scope="row">Location</th>
+              <td>3733 Westheimer, No. 7, Houston, Texas 77027, USA</td>
+            </tr>
+            <tr>
+              <th scope="row">Telephone</th>
+              <td>(713) 961-5229</td>
+            </tr>
+            <tr>
+              <th scope="row">Entrance</th>
+              <td>Entrance on Westgrove Lane, one block east of Weslayan</td>
+            </tr>
+            <tr>
+              <th scope="row">Dates</th>
+              <td>February 11–March 3, 1990</td>
+            </tr>
+            <tr>
+              <th scope="row">Opening reception</th>
+              <td>Sunday, February 11, 1990, 1:00–6:00 p.m.</td>
+            </tr>
+            <tr>
+              <th scope="row">Gallery hours</th>
+              <td>Tuesday–Saturday, 10:00 a.m. to 5:30 p.m.</td>
+            </tr>
+            <tr>
+              <th scope="row">Festival context</th>
+              <td>FotoFest ’90, The International Month of Photography</td>
+            </tr>
+            <tr>
+              <th scope="row">Material documented here</th>
+              <td>Exhibition showcard (front and reverse), periodical reproductions, catalogue entry, and documented works associated with the exhibition</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
