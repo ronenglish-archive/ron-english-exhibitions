@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,17 +65,18 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
-    .hero{
+    .hero,
+    .meta-card,
+    .sources-card{
       margin-top:24px;
       border:1px solid var(--border);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
       background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero img{
@@ -95,17 +96,6 @@
       background:#fff;
     }
 
-    .meta-card,
-    .text-card,
-    .sources-card{
-      margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
-    }
-
     .card-head{
       padding:16px 18px;
       border-bottom:1px solid var(--border);
@@ -123,7 +113,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -139,17 +129,6 @@
       font-size:16px;
       line-height:1.6;
       color:#111;
-    }
-
-    .card-body p{
-      margin:0 0 14px;
-      font-size:16px;
-      line-height:1.7;
-      color:#1f2937;
-    }
-
-    .card-body p:last-child{
-      margin-bottom:0;
     }
 
     .sources-card ul{
@@ -171,6 +150,10 @@
       font-size:14px;
     }
 
+    footer a{
+      color:inherit;
+    }
+
     @media (max-width:700px){
       .meta-grid{
         grid-template-columns:1fr;
@@ -183,7 +166,7 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Exhibitions</a>
       <a class="nav-pill" href="../index.html">Solo exhibitions</a>
       <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
@@ -196,8 +179,8 @@
       </p>
     </header>
 
-    <section class="hero" aria-label="Exhibition image">
-      <img src="../../images/Exhibitions/Solo/kisslinger.jpg" alt="Ron English — Art in Heaven, Michael Kisslinger Gallery, 1994">
+    <section class="hero" aria-label="Exhibition ephemera">
+      <img src="../../images/Exhibitions/Solo/kisslinger.jpg" alt="Show card for Art in Heaven, Michael Kisslinger Gallery, New York, 1994">
       <div class="caption">
         Show card for <em>Art in Heaven</em>, Michael Kisslinger Gallery, New York, 1994.
       </div>
@@ -222,28 +205,11 @@
           <div class="meta-value">New York, New York, USA</div>
 
           <div class="meta-label">Dates</div>
-          <div class="meta-value">June 30 – July 30, 1994</div>
+          <div class="meta-value">June 30–July 30, 1994</div>
 
-          <div class="meta-label">Type</div>
-          <div class="meta-value">Solo exhibition</div>
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Show card</div>
         </div>
-      </div>
-    </section>
-
-    <section class="text-card" aria-label="Notes">
-      <div class="card-head">
-        <h2>Notes</h2>
-      </div>
-      <div class="card-body">
-        <p>
-          This installment of <em>Art in Heaven</em> brought Ron English’s solo exhibition to Michael Kisslinger Gallery in SoHo, opening on June 30, 1994. The New York presentation continued the touring format that had begun earlier that year in Austin. :contentReference[oaicite:1]{index=1}
-        </p>
-        <p>
-          The exhibition featured paintings, drawings, and photographs centered on English’s ongoing interest in belief systems, mass-media conditioning, and visual satire. Shown in New York, the exhibition placed that body of work before a broader downtown audience at a moment when his Popaganda language was becoming more visible. :contentReference[oaicite:2]{index=2}
-        </p>
-        <p>
-          The surviving show card confirms the venue and dates and helps establish this exhibition as a key 1994 New York presentation within English’s early solo exhibition history. :contentReference[oaicite:3]{index=3}
-        </p>
       </div>
     </section>
 
@@ -253,7 +219,7 @@
       </div>
       <div class="card-body">
         <ul>
-          <li>Show card: <em>Art in Heaven — Michael Kisslinger Gallery</em> (Michael Kisslinger Gallery, New York, June 30 – July 30, 1994). :contentReference[oaicite:4]{index=4}</li>
+          <li>Show card: <em>Art in Heaven — Michael Kisslinger Gallery</em> (Michael Kisslinger Gallery, New York, June 30–July 30, 1994).</li>
         </ul>
       </div>
     </section>
