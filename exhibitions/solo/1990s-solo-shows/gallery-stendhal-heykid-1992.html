@@ -127,23 +127,33 @@
     }
 
     .meta-grid{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .meta-row{
       display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+      grid-template-columns:max-content 1fr;
+      gap:18px;
+      align-items:start;
     }
 
     .meta-label{
       font-size:13px;
+      line-height:1.45;
       letter-spacing:.04em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
+      white-space:nowrap;
     }
 
     .meta-value{
       font-size:16px;
-      line-height:1.6;
+      line-height:1.45;
       color:#111;
+      min-width:0;
     }
 
     .card-body p{
@@ -258,9 +268,13 @@
         grid-template-columns:1fr;
       }
 
-      .meta-grid{
+      .meta-row{
         grid-template-columns:1fr;
-        gap:6px 0;
+        gap:4px;
+      }
+
+      .meta-label{
+        white-space:normal;
       }
 
       .hero img{
@@ -308,38 +322,60 @@
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1992</div>
+          <div class="meta-row">
+            <div class="meta-label">Year</div>
+            <div class="meta-value">1992</div>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>HEY! My Kid Could Do That!</em></div>
+          <div class="meta-row">
+            <div class="meta-label">Title</div>
+            <div class="meta-value"><em>HEY! My Kid Could Do That!</em></div>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Gallery Stendhal</div>
+          <div class="meta-row">
+            <div class="meta-label">Venue</div>
+            <div class="meta-value">Gallery Stendhal</div>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">622–626 Broadway, 3rd Floor, New York, NY 10012, USA</div>
+          <div class="meta-row">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">622–626 Broadway, 3rd Floor, New York, NY 10012, USA</div>
+          </div>
 
-          <div class="meta-label">Dates</div>
-          <div class="meta-value">November 12–December 12, 1992</div>
+          <div class="meta-row">
+            <div class="meta-label">Dates</div>
+            <div class="meta-value">November 12–December 12, 1992</div>
+          </div>
 
-          <div class="meta-label">Opening reception</div>
-          <div class="meta-value">November 12, 1992, 6:30–9:00 p.m.</div>
+          <div class="meta-row">
+            <div class="meta-label">Opening reception</div>
+            <div class="meta-value">November 12, 1992, 6:30–9:00 p.m.</div>
+          </div>
 
-          <div class="meta-label">Co-sponsored by</div>
-          <div class="meta-value">QP / Ian Alterman</div>
+          <div class="meta-row">
+            <div class="meta-label">Co-sponsored by</div>
+            <div class="meta-value">QP / Ian Alterman</div>
+          </div>
 
-          <div class="meta-label">Phone &amp; Fax</div>
-          <div class="meta-value">212-505-1201</div>
+          <div class="meta-row">
+            <div class="meta-label">Phone &amp; Fax</div>
+            <div class="meta-value">212-505-1201</div>
+          </div>
 
-          <div class="meta-label">Gallery hours</div>
-          <div class="meta-value">Tuesday–Saturday, 11:00 a.m.–6:00 p.m.</div>
+          <div class="meta-row">
+            <div class="meta-label">Gallery hours</div>
+            <div class="meta-value">Tuesday–Saturday, 11:00 a.m.–6:00 p.m.</div>
+          </div>
 
-          <div class="meta-label">Related note</div>
-          <div class="meta-value">All art purchases include a donation to Learning Through Art / Guggenheim Children’s Program</div>
+          <div class="meta-row">
+            <div class="meta-label">Related note</div>
+            <div class="meta-value">All art purchases include a donation to Learning Through Art / Guggenheim Children’s Program</div>
+          </div>
 
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Exhibition showcard, contemporary magazine coverage, and associated documented works</div>
+          <div class="meta-row">
+            <div class="meta-label">Material documented here</div>
+            <div class="meta-value">Exhibition showcard, contemporary magazine coverage, and associated documented works</div>
+          </div>
         </div>
       </div>
     </section>
