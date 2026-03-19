@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,7 +65,6 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
@@ -76,7 +75,11 @@
       gap:18px;
     }
 
-    .hero{
+    .hero,
+    .meta-card,
+    .works-card,
+    .text-card,
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
       overflow:hidden;
@@ -102,14 +105,10 @@
     }
 
     .meta-card,
+    .works-card,
     .text-card,
     .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -129,7 +128,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -158,6 +157,56 @@
       margin-bottom:0;
     }
 
+    .works-note{
+      margin-bottom:16px;
+      color:#1f2937;
+    }
+
+    .works-gallery{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin-top:10px;
+    }
+
+    .work-card{
+      margin:0;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    .work-card img{
+      width:100%;
+      height:255px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .work-caption{
+      padding:8px 12px 9px;
+      border-top:1px solid var(--border);
+    }
+
+    .work-caption p{
+      margin:0;
+    }
+
+    .work-title{
+      font-size:15px;
+      line-height:1.25;
+      color:#111;
+    }
+
+    .work-year{
+      margin-top:0;
+      font-size:13px;
+      line-height:1.25;
+      color:var(--muted);
+    }
+
     .sources-card ul{
       margin:0;
       padding-left:20px;
@@ -169,6 +218,10 @@
       color:#1f2937;
     }
 
+    .sources-card a{
+      color:#111;
+    }
+
     footer{
       margin-top:30px;
       padding-top:16px;
@@ -177,8 +230,19 @@
       font-size:14px;
     }
 
+    footer a{
+      color:inherit;
+    }
+
+    @media (max-width:1000px){
+      .works-gallery{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+    }
+
     @media (max-width:800px){
-      .hero-grid{
+      .hero-grid,
+      .works-gallery{
         grid-template-columns:1fr;
       }
     }
@@ -195,10 +259,10 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
- <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Exhibitions</a>
-      <a class="nav-pill" href="../index.html">Solo exhibitions</a>
-      <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
+      <a class="nav-pill" href="index.html">Solo exhibitions</a>
+      <a class="nav-pill" href="1990s-solo-exhibitions.html">1990s</a>
     </nav>
 
     <header>
@@ -208,18 +272,18 @@
       </p>
     </header>
 
-    <section class="hero-grid" aria-label="Exhibition images">
+    <section class="hero-grid" aria-label="Exhibition card and related ephemera">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/wonderlich.jpg" alt="Ron English — Art in Heaven, Wunderlich Gallery, 1994">
+        <img src="../../images/Exhibitions/Solo/wunderlich.jpg" alt="Front of exhibition card for Art in Heaven, Wunderlich Gallery, Austin, 1994">
         <div class="caption">
-          Exhibition card for <em>Art in Heaven</em>, Wunderlich Gallery, Austin, 1994.
+          Front of exhibition card for <em>Art in Heaven</em>, Wunderlich Gallery, Austin, 1994. The card reproduces <em>The Ascension of English</em>.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Art-in-Heaven-Wunderlich-2.jpg" alt="Ron English — Art in Heaven, Wunderlich Gallery, 1994">
+        <img src="../../images/Exhibitions/Solo/Art-in-Heaven-Wunderlich-2.jpg" alt="Reverse side of the exhibition card for Art in Heaven">
         <div class="caption">
-          Additional archival image for <em>Art in Heaven</em>.
+          Reverse side of the exhibition card for <em>Art in Heaven</em>, with venue address, dates, reception details, and gallery hours.
         </div>
       </div>
     </section>
@@ -240,13 +304,40 @@
           <div class="meta-value">Wunderlich Gallery</div>
 
           <div class="meta-label">Location</div>
-          <div class="meta-value">807 Congress, Austin, Texas, USA</div>
+          <div class="meta-value">807 Congress Avenue, Austin, Texas 78701, USA</div>
 
           <div class="meta-label">Dates</div>
-          <div class="meta-value">February 5 – March 19, 1994</div>
+          <div class="meta-value">February 5–March 19, 1994</div>
 
-          <div class="meta-label">Type</div>
-          <div class="meta-value">Solo exhibition</div>
+          <div class="meta-label">Artist reception</div>
+          <div class="meta-value">Saturday, February 5, 1994, 6:00 p.m. to 8:00 p.m.</div>
+
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Exhibition card (front and reverse), contemporary periodical coverage, and confirmed works documented from the exhibition</div>
+
+          <div class="meta-label">Additional details</div>
+          <div class="meta-value">Presented in cooperation with Robinson Galleries; described on the card as an exhibition of paintings, drawings, and photographs</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-card" aria-label="Confirmed works documented in the exhibition">
+      <div class="card-head">
+        <h2>Confirmed Works Documented in the Exhibition</h2>
+      </div>
+      <div class="card-body">
+        <p class="works-note">
+          The following work is directly documented in surviving exhibition ephemera; additional works were also included in the exhibition.
+        </p>
+
+        <div class="works-gallery">
+          <figure class="work-card">
+            <img src="../../images/Exhibitions/Solo/Paintings/The-Ascension-of-EnglishL.jpg" alt="The Ascension of English by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>The Ascension of English</em></p>
+              <p class="work-year">1994</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -257,13 +348,19 @@
       </div>
       <div class="card-body">
         <p>
-          Ron English presented <em>Art in Heaven</em> at Wunderlich Gallery in Austin in early 1994. The exhibition included new paintings, drawings, and photographs and centered on religious imagery, with English using himself as a model for Jesus in several works. :contentReference[oaicite:1]{index=1}
+          Ron English presented <em>Art in Heaven</em> at Wunderlich Gallery in Austin from February 5 through March 19, 1994. The exhibition card describes the show as an exhibition of paintings, drawings, and photographs and notes that it was presented in cooperation with Robinson Galleries.
         </p>
         <p>
-          The surviving article connected to the exhibition notes that the imagery drew both from traditional Catholic visual culture and from themes associated with the Gnostic scriptures. It also reproduces the work <em>Mary, Jesus and the Little Drummer Boy</em> (© 1993), helping document one of the pieces associated with the show. :contentReference[oaicite:2]{index=2}
+          The front of the exhibition card reproduces <em>The Ascension of English</em>, identifying one of the works associated with the show. The reverse of the card preserves the exhibition dates, venue address, reception details, and gallery hours.
         </p>
         <p>
-          This Austin presentation appears to be an earlier installment of <em>Art in Heaven</em> before the related 1994 New York showing at Michael Kisslinger Gallery, making it an important entry in the development and circulation of that body of work. :contentReference[oaicite:3]{index=3}
+          A contemporary article in <em>Sendero</em>, issue VII, page 12, titled “Art in Heaven: New Works by Ron English at Wonderlich Gallery,” describes the exhibition as examining the role of the artist in religious imagery and the personal meanings behind the Jesus persona. The article states that one half of the exhibition featured traditional Catholic imagery, while the other drew on Gnostic scriptures that English had studied extensively.
+        </p>
+        <p>
+          The <em>Sendero</em> article also notes that across the paintings, drawings, and photographs, English used himself as a model for Jesus. It reproduces <em>Mary, Jesus and the Little Drummer Boy</em> (photo by Ron English, © 1993), providing additional documentation for the body of work shown in Austin.
+        </p>
+        <p>
+          The periodical spells the venue name as “Wonderlich Gallery,” while the exhibition card uses “Wunderlich Gallery.” The card provides the more formal venue identification and address.
         </p>
       </div>
     </section>
@@ -274,14 +371,15 @@
       </div>
       <div class="card-body">
         <ul>
-          <li>Exhibition flyer for <em>Art in Heaven</em>, Wunderlich Gallery, Austin, Texas. :contentReference[oaicite:4]{index=4}</li>
-          <li>Archival newspaper clipping, “Art in Heaven: New Works by Ron English at Wunderlich Gallery.” :contentReference[oaicite:5]{index=5}</li>
+          <li>Exhibition card for <em>Art in Heaven</em>, Wunderlich Gallery, Austin, Texas, February 5–March 19, 1994; front reproducing <em>The Ascension of English</em>.</li>
+          <li>Reverse side of the <em>Art in Heaven</em> exhibition card, listing venue address, artist reception, gallery hours, and cooperation with Robinson Galleries.</li>
+          <li><em>Sendero</em>, issue VII, p. 12, “Art in Heaven: New Works by Ron English at Wonderlich Gallery.”</li>
         </ul>
       </div>
     </section>
 
     <footer>
-      <a href="../1990s-solo-exhibitions.html#wunderlich-art-in-heaven-1994-row">Back to 1990s solo exhibitions</a>
+      <a href="1990s-solo-exhibitions.html#wunderlich-art-in-heaven-1994-row">Back to 1990s solo exhibitions</a>
     </footer>
   </main>
 </body>
