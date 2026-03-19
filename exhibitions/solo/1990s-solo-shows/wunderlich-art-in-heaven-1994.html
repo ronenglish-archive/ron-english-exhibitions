@@ -126,23 +126,38 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-label{
-      font-size:13px;
-      letter-spacing:.04em;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
+    }
+
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.6;
+      line-height:1.55;
       color:#111;
     }
 
@@ -246,13 +261,6 @@
         grid-template-columns:1fr;
       }
     }
-
-    @media (max-width:700px){
-      .meta-grid{
-        grid-template-columns:1fr;
-        gap:6px 0;
-      }
-    }
   </style>
 </head>
 
@@ -293,31 +301,47 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1994</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">1994</dd>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Art in Heaven</em></div>
+          <div class="detail-item">
+            <dt class="detail-label">Title</dt>
+            <dd class="detail-value"><em>Art in Heaven</em></dd>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Wunderlich Gallery</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">Wunderlich Gallery</dd>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">807 Congress Avenue, Austin, Texas 78701, USA</div>
+          <div class="detail-item">
+            <dt class="detail-label">Location</dt>
+            <dd class="detail-value">807 Congress Avenue, Austin, Texas 78701, USA</dd>
+          </div>
 
-          <div class="meta-label">Dates</div>
-          <div class="meta-value">February 5–March 19, 1994</div>
+          <div class="detail-item">
+            <dt class="detail-label">Dates</dt>
+            <dd class="detail-value">February 5–March 19, 1994</dd>
+          </div>
 
-          <div class="meta-label">Artist reception</div>
-          <div class="meta-value">Saturday, February 5, 1994, 6:00 p.m. to 8:00 p.m.</div>
+          <div class="detail-item">
+            <dt class="detail-label">Artist reception</dt>
+            <dd class="detail-value">Saturday, February 5, 1994, 6:00 p.m. to 8:00 p.m.</dd>
+          </div>
 
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Exhibition card (front and reverse), contemporary periodical coverage, and confirmed works documented from the exhibition</div>
+          <div class="detail-item">
+            <dt class="detail-label">Material documented here</dt>
+            <dd class="detail-value">Exhibition card (front and reverse), contemporary periodical coverage, and confirmed works documented from the exhibition</dd>
+          </div>
 
-          <div class="meta-label">Additional details</div>
-          <div class="meta-value">Presented in cooperation with Robinson Galleries; described on the card as an exhibition of paintings, drawings, and photographs</div>
-        </div>
+          <div class="detail-item">
+            <dt class="detail-label">Additional details</dt>
+            <dd class="detail-value">Presented in cooperation with Robinson Galleries; described on the card as an exhibition of paintings, drawings, and photographs</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
