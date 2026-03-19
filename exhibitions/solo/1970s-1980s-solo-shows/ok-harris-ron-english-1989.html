@@ -125,23 +125,38 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-label{
-      font-size:13px;
-      letter-spacing:.04em;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
+    }
+
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.6;
+      line-height:1.55;
       color:#111;
     }
 
@@ -190,11 +205,6 @@
     }
 
     @media (max-width:700px){
-      .meta-grid{
-        grid-template-columns:1fr;
-        gap:6px 0;
-      }
-
       .hero{
         padding:14px;
       }
@@ -229,7 +239,7 @@
       <div class="hero">
         <img src="../../../images/Exhibitions/Solo/OK-Harris-1.jpg" alt="Reverse side of exhibition card for Ron English at OK Harris Works of Art, New York">
         <div class="hero-meta">
-         Reverse side of exhibition card for <em>Ron English</em>, OK Harris Works of Art, New York.
+          Reverse side of exhibition card for <em>Ron English</em>, OK Harris Works of Art, New York.
         </div>
       </div>
     </section>
@@ -239,31 +249,47 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-label">Object type</div>
-          <div class="meta-value">Exhibition card and related ephemera</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Object type</dt>
+            <dd class="detail-value">Exhibition card and related ephemera</dd>
+          </div>
 
-          <div class="meta-label">Title on card</div>
-          <div class="meta-value"><em>Ron English</em></div>
+          <div class="detail-item">
+            <dt class="detail-label">Title on card</dt>
+            <dd class="detail-value"><em>Ron English</em></dd>
+          </div>
 
-          <div class="meta-label">Artist</div>
-          <div class="meta-value">Ron English</div>
+          <div class="detail-item">
+            <dt class="detail-label">Artist</dt>
+            <dd class="detail-value">Ron English</dd>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">OK Harris Works of Art</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">OK Harris Works of Art</dd>
+          </div>
 
-          <div class="meta-label">Address</div>
-          <div class="meta-value">383 West Broadway, New York, New York 10012</div>
+          <div class="detail-item">
+            <dt class="detail-label">Address</dt>
+            <dd class="detail-value">383 West Broadway, New York, New York 10012</dd>
+          </div>
 
-          <div class="meta-label">Documented dates</div>
-          <div class="meta-value">March 4–25, 1989</div>
+          <div class="detail-item">
+            <dt class="detail-label">Documented dates</dt>
+            <dd class="detail-value">March 4–25, 1989</dd>
+          </div>
 
-          <div class="meta-label">Medium listed in schedule</div>
-          <div class="meta-value">Photographs</div>
+          <div class="detail-item">
+            <dt class="detail-label">Medium listed in schedule</dt>
+            <dd class="detail-value">Photographs</dd>
+          </div>
 
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1989</div>
-        </div>
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">1989</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -290,6 +316,7 @@
       </div>
       <div class="card-body">
         <ul>
+          <li>Exhibition card for <em>Ron English</em>, OK Harris Works of Art, 383 West Broadway, New York, New York 10012, March 4–25, 1989.</li>
           <li><a href="https://gallery98.org/2021/ok-harris-gallery-ron-english-card-1989">Gallery 98 – <em>Ron English, OK Harris Gallery</em> (exhibition card, 1989)</a></li>
           <li><a href="https://www.okharris.com/previous/2ExhSchedSept1979-July1989.pdf">OK Harris – <em>Exhibition Schedule 1979–1989</em> (PDF)</a></li>
         </ul>
