@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,31 +65,36 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
+    }
+
+    .hero,
+    .meta-card,
+    .text-card,
+    .sources-card{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
-      background:#fff;
     }
 
     .hero img{
       width:100%;
-      max-height:620px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .caption{
-      padding:12px 16px 16px;
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
       border-top:1px solid var(--border);
       background:#fff;
@@ -99,11 +104,6 @@
     .text-card,
     .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -123,7 +123,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -171,35 +171,40 @@
       font-size:14px;
     }
 
-    @media (max-width:700px){
+    footer a{
+      color:inherit;
+    }
+
+    @media (max-width:760px){
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
       }
+
+      .hero img{
+        height:340px;
+      }
     }
   </style>
 </head>
-
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Exhibitions</a>
-      <a class="nav-pill" href="../index.html">Solo exhibitions</a>
-      <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
+      <a class="nav-pill" href="index.html">Solo exhibitions</a>
+      <a class="nav-pill" href="1990s-solo-exhibitions.html">1990s</a>
     </nav>
 
     <header>
       <h1><em>Noiseville 98</em></h1>
-      <p class="subtitle">
-        Noiseville Gallery, New York, 1998.
-      </p>
+      <p class="subtitle">Noiseville Gallery, New York, New York, 1998.</p>
     </header>
 
     <section class="hero" aria-label="Exhibition image">
-      <img src="../../images/Exhibitions/Solo/noiseville.jpg" alt="Ron English — Noiseville 98, Noiseville Gallery, 1998">
+      <img src="../../images/Exhibitions/Solo/noiseville.jpg" alt="Noiseville 98 poster for Ron English at Noiseville Gallery, New York, 1998">
       <div class="caption">
-        Exhibition image for <em>Noiseville 98</em>, Noiseville Gallery, New York, 1998.
+        Poster for <em>Noiseville 98</em>, Noiseville Gallery, New York, 1998.
       </div>
     </section>
 
@@ -222,10 +227,22 @@
           <div class="meta-value">New York, New York, USA</div>
 
           <div class="meta-label">Dates</div>
-          <div class="meta-value">July 31 – August 16, 1998</div>
+          <div class="meta-value">July 31–August 16, 1998</div>
 
-          <div class="meta-label">Type</div>
-          <div class="meta-value">Solo exhibition</div>
+          <div class="meta-label">Format documented by later listing</div>
+          <div class="meta-value">Original silk screen art print for the 1998 Noiseville Gallery show</div>
+
+          <div class="meta-label">Dimensions</div>
+          <div class="meta-value">18 × 24 in. (45.72 × 60.96 cm)</div>
+
+          <div class="meta-label">Run</div>
+          <div class="meta-value">35</div>
+
+          <div class="meta-label">Markings</div>
+          <div class="meta-value">Numbered</div>
+
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Surviving exhibition poster, archival exhibition record, and later print-market listing</div>
         </div>
       </div>
     </section>
@@ -236,13 +253,16 @@
       </div>
       <div class="card-body">
         <p>
-          <em>Noiseville 98</em> presented a focused selection of Ron English’s late-1990s work at Noiseville Gallery in New York. The exhibition belongs to a period when English’s Popaganda language was becoming sharper, harsher, and more direct in its attacks on corporate mythmaking. :contentReference[oaicite:1]{index=1}
+          A later DogStreets listing identifies <em>Noiseville 98</em> as an original silk screen art print made for Ron English’s 1998 show at Noiseville Gallery.
         </p>
         <p>
-          The surviving exhibition record notes one of the earliest documented appearances of English’s crucified Mickey Mouse on a mousetrap, an image that would become one of his most recognizable attacks on Disney iconography and the commercialization of innocence. :contentReference[oaicite:2]{index=2}
+          The same listing gives the print dimensions as 18 × 24 inches, describes it as a numbered edition, and records the run as 35.
         </p>
         <p>
-          Shown at a downtown gallery tied to underground culture and alternative music, the exhibition placed English’s visual satire within a setting aligned with punk, counterculture, and anti-commercial energy. :contentReference[oaicite:3]{index=3}
+          DogStreets also states that this was the first time Ron English used the crucified Mickey Mouse image, describing it as a response to the “Disneyisation” of Times Square.
+        </p>
+        <p>
+          According to that listing, about 90 copies of the show poster were made, along with a smaller batch issued without the show information.
         </p>
       </div>
     </section>
@@ -253,13 +273,14 @@
       </div>
       <div class="card-body">
         <ul>
-          <li>Archival exhibition record for <em>Noiseville 98</em>, Noiseville Gallery, New York, July 31 – August 16, 1998. :contentReference[oaicite:4]{index=4}</li>
+          <li>Archival exhibition record for <em>Noiseville 98</em>, Noiseville Gallery, New York, July 31–August 16, 1998.</li>
+          <li>DogStreets listing for <em>Noiseville 98</em> by Ron English.</li>
         </ul>
       </div>
     </section>
 
     <footer>
-      <a href="../1990s-solo-exhibitions.html#noiseville-98-1998-row">Back to 1990s solo exhibitions</a>
+      <a href="1990s-solo-exhibitions.html#noiseville-98-1998-row">Back to 1990s solo exhibitions</a>
     </footer>
   </main>
 </body>
