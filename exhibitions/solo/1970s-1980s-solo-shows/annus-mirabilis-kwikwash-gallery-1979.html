@@ -94,7 +94,8 @@
       color:var(--muted);
     }
 
-    .detail-card{
+    .detail-card,
+    .sources-card{
       margin-top:24px;
       border:1px solid var(--border);
       border-radius:var(--radius);
@@ -118,24 +119,50 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-label{
-      font-size:13px;
-      letter-spacing:.04em;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
+    }
+
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.6;
+      line-height:1.55;
       color:#111;
+    }
+
+    .sources-card ul{
+      margin:0;
+      padding-left:20px;
+    }
+
+    .sources-card li{
+      font-size:16px;
+      line-height:1.7;
+      color:#1f2937;
     }
 
     footer{
@@ -151,11 +178,6 @@
     }
 
     @media (max-width:700px){
-      .meta-grid{
-        grid-template-columns:1fr;
-        gap:6px 0;
-      }
-
       .hero{
         padding:14px;
       }
@@ -191,34 +213,63 @@
         <h2>Showcard Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-label">Object type</div>
-          <div class="meta-value">Showcard ephemera</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Object type</dt>
+            <dd class="detail-value">Showcard ephemera</dd>
+          </div>
 
-          <div class="meta-label">Title on showcard</div>
-          <div class="meta-value"><em>Eye/Hand Coordination — Annus ... Mirabilis</em></div>
+          <div class="detail-item">
+            <dt class="detail-label">Title on showcard</dt>
+            <dd class="detail-value"><em>Eye/Hand Coordination — Annus ... Mirabilis</em></dd>
+          </div>
 
-          <div class="meta-label">Artist</div>
-          <div class="meta-value">Ron English</div>
+          <div class="detail-item">
+            <dt class="detail-label">Artist</dt>
+            <dd class="detail-value">Ron English</dd>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Kwikwash Gallery</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">Kwikwash Gallery</dd>
+          </div>
 
-          <div class="meta-label">Address</div>
-          <div class="meta-value">3207 Montrose, Houston, Texas</div>
+          <div class="detail-item">
+            <dt class="detail-label">Address</dt>
+            <dd class="detail-value">3207 Montrose, Houston, Texas</dd>
+          </div>
 
-          <div class="meta-label">Documented event</div>
-          <div class="meta-value">Opening reception</div>
+          <div class="detail-item">
+            <dt class="detail-label">Documented event</dt>
+            <dd class="detail-value">Opening reception</dd>
+          </div>
 
-          <div class="meta-label">Documented date</div>
-          <div class="meta-value">December 7</div>
+          <div class="detail-item">
+            <dt class="detail-label">Documented date</dt>
+            <dd class="detail-value">December 7</dd>
+          </div>
 
-          <div class="meta-label">Documented time</div>
-          <div class="meta-value">7–10 p.m.</div>
+          <div class="detail-item">
+            <dt class="detail-label">Documented time</dt>
+            <dd class="detail-value">7–10 p.m.</dd>
+          </div>
 
-          <div class="meta-label">Year</div>
-          <div class="meta-value">c. 1979 / 1980 dating to be confirmed</div>
-        </div>
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">c. 1979 / 1980 dating to be confirmed</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sources-card" aria-label="Sources">
+      <div class="card-head">
+        <h2>Sources</h2>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Showcard for <em>Eye/Hand Coordination — Annus ... Mirabilis</em>, Kwikwash Gallery, 3207 Montrose, Houston, Texas, opening reception December 7, 7–10 p.m.</li>
+        </ul>
       </div>
     </section>
 
