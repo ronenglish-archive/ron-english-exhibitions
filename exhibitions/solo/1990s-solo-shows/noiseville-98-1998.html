@@ -121,23 +121,38 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-label{
-      font-size:13px;
-      letter-spacing:.04em;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
+    }
+
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.6;
+      line-height:1.55;
       color:#111;
     }
 
@@ -176,11 +191,6 @@
     }
 
     @media (max-width:760px){
-      .meta-grid{
-        grid-template-columns:1fr;
-        gap:6px 0;
-      }
-
       .hero img{
         height:340px;
       }
@@ -213,37 +223,57 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1998</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">1998</dd>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Noiseville 98</em></div>
+          <div class="detail-item">
+            <dt class="detail-label">Title</dt>
+            <dd class="detail-value"><em>Noiseville 98</em></dd>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Noiseville Gallery</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">Noiseville Gallery</dd>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">New York, New York, USA</div>
+          <div class="detail-item">
+            <dt class="detail-label">Location</dt>
+            <dd class="detail-value">New York, New York, USA</dd>
+          </div>
 
-          <div class="meta-label">Dates</div>
-          <div class="meta-value">July 31–August 16, 1998</div>
+          <div class="detail-item">
+            <dt class="detail-label">Dates</dt>
+            <dd class="detail-value">July 31–August 16, 1998</dd>
+          </div>
 
-          <div class="meta-label">Format documented by later listing</div>
-          <div class="meta-value">Original silk screen art print for the 1998 Noiseville Gallery show</div>
+          <div class="detail-item">
+            <dt class="detail-label">Format documented by later listing</dt>
+            <dd class="detail-value">Original silk screen art print for the 1998 Noiseville Gallery show</dd>
+          </div>
 
-          <div class="meta-label">Dimensions</div>
-          <div class="meta-value">18 × 24 in. (45.72 × 60.96 cm)</div>
+          <div class="detail-item">
+            <dt class="detail-label">Dimensions</dt>
+            <dd class="detail-value">18 × 24 in. (45.72 × 60.96 cm)</dd>
+          </div>
 
-          <div class="meta-label">Run</div>
-          <div class="meta-value">35</div>
+          <div class="detail-item">
+            <dt class="detail-label">Run</dt>
+            <dd class="detail-value">35</dd>
+          </div>
 
-          <div class="meta-label">Markings</div>
-          <div class="meta-value">Numbered</div>
+          <div class="detail-item">
+            <dt class="detail-label">Markings</dt>
+            <dd class="detail-value">Numbered</dd>
+          </div>
 
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Surviving exhibition poster, archival exhibition record, and later print-market listing</div>
-        </div>
+          <div class="detail-item">
+            <dt class="detail-label">Material documented here</dt>
+            <dd class="detail-value">Surviving exhibition poster, archival exhibition record, and later print-market listing</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -273,6 +303,7 @@
       </div>
       <div class="card-body">
         <ul>
+          <li>Exhibition poster for <em>Noiseville 98</em>, Noiseville Gallery, New York, July 31–August 16, 1998.</li>
           <li>Archival exhibition record for <em>Noiseville 98</em>, Noiseville Gallery, New York, July 31–August 16, 1998.</li>
           <li>DogStreets listing for <em>Noiseville 98</em> by Ron English.</li>
         </ul>
