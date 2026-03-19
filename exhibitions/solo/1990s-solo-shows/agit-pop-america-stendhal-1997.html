@@ -126,33 +126,39 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:flex;
-      flex-direction:column;
-      gap:12px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-row{
-      display:grid;
-      grid-template-columns:190px minmax(0,1fr);
-      gap:18px;
-      align-items:start;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
     }
 
-    .meta-label{
-      font-size:13px;
-      line-height:1.45;
-      letter-spacing:.04em;
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.45;
+      line-height:1.55;
       color:#111;
-      min-width:0;
     }
 
     .card-body p{
@@ -251,11 +257,6 @@
         grid-template-columns:1fr;
       }
 
-      .meta-row{
-        grid-template-columns:1fr;
-        gap:4px;
-      }
-
       .hero img{
         height:340px;
       }
@@ -300,62 +301,62 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-row">
-            <div class="meta-label">Year</div>
-            <div class="meta-value">1990</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">1990</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Title</div>
-            <div class="meta-value"><em>Ron English (FotoFest ’90)</em></div>
+          <div class="detail-item">
+            <dt class="detail-label">Title</dt>
+            <dd class="detail-value"><em>Ron English (FotoFest ’90)</em></dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Venue</div>
-            <div class="meta-value">Thomas V. Robinson / Robinson Galleries</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">Thomas V. Robinson / Robinson Galleries</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Location</div>
-            <div class="meta-value">3733 Westheimer, No. 7, Houston, Texas 77027, USA</div>
+          <div class="detail-item">
+            <dt class="detail-label">Location</dt>
+            <dd class="detail-value">3733 Westheimer, No. 7, Houston, Texas 77027, USA</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Telephone</div>
-            <div class="meta-value">(713) 961-5229</div>
+          <div class="detail-item">
+            <dt class="detail-label">Telephone</dt>
+            <dd class="detail-value">(713) 961-5229</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Entrance</div>
-            <div class="meta-value">Entrance on Westgrove Lane, one block east of Weslayan</div>
+          <div class="detail-item">
+            <dt class="detail-label">Entrance</dt>
+            <dd class="detail-value">Entrance on Westgrove Lane, one block east of Weslayan</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Dates</div>
-            <div class="meta-value">February 11–March 3, 1990</div>
+          <div class="detail-item">
+            <dt class="detail-label">Dates</dt>
+            <dd class="detail-value">February 11–March 3, 1990</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Opening reception</div>
-            <div class="meta-value">Sunday, February 11, 1990, 1:00–6:00 p.m.</div>
+          <div class="detail-item">
+            <dt class="detail-label">Opening reception</dt>
+            <dd class="detail-value">Sunday, February 11, 1990, 1:00–6:00 p.m.</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Gallery hours</div>
-            <div class="meta-value">Tuesday–Saturday, 10:00 a.m. to 5:30 p.m.</div>
+          <div class="detail-item">
+            <dt class="detail-label">Gallery hours</dt>
+            <dd class="detail-value">Tuesday–Saturday, 10:00 a.m. to 5:30 p.m.</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Festival context</div>
-            <div class="meta-value">FotoFest ’90, The International Month of Photography</div>
+          <div class="detail-item">
+            <dt class="detail-label">Festival context</dt>
+            <dd class="detail-value">FotoFest ’90, The International Month of Photography</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Material documented here</div>
-            <div class="meta-value">Exhibition showcard (front and reverse), periodical reproductions, catalogue entry, and documented works associated with the exhibition</div>
+          <div class="detail-item">
+            <dt class="detail-label">Material documented here</dt>
+            <dd class="detail-value">Exhibition showcard (front and reverse), periodical reproductions, catalogue entry, and documented works associated with the exhibition</dd>
           </div>
-        </div>
+        </dl>
       </div>
     </section>
 
