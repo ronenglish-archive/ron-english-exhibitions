@@ -75,39 +75,32 @@
       gap:18px;
     }
 
-    .hero,
-    .meta-card,
-    .works-card,
-    .text-card,
-    .sources-card{
+    .hero, .meta-card, .works-card, .text-card, .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
       background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero img{
       width:100%;
-      max-height:620px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .caption{
-      padding:12px 16px 16px;
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
       border-top:1px solid var(--border);
       background:#fff;
     }
 
-    .meta-card,
-    .works-card,
-    .text-card,
-    .sources-card{
+    .meta-card, .works-card, .text-card, .sources-card{
       margin-top:24px;
     }
 
@@ -158,27 +151,64 @@
     }
 
     .works-note{
-      margin-bottom:14px;
+      margin-bottom:16px;
       color:#1f2937;
     }
 
-    .works-list,
-    .sources-list{
+    .works-gallery{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin-top:10px;
+    }
+
+    .work-card{
+      margin:0;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    .work-card img{
+      width:100%;
+      height:255px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .work-caption{
+      padding:8px 12px 9px;
+      border-top:1px solid var(--border);
+    }
+
+    .work-caption p{
+      margin:0;
+    }
+
+    .work-title{
+      font-size:15px;
+      line-height:1.25;
+      color:#111;
+    }
+
+    .work-year{
+      margin-top:0;
+      font-size:13px;
+      line-height:1.25;
+      color:var(--muted);
+    }
+
+    .sources-card ul{
       margin:0;
       padding-left:20px;
     }
 
-    .works-list li,
-    .sources-list li{
-      margin:0 0 8px;
+    .sources-card li{
       font-size:16px;
-      line-height:1.6;
+      line-height:1.7;
       color:#1f2937;
-    }
-
-    .works-list li:last-child,
-    .sources-list li:last-child{
-      margin-bottom:0;
     }
 
     footer{
@@ -193,21 +223,28 @@
       color:inherit;
     }
 
-    @media (max-width:800px){
-      .hero-grid{
-        grid-template-columns:1fr;
+    @media (max-width:1000px){
+      .works-gallery{
+        grid-template-columns:repeat(2,minmax(0,1fr));
       }
     }
 
-    @media (max-width:700px){
+    @media (max-width:760px){
+      .hero-grid, .works-gallery{
+        grid-template-columns:1fr;
+      }
+
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
       }
+
+      .hero img{
+        height:340px;
+      }
     }
   </style>
 </head>
-
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
@@ -219,23 +256,21 @@
 
     <header>
       <h1><em>Revisionist Modernism</em></h1>
-      <p class="subtitle">
-        Museum of Contemporary Art, Washington, D.C., 1994–1995.
-      </p>
+      <p class="subtitle">The Museum of Contemporary Art in D.C., Washington, D.C., 1994–1995.</p>
     </header>
 
     <section class="hero-grid" aria-label="Exhibition ephemera">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Revisionist-Modernism-2 copy.jpg" alt="Exhibition card for Revisionist Modernism, Museum of Contemporary Art, Washington, D.C., 1994–1995">
+        <img src="../../images/Exhibitions/Solo/Revisionist-Modernism-1 copy.jpg" alt="Exhibition card for Revisionist Modernism">
         <div class="caption">
-          Exhibition card for <em>Revisionist Modernism</em>. The painting reproduced on the front is <em>Color Corrected</em>.
+          Exhibition card for <em>Revisionist Modernism</em>.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Revisionist-Modernism-1 copy.jpg" alt="Additional archival image associated with Revisionist Modernism">
+        <img src="../../images/Exhibitions/Solo/Revisionist-Modernism-2 copy.jpg" alt="Reverse side of the exhibition card for Revisionist Modernism">
         <div class="caption">
-          Additional archival image associated with <em>Revisionist Modernism</em>.
+          Reverse side of the exhibition card, listing dates, venue information, gallery hours, and the note that the front reproduces <em>Color Corrected</em>, 1994, oil on canvas, 48 × 34 in.
         </div>
       </div>
     </section>
@@ -253,40 +288,109 @@
           <div class="meta-value"><em>Revisionist Modernism</em></div>
 
           <div class="meta-label">Venue</div>
-          <div class="meta-value">Museum of Contemporary Art</div>
+          <div class="meta-value">The Museum of Contemporary Art in D.C.</div>
+
+          <div class="meta-label">Alternative venue styling in press</div>
+          <div class="meta-value">Clark &amp; Company’s Museum of Contemporary Art; Clark &amp; Co.</div>
 
           <div class="meta-label">Location</div>
-          <div class="meta-value">Washington, D.C., USA</div>
+          <div class="meta-value">1054 31st N.W., Georgetown, Washington, D.C., USA</div>
 
-          <div class="meta-label">Dates</div>
+          <div class="meta-label">Telephone</div>
+          <div class="meta-value">(202) 342-6230</div>
+
+          <div class="meta-label">Dates on exhibition card</div>
           <div class="meta-value">December 2, 1994–January 1, 1995</div>
 
-          <div class="meta-label">Opening reception</div>
-          <div class="meta-value">December 1, 1994, 6:00–9:00 p.m.</div>
+          <div class="meta-label">Opening on exhibition card</div>
+          <div class="meta-value">December 2, 1994, 6:00–9:00 p.m.</div>
 
-          <div class="meta-label">Contemporary venue note</div>
-          <div class="meta-value">A <em>Where Washington</em> notice places the opening at 1054 31st Street NW, Georgetown, Washington, D.C.</div>
+          <div class="meta-label">Gallery hours on exhibition card</div>
+          <div class="meta-value">Wednesday–Saturday, 1:00–7:00 p.m.</div>
+
+          <div class="meta-label">Additional dates in press</div>
+          <div class="meta-value"><em>Where Washington</em> lists a reception on December 1, 1994, 6:00–9:00 p.m.; <em>The Georgetowner</em> states that the exhibition continued through December 31, 1994.</div>
 
           <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Exhibition card, contemporary press coverage, and confirmed works documented from the exhibition</div>
+          <div class="meta-value">Exhibition card and contemporary press coverage naming works shown in the exhibition.</div>
         </div>
       </div>
     </section>
 
-    <section class="works-card" aria-label="Confirmed works documented here">
+    <section class="works-card" aria-label="Documented works associated with the exhibition">
       <div class="card-head">
-        <h2>Confirmed Works Documented Here</h2>
+        <h2>Documented Works Associated with the Exhibition</h2>
       </div>
       <div class="card-body">
         <p class="works-note">
-          The following works are directly documented by surviving exhibition ephemera and contemporary press coverage.
+          The following titles are directly documented in the surviving exhibition card and contemporary press coverage. The exhibition card explicitly identifies <em>Color Corrected</em> as oil on canvas; the reviews name the other exhibited works without giving medium.
         </p>
-        <ul class="works-list">
-          <li><em>Color Corrected</em> — reproduced on the front of the exhibition card.</li>
-          <li><em>10,000 Surrealists</em> — illustrated in <em>Where Washington</em>, December 1994.</li>
-        </ul>
-      </div>
-    </section>
+
+   <div class="works-gallery">
+  <figure class="work-card">
+    <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-1-L.jpg" alt="The Anti-Warhol, Panel 1 by Ron English">
+    <figcaption class="work-caption">
+      <p class="work-title"><em>The Anti-Warhol</em>, Panel 1</p>
+      <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
+    </figcaption>
+  </figure>
+
+  <figure class="work-card">
+    <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-2-L.jpg" alt="The Anti-Warhol, Panel 2 by Ron English">
+    <figcaption class="work-caption">
+      <p class="work-title"><em>The Anti-Warhol</em>, Panel 2</p>
+      <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
+    </figcaption>
+  </figure>
+
+  <figure class="work-card">
+    <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-3-L.jpg" alt="The Anti-Warhol, Panel 3 by Ron English">
+    <figcaption class="work-caption">
+      <p class="work-title"><em>The Anti-Warhol</em>, Panel 3</p>
+      <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
+    </figcaption>
+  </figure>
+
+  <figure class="work-card">
+    <img src="../../images/Exhibitions/Solo/Paintings/The-Anti-Warhol-Panel-4-L.jpg" alt="The Anti-Warhol, Panel 4 by Ron English">
+    <figcaption class="work-caption">
+      <p class="work-title"><em>The Anti-Warhol</em>, Panel 4</p>
+      <p class="work-year">Named in <em>The Washington Post</em>, January 6, 1995</p>
+    </figcaption>
+  </figure>
+
+  <figure class="work-card">
+    <img src="../../images/Exhibitions/Solo/Paintings/Hot-Artist.jpg" alt="Hot Artist by Ron English">
+    <figcaption class="work-caption">
+      <p class="work-title"><em>Hot Artist</em></p>
+      <p class="work-year">Named in <em>The Georgetowner</em>, December 9, 1994</p>
+    </figcaption>
+  </figure>
+
+  <figure class="work-card">
+    <img src="../../images/Exhibitions/Solo/Paintings/Blue-Period-Action-Painting.jpg" alt="Blue Period Action Painting by Ron English">
+    <figcaption class="work-caption">
+      <p class="work-title"><em>Blue Period Action Painting</em></p>
+      <p class="work-year">Related file supplied for the work discussed in period coverage as <em>Action Painting</em></p>
+    </figcaption>
+  </figure>
+
+  <figure class="work-card">
+    <img src="../../images/Exhibitions/Solo/Paintings/Harmonic-Scream.jpg" alt="Harmonic Scream by Ron English">
+    <figcaption class="work-caption">
+      <p class="work-title"><em>Harmonic Scream</em></p>
+      <p class="work-year">Included from supplied exhibition painting files</p>
+    </figcaption>
+  </figure>
+
+  <figure class="work-card">
+    <img src="../../images/Exhibitions/Solo/Paintings/Literal-Cubism.jpg" alt="Literal Cubism by Ron English">
+    <figcaption class="work-caption">
+      <p class="work-title"><em>Literal Cubism</em></p>
+      <p class="work-year">Included from supplied exhibition painting files</p>
+    </figcaption>
+  </figure>
+</div>
 
     <section class="text-card" aria-label="Notes">
       <div class="card-head">
@@ -294,16 +398,22 @@
       </div>
       <div class="card-body">
         <p>
-          Ron English presented <em>Revisionist Modernism</em> in Washington, D.C., in late 1994 and early 1995. The surviving exhibition card documents the show visually and identifies <em>Color Corrected</em> as the painting reproduced on its front.
+          The reverse side of the surviving exhibition card gives the venue as The Museum of Contemporary Art in D.C., lists the address as 1054 31st N.W. in Georgetown, and prints the exhibition dates as December 2, 1994–January 1, 1995.
         </p>
         <p>
-          Contemporary coverage in <em>Where Washington</em>, December 1994, describes the exhibition as a group of irreverent reworkings of twentieth-century art icons and clichés. That notice specifically mentions <em>10,000 Surrealists</em> and frames the show as a broad homage to figures including Picasso, Frida Kahlo, and Norman Rockwell.
+          That same card lists gallery hours as Wednesday through Saturday, 1:00–7:00 p.m., and identifies the image on the front as <em>Color Corrected</em>, 1994, oil on canvas, 48 × 34 in.
         </p>
         <p>
-          The <em>Where Washington</em> notice also gives additional opening information, stating that the exhibition opened with a reception on December 1 from 6:00 to 9:00 p.m. at 1054 31st Street NW in Georgetown. This contemporary address note helps clarify the Washington presentation alongside other sources that associate the show with the Museum of Contemporary Art.
+          A notice in <em>Where Washington</em>, December 1994, refers to the exhibition as <em>Revisionist Art History</em>, reproduces <em>10,000 Surrealists</em>, and gives the reception date as December 1, 1994, from 6:00 to 9:00 p.m.
         </p>
         <p>
-          In period coverage, the exhibition is sometimes described with slightly different wording, including the phrase “Revisionist Art History,” but the sources clearly point to the same Washington showing at the end of 1994.
+          <em>The Georgetowner</em>, December 9, 1994, refers to the show as “Revisionist Modernism: New Works by Ron English” at Clark &amp; Company’s Museum of Contemporary Art and states that it continued through December 31, 1994.
+        </p>
+        <p>
+          Lee Fleming’s review “Joshing With the Masters” names additional works shown in the exhibition, including <em>Luncheon on the Grass</em>, <em>Money Is the Root of All Art</em>, <em>The Anti-Warhol</em>, and <em>Ron in My Thoughts</em>.
+        </p>
+        <p>
+          Because the surviving sources do not agree perfectly on the title and opening date, this page preserves the wording and dates as they appear in each documented source rather than harmonizing them.
         </p>
       </div>
     </section>
@@ -313,11 +423,11 @@
         <h2>Sources</h2>
       </div>
       <div class="card-body">
-        <ul class="sources-list">
-          <li>Exhibition card for <em>Revisionist Modernism</em>, Museum of Contemporary Art, Washington, D.C., 1994–1995; front reproducing <em>Color Corrected</em>.</li>
-          <li><em>Where Washington</em>, December 1994, illustrated exhibition notice for Ron English’s Washington show, mentioning <em>10,000 Surrealists</em> and the December 1 opening reception.</li>
-          <li>Lee Fleming, “Galleries: Joshing With the Masters,” <em>The Washington Post</em>, January 6, 1995.</li>
+        <ul>
+          <li>Exhibition card for <em>Revisionist Modernism</em>, The Museum of Contemporary Art in D.C., Washington, D.C., 1994–1995.</li>
+          <li><em>Where Washington</em>, December 1994, illustrated notice for Ron English’s Washington exhibition.</li>
           <li>“Ron English &amp; Gale Fulton Ross,” <em>The Georgetowner</em>, December 9, 1994, p. 6.</li>
+          <li>Lee Fleming, “Joshing With the Masters,” <em>The Washington Post</em>, January 6, 1995.</li>
         </ul>
       </div>
     </section>
