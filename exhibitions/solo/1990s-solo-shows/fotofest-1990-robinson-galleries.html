@@ -127,23 +127,33 @@
     }
 
     .meta-grid{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .meta-row{
       display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+      grid-template-columns:max-content 1fr;
+      gap:18px;
+      align-items:start;
     }
 
     .meta-label{
       font-size:13px;
+      line-height:1.45;
       letter-spacing:.04em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
+      white-space:nowrap;
     }
 
     .meta-value{
       font-size:16px;
-      line-height:1.6;
+      line-height:1.45;
       color:#111;
+      min-width:0;
     }
 
     .card-body p{
@@ -242,9 +252,13 @@
         grid-template-columns:1fr;
       }
 
-      .meta-grid{
+      .meta-row{
         grid-template-columns:1fr;
-        gap:6px 0;
+        gap:4px;
+      }
+
+      .meta-label{
+        white-space:normal;
       }
 
       .hero img{
@@ -284,8 +298,6 @@
           Reverse side of the exhibition showcard for <em>Ron English</em>.
         </div>
       </div>
-
-    
     </section>
 
     <section class="meta-card" aria-label="Exhibition details">
@@ -294,38 +306,60 @@
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1990</div>
+          <div class="meta-row">
+            <div class="meta-label">Year</div>
+            <div class="meta-value">1990</div>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Ron English (FotoFest ’90)</em></div>
+          <div class="meta-row">
+            <div class="meta-label">Title</div>
+            <div class="meta-value"><em>Ron English (FotoFest ’90)</em></div>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Thomas V. Robinson / Robinson Galleries</div>
+          <div class="meta-row">
+            <div class="meta-label">Venue</div>
+            <div class="meta-value">Thomas V. Robinson / Robinson Galleries</div>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">3733 Westheimer, No. 7, Houston, Texas 77027, USA</div>
+          <div class="meta-row">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">3733 Westheimer, No. 7, Houston, Texas 77027, USA</div>
+          </div>
 
-          <div class="meta-label">Telephone</div>
-          <div class="meta-value">(713) 961-5229</div>
+          <div class="meta-row">
+            <div class="meta-label">Telephone</div>
+            <div class="meta-value">(713) 961-5229</div>
+          </div>
 
-          <div class="meta-label">Entrance</div>
-          <div class="meta-value">Entrance on Westgrove Lane, one block east of Weslayan</div>
+          <div class="meta-row">
+            <div class="meta-label">Entrance</div>
+            <div class="meta-value">Entrance on Westgrove Lane, one block east of Weslayan</div>
+          </div>
 
-          <div class="meta-label">Dates</div>
-          <div class="meta-value">February 11–March 3, 1990</div>
+          <div class="meta-row">
+            <div class="meta-label">Dates</div>
+            <div class="meta-value">February 11–March 3, 1990</div>
+          </div>
 
-          <div class="meta-label">Opening reception</div>
-          <div class="meta-value">Sunday, February 11, 1990, 1:00–6:00 p.m.</div>
+          <div class="meta-row">
+            <div class="meta-label">Opening reception</div>
+            <div class="meta-value">Sunday, February 11, 1990, 1:00–6:00 p.m.</div>
+          </div>
 
-          <div class="meta-label">Gallery hours</div>
-          <div class="meta-value">Tuesday–Saturday, 10:00 a.m. to 5:30 p.m.</div>
+          <div class="meta-row">
+            <div class="meta-label">Gallery hours</div>
+            <div class="meta-value">Tuesday–Saturday, 10:00 a.m. to 5:30 p.m.</div>
+          </div>
 
-          <div class="meta-label">Festival context</div>
-          <div class="meta-value">FotoFest ’90, The International Month of Photography</div>
+          <div class="meta-row">
+            <div class="meta-label">Festival context</div>
+            <div class="meta-value">FotoFest ’90, The International Month of Photography</div>
+          </div>
 
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Exhibition showcard (front and reverse), periodical reproductions, catalogue entry, and documented works associated with the exhibition</div>
+          <div class="meta-row">
+            <div class="meta-label">Material documented here</div>
+            <div class="meta-value">Exhibition showcard (front and reverse), periodical reproductions, catalogue entry, and documented works associated with the exhibition</div>
+          </div>
         </div>
       </div>
     </section>
@@ -347,8 +381,6 @@
               <p class="work-year">Documented in the FotoFest ’90 catalogue</p>
             </figcaption>
           </figure>
-
- 
 
           <figure class="work-card">
             <img src="../../../images/Exhibitions/Solo/high-five.jpg" alt="High Five Three by Ron English">
@@ -379,7 +411,7 @@
           The same catalogue text notes prior exhibitions in Houston, Dallas, New York, and Amsterdam, and states that his work was held in collections including the Museum of Contemporary Art in Paris and the Whitney Museum in New York.
         </p>
         <p>
-          Margaret Daugherty’s “For art’s sake,” published in <em>Houston: The Magazine for Business</em>, describes English’s photographs as merging actual persons and places, his own hand-drawn cardboard figures, and a flattening of space. The article also notes the inclusion of <em>American Sideshows</em>.
+          Margaret Daugherty’s “For art’s sake,” published in <em>Houston: The Magazine for Business</em>, February 1990, describes English’s photographs as merging actual persons and places, his own hand-drawn cardboard figures, and a flattening of space. The article also notes the inclusion of <em>American Sideshows</em>.
         </p>
         <p>
           The front of the surviving showcard reproduces <em>Out of the Frying Pan</em>, while the FotoFest ’90 catalogue documents <em>Poker</em>, and contemporaneous magazine coverage reproduces <em>High Five Three</em>.
