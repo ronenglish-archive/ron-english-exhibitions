@@ -127,23 +127,33 @@
     }
 
     .meta-grid{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .meta-row{
       display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+      grid-template-columns:max-content 1fr;
+      gap:18px;
+      align-items:start;
     }
 
     .meta-label{
       font-size:13px;
+      line-height:1.45;
       letter-spacing:.04em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
+      white-space:nowrap;
     }
 
     .meta-value{
       font-size:16px;
-      line-height:1.6;
+      line-height:1.45;
       color:#111;
+      min-width:0;
     }
 
     .card-body p{
@@ -185,9 +195,13 @@
         grid-template-columns:1fr;
       }
 
-      .meta-grid{
+      .meta-row{
         grid-template-columns:1fr;
-        gap:6px 0;
+        gap:4px;
+      }
+
+      .meta-label{
+        white-space:normal;
       }
 
       .hero img{
@@ -235,23 +249,35 @@
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1993</div>
+          <div class="meta-row">
+            <div class="meta-label">Year</div>
+            <div class="meta-value">1993</div>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Recent Works by Ron English</em></div>
+          <div class="meta-row">
+            <div class="meta-label">Title</div>
+            <div class="meta-value"><em>Recent Works by Ron English</em></div>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Debris at USA / Big Bottom Lounge</div>
+          <div class="meta-row">
+            <div class="meta-label">Venue</div>
+            <div class="meta-value">Debris at USA / Big Bottom Lounge</div>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">New York City, New York, USA</div>
+          <div class="meta-row">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">New York City, New York, USA</div>
+          </div>
 
-          <div class="meta-label">Date</div>
-          <div class="meta-value">March 24, 1993</div>
+          <div class="meta-row">
+            <div class="meta-label">Date</div>
+            <div class="meta-value">March 24, 1993</div>
+          </div>
 
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Showcard and additional archival image</div>
+          <div class="meta-row">
+            <div class="meta-label">Material documented here</div>
+            <div class="meta-value">Showcard and additional archival image</div>
+          </div>
         </div>
       </div>
     </section>
