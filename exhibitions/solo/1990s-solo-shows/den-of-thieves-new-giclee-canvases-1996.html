@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>New Giclée Canvases | Ron English Catalogue Raisonné</title>
+  <title>New Giclee Canvases | Ron English Catalogue Raisonné</title>
 
   <link rel="stylesheet" href="../../css/styles.css" />
 
@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,7 +65,6 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
@@ -76,40 +75,33 @@
       gap:18px;
     }
 
-    .hero{
+    .hero, .meta-card, .text-card, .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
       background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero img{
       width:100%;
-      max-height:620px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .caption{
-      padding:12px 16px 16px;
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
       border-top:1px solid var(--border);
       background:#fff;
     }
 
-    .meta-card,
-    .text-card,
-    .sources-card{
+    .meta-card, .text-card, .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -129,7 +121,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -177,49 +169,45 @@
       font-size:14px;
     }
 
-    @media (max-width:800px){
+    footer a{
+      color:inherit;
+    }
+
+    @media (max-width:760px){
       .hero-grid{
         grid-template-columns:1fr;
       }
-    }
 
-    @media (max-width:700px){
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
       }
+
+      .hero img{
+        height:340px;
+      }
     }
   </style>
 </head>
-
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Exhibitions</a>
-      <a class="nav-pill" href="../index.html">Solo exhibitions</a>
-      <a class="nav-pill" href="../2000s-solo-exhibitions.html">2000s</a>
+      <a class="nav-pill" href="index.html">Solo exhibitions</a>
+      <a class="nav-pill" href="1990s-solo-exhibitions.html">1990s</a>
     </nav>
 
     <header>
-      <h1><em>New Giclée Canvases</em></h1>
-      <p class="subtitle">
-        Den of Thieves, New York, 1996.
-      </p>
+      <h1><em>New Giclee Canvases</em></h1>
+      <p class="subtitle">Den of Thieves, New York, New York, 1996.</p>
     </header>
 
-    <section class="hero-grid" aria-label="Exhibition images">
+    <section class="hero-grid" aria-label="Exhibition ephemera">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/denofthieves.jpg" alt="Ron English — New Giclée Canvases, Den of Thieves, 1996">
+        <img src="../../images/Exhibitions/Solo/den-of-thieves.jpg" alt="Promotional card for New Giclee Canvases by Ron English at Den of Thieves, New York, April 11, 1996">
         <div class="caption">
-          Show card for <em>New Giclée Canvases</em>, Den of Thieves, New York, 1996.
-        </div>
-      </div>
-
-      <div class="hero">
-        <img src="../../images/Exhibitions/Solo/den-of-thieves.jpg" alt="Ron English — New Giclée Canvases, Den of Thieves, 1996">
-        <div class="caption">
-          Additional archival image for <em>New Giclée Canvases</em>.
+          Promotional card for <em>New Giclee Canvases</em> by Ron English, presented by Camel &amp; Den of Thieves, Thursday, April 11, 1996, 10 p.m.
         </div>
       </div>
     </section>
@@ -234,19 +222,37 @@
           <div class="meta-value">1996</div>
 
           <div class="meta-label">Title</div>
-          <div class="meta-value"><em>New Giclée Canvases</em></div>
+          <div class="meta-value"><em>New Giclee Canvases</em></div>
+
+          <div class="meta-label">Artist</div>
+          <div class="meta-value">Ron English</div>
 
           <div class="meta-label">Venue</div>
           <div class="meta-value">Den of Thieves</div>
 
           <div class="meta-label">Location</div>
-          <div class="meta-value">New York, New York, USA</div>
+          <div class="meta-value">145 E. Houston St., New York, N.Y., USA</div>
+
+          <div class="meta-label">Telephone</div>
+          <div class="meta-value">477-5005</div>
 
           <div class="meta-label">Date</div>
-          <div class="meta-value">April 11, 1996</div>
+          <div class="meta-value">Thursday, April 11, 1996</div>
+
+          <div class="meta-label">Time</div>
+          <div class="meta-value">10 p.m.</div>
 
           <div class="meta-label">Presented by</div>
-          <div class="meta-value">Camel Lights (event sponsor)</div>
+          <div class="meta-value">Camel &amp; Den of Thieves</div>
+
+          <div class="meta-label">Card text</div>
+          <div class="meta-value">“New Giclee Canvases by Agit-Pop Prophet Ron English”</div>
+
+          <div class="meta-label">Canvas editions by</div>
+          <div class="meta-value">Canvas Imaging, 118 East 59th Street, Suite 403, New York, N.Y. 10022, (212) 980-2984</div>
+
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Surviving promotional card</div>
         </div>
       </div>
     </section>
@@ -257,13 +263,13 @@
       </div>
       <div class="card-body">
         <p>
-          Held at the downtown nightclub <em>Den of Thieves</em>, this late-night Camel Lights–sponsored event showcased a selection of Ron English’s new giclée canvases.
+          The surviving card advertises <em>New Giclee Canvases</em> by Ron English at Den of Thieves in New York on Thursday, April 11, 1996, at 10 p.m.
         </p>
         <p>
-          During the mid-1990s, English was expanding the use of digital printing technologies in his practice and pairing them with hand-painted interventions. This compact solo presentation highlighted that experimental direction while placing his work in the center of New York’s nightlife scene, where fashion, advertising, and counterculture collided.
+          The same card states that the event was presented by Camel &amp; Den of Thieves and describes Ron English as an “Agit-Pop Prophet.”
         </p>
         <p>
-          The surviving show card emphasizes the hybrid atmosphere of the event, pairing fine art with a nightclub setting and reflecting English’s tendency to bridge commercial imagery with artistic critique.
+          It also includes production information for the canvas editions, naming Canvas Imaging at 118 East 59th Street, Suite 403, New York, N.Y. 10022, with telephone number (212) 980-2984.
         </p>
       </div>
     </section>
@@ -274,13 +280,13 @@
       </div>
       <div class="card-body">
         <ul>
-          <li>Show card: <em>New Giclée Canvases — Den of Thieves</em> (Camel Lights / Den of Thieves, New York, April 11, 1996).</li>
+          <li>Promotional card for <em>New Giclee Canvases</em>, Camel &amp; Den of Thieves, Den of Thieves, New York, Thursday, April 11, 1996, 10 p.m.</li>
         </ul>
       </div>
     </section>
 
     <footer>
-      <a href="../1990s-solo-exhibitions.html#den-of-thieves-new-giclee-canvases-1996-row">Back to 1990s solo exhibitions</a>
+      <a href="1990s-solo-exhibitions.html#den-of-thieves-new-giclee-canvases-1996-row">Back to 1990s solo exhibitions</a>
     </footer>
   </main>
 </body>
