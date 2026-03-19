@@ -126,23 +126,38 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-label{
-      font-size:13px;
-      letter-spacing:.04em;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
+    }
+
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.6;
+      line-height:1.55;
       color:#111;
     }
 
@@ -242,11 +257,6 @@
         grid-template-columns:1fr;
       }
 
-      .meta-grid{
-        grid-template-columns:1fr;
-        gap:6px 0;
-      }
-
       .hero img{
         height:340px;
       }
@@ -291,31 +301,47 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1990</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">1990</dd>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Pavlov’s Dog: The Last Supper and Other Paintings</em></div>
+          <div class="detail-item">
+            <dt class="detail-label">Title</dt>
+            <dd class="detail-value"><em>Pavlov’s Dog: The Last Supper and Other Paintings</em></dd>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Red Zone</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">Red Zone</dd>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">440 W 54th St, New York City, New York, USA</div>
+          <div class="detail-item">
+            <dt class="detail-label">Location</dt>
+            <dd class="detail-value">440 W 54th St, New York City, New York, USA</dd>
+          </div>
 
-          <div class="meta-label">Opening</div>
-          <div class="meta-value">Friday, May 25, 1990</div>
+          <div class="detail-item">
+            <dt class="detail-label">Opening</dt>
+            <dd class="detail-value">Friday, May 25, 1990</dd>
+          </div>
 
-          <div class="meta-label">Host</div>
-          <div class="meta-value">Fred Rothbell-Mista</div>
+          <div class="detail-item">
+            <dt class="detail-label">Host</dt>
+            <dd class="detail-value">Fred Rothbell-Mista</dd>
+          </div>
 
-          <div class="meta-label">Admission note</div>
-          <div class="meta-value">$5 admission option noted on the invitation</div>
+          <div class="detail-item">
+            <dt class="detail-label">Admission note</dt>
+            <dd class="detail-value">$5 admission option noted on the invitation</dd>
+          </div>
 
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Invitation card (front and reverse) and documented works reproduced on the show card</div>
-        </div>
+          <div class="detail-item">
+            <dt class="detail-label">Material documented here</dt>
+            <dd class="detail-value">Invitation card (front and reverse) and documented works reproduced on the show card</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
