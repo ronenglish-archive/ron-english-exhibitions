@@ -29,7 +29,7 @@
     }
 
     .wrap{
-      max-width:1000px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -65,7 +65,6 @@
       font-size:18px;
       line-height:1.55;
       color:var(--muted);
-      max-width:70ch;
       margin:0;
     }
 
@@ -76,40 +75,33 @@
       gap:18px;
     }
 
-    .hero{
+    .hero, .meta-card, .works-card, .text-card, .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
       background:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .hero img{
       width:100%;
-      max-height:620px;
+      height:400px;
       object-fit:contain;
       display:block;
       background:#f3f4f6;
     }
 
     .caption{
-      padding:12px 16px 16px;
+      padding:10px 14px 12px;
       font-size:14px;
-      line-height:1.5;
+      line-height:1.45;
       color:var(--muted);
       border-top:1px solid var(--border);
       background:#fff;
     }
 
-    .meta-card,
-    .text-card,
-    .sources-card{
+    .meta-card, .works-card, .text-card, .sources-card{
       margin-top:24px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
     }
 
     .card-head{
@@ -129,7 +121,7 @@
 
     .meta-grid{
       display:grid;
-      grid-template-columns:180px 1fr;
+      grid-template-columns:190px 1fr;
       gap:12px 18px;
     }
 
@@ -158,6 +150,56 @@
       margin-bottom:0;
     }
 
+    .works-note{
+      margin-bottom:16px;
+      color:#1f2937;
+    }
+
+    .works-gallery{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin-top:10px;
+    }
+
+    .work-card{
+      margin:0;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    .work-card img{
+      width:100%;
+      height:255px;
+      object-fit:contain;
+      display:block;
+      background:#f3f4f6;
+    }
+
+    .work-caption{
+      padding:8px 12px 9px;
+      border-top:1px solid var(--border);
+    }
+
+    .work-caption p{
+      margin:0;
+    }
+
+    .work-title{
+      font-size:15px;
+      line-height:1.25;
+      color:#111;
+    }
+
+    .work-year{
+      margin-top:0;
+      font-size:13px;
+      line-height:1.25;
+      color:var(--muted);
+    }
+
     .sources-card ul{
       margin:0;
       padding-left:20px;
@@ -177,63 +219,72 @@
       font-size:14px;
     }
 
-    @media (max-width:800px){
-      .hero-grid{
-        grid-template-columns:1fr;
+    footer a{
+      color:inherit;
+    }
+
+    @media (max-width:1000px){
+      .works-gallery{
+        grid-template-columns:repeat(2,minmax(0,1fr));
       }
     }
 
-    @media (max-width:700px){
+    @media (max-width:760px){
+      .hero-grid, .works-gallery{
+        grid-template-columns:1fr;
+      }
+
       .meta-grid{
         grid-template-columns:1fr;
         gap:6px 0;
       }
+
+      .hero img{
+        height:340px;
+      }
     }
   </style>
 </head>
-
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Exhibitions</a>
-      <a class="nav-pill" href="../index.html">Solo exhibitions</a>
-      <a class="nav-pill" href="../1990s-solo-exhibitions.html">1990s</a>
+      <a class="nav-pill" href="index.html">Solo exhibitions</a>
+      <a class="nav-pill" href="1990s-solo-exhibitions.html">1990s</a>
     </nav>
 
     <header>
       <h1><em>Agit-Pop America</em></h1>
-      <p class="subtitle">
-        Gallery Stendhal, New York, 1997.
-      </p>
+      <p class="subtitle">Gallery Stendhal, New York, New York, 1997.</p>
     </header>
 
-    <section class="hero-grid" aria-label="Exhibition images">
+    <section class="hero-grid" aria-label="Showcard, after-party flyer, review spread, and related printed material">
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Agit-Pop-a2.jpg" alt="Ron English — Agit-Pop America, Gallery Stendhal, 1997">
+        <img src="../../images/Exhibitions/Solo/Agit-Pop-1.jpg" alt="Invitation card for Agit-Pop America, New Works by Ron English, Gallery Stendhal, New York, 1997">
         <div class="caption">
-          Exhibition card for <em>Agit-Pop America</em>, Gallery Stendhal, New York, 1997.
+          Invitation card for <em>Agit-Pop America: New Works by Ron English</em>, announcing the exhibition dates of April 3 to April 30, 1997, and a cocktail reception on Thursday, April 3, from 6 p.m. to 9 p.m.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Agit-Pop-1.jpg" alt="Ron English — Agit-Pop America, Gallery Stendhal, 1997">
+        <img src="../../images/Exhibitions/Solo/Agit-pop-after-party.jpg" alt="Official after-party flyer for Ron English, Agit-Pop America, Gallery Stendhal, 1997">
         <div class="caption">
-          Additional exhibition material for <em>Agit-Pop America</em>.
+          Official after-party flyer for <em>Agit-Pop America</em>, held Thursday, April 3, 1997, at Opera, 539 W 21st St., New York.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Agit-Pop America, 1997.jpg" alt="Ron English — Agit-Pop America, Gallery Stendhal, 1997">
+        <img src="../../images/Exhibitions/Solo/Agit-Pop-a2.jpg" alt="Printed promotional piece for Agit-Pop America, New Works by Ron English, featuring Culture Wars">
         <div class="caption">
-          Archival reproduction associated with <em>Agit-Pop America</em>.
+          Printed promotional piece for <em>Agit-Pop America</em> featuring a reproduction of <em>Culture Wars</em>, 1996, 40 × 90 in., oil on canvas.
         </div>
       </div>
 
       <div class="hero">
-        <img src="../../images/Exhibitions/Solo/Agit-pop-after-party.jpg" alt="After-party flyer for Ron English — Agit-Pop America, 1997">
+        <img src="../../images/Exhibitions/Solo/Agit-Pop America, 1997.jpg" alt="Review spread titled Agit-Pop America by Tarssa Yazdani">
         <div class="caption">
-          Printed after-party flyer connected to the opening of <em>Agit-Pop America</em>.
+          Review spread titled <em>Agit-Pop America</em> by Tarssa Yazdani. The publication title and date are not identified here.
         </div>
       </div>
     </section>
@@ -257,13 +308,49 @@
           <div class="meta-value">386 West Broadway, 2nd floor, New York, NY 10012, USA</div>
 
           <div class="meta-label">Dates</div>
-          <div class="meta-value">April 3 – April 30, 1997</div>
+          <div class="meta-value">April 3–April 30, 1997</div>
 
           <div class="meta-label">Opening reception</div>
-          <div class="meta-value">April 3, 1997, 6–9 p.m.</div>
+          <div class="meta-value">Thursday, April 3, 1997, 6 p.m. to 9 p.m.</div>
+
+          <div class="meta-label">Telephone</div>
+          <div class="meta-value">212.334.4649</div>
+
+          <div class="meta-label">Fax</div>
+          <div class="meta-value">212.334.4609</div>
+
+          <div class="meta-label">E-mail</div>
+          <div class="meta-value">Stendhal@NetworkAmerica.com</div>
 
           <div class="meta-label">Related event</div>
-          <div class="meta-value">Official after-party at Opera, 539 W. 21st Street, New York, April 3, 1997</div>
+          <div class="meta-value">Official after-party at Opera, 539 W 21st St. (between 10th &amp; 11th), New York, Thursday, April 3, 1997</div>
+
+          <div class="meta-label">After-party hosts</div>
+          <div class="meta-value">Reuben Rubin and Lee Klein</div>
+
+          <div class="meta-label">Material documented here</div>
+          <div class="meta-value">Invitation card, after-party flyer, printed promotional piece, and review spread</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-card" aria-label="Documented works associated with the exhibition">
+      <div class="card-head">
+        <h2>Documented Works Associated with the Exhibition</h2>
+      </div>
+      <div class="card-body">
+        <p class="works-note">
+          The following work is identified in the printed promotional material associated with the exhibition.
+        </p>
+
+        <div class="works-gallery">
+          <figure class="work-card">
+            <img src="../../images/Exhibitions/Solo/Paintings/Culture-Wars.jpg" alt="Culture Wars by Ron English">
+            <figcaption class="work-caption">
+              <p class="work-title"><em>Culture Wars</em></p>
+              <p class="work-year">1996, 40 × 90 in., oil on canvas</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -274,13 +361,19 @@
       </div>
       <div class="card-body">
         <p>
-          <em>Agit-Pop America</em> presented new works by Ron English at Gallery Stendhal in April 1997. The exhibition sits within a period when English was sharpening his use of American commercial language, political tension, and pop-cultural symbols into a more direct gallery format.
+          The invitation card identifies <em>Agit-Pop America</em> as an exhibition of new works by Ron English at Gallery Stendhal, running from April 3 to April 30, 1997.
         </p>
         <p>
-          Archival writing associated with the show describes works that balance confrontation with ambiguity, drawing on familiar cultural imagery while unsettling the viewer’s expectations. The exhibition title itself points to English’s use of pop visual language as a site of critique rather than celebration.
+          The same card invites viewers to a cocktail reception on Thursday, April 3, from 6 p.m. to 9 p.m., and gives the gallery address as 386 West Broadway, 2nd floor, New York, NY 10012.
         </p>
         <p>
-          The surviving materials also document an opening-night after-party tied to the exhibition, adding to the record of the show’s public presentation in New York during the late 1990s.
+          A related after-party flyer documents an official opening-night event at Opera, 539 W 21st St., with complimentary admission and drinks from 10 to 11, hosted by Reuben Rubin and Lee Klein.
+        </p>
+        <p>
+          A printed promotional piece for the exhibition reproduces <em>Culture Wars</em> and identifies it as a 1996 oil on canvas measuring 40 × 90 in.
+        </p>
+        <p>
+          A review spread titled <em>Agit-Pop America</em> credits Tarssa Yazdani and lists New York, USA, but the publication title and date are not established here.
         </p>
       </div>
     </section>
@@ -291,15 +384,16 @@
       </div>
       <div class="card-body">
         <ul>
-          <li><em>Agit-Pop America</em> showcard, Gallery Stendhal, New York, April 3–30, 1997.</li>
-          <li>Tarssa Yazdani, “Agit-Pop America,” archival clipping.</li>
-          <li><em>Afterparty for Ron English — Agit-Pop America</em>, printed flyer, April 3, 1997.</li>
+          <li>Invitation card for <em>Agit-Pop America: New Works by Ron English</em>, Gallery Stendhal, New York, April 3–30, 1997.</li>
+          <li>Official after-party flyer for Ron English, <em>Agit-Pop America</em>, Thursday, April 3, 1997.</li>
+          <li>Printed promotional piece for <em>Agit-Pop America</em> reproducing <em>Culture Wars</em>, 1996.</li>
+          <li>Review spread titled <em>Agit-Pop America</em> by Tarssa Yazdani.</li>
         </ul>
       </div>
     </section>
 
     <footer>
-      <a href="../1990s-solo-exhibitions.html#agit-pop-america-stendhal-1997-row">Back to 1990s solo exhibitions</a>
+      <a href="1990s-solo-exhibitions.html#agit-pop-america-stendhal-1997-row">Back to 1990s solo exhibitions</a>
     </footer>
   </main>
 </body>
