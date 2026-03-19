@@ -126,45 +126,38 @@
       padding:18px;
     }
 
-    .meta-table{
-      width:100%;
-      border-collapse:collapse;
-      table-layout:fixed;
+    .details-list{
+      margin:0;
     }
 
-    .meta-table th,
-    .meta-table td{
-      padding:10px 0;
-      vertical-align:top;
-      text-align:left;
+    .detail-item{
+      padding:12px 0;
       border-bottom:1px solid #f1f5f9;
     }
 
-    .meta-table tr:first-child th,
-    .meta-table tr:first-child td{
+    .detail-item:first-child{
       padding-top:0;
     }
 
-    .meta-table tr:last-child th,
-    .meta-table tr:last-child td{
+    .detail-item:last-child{
       padding-bottom:0;
       border-bottom:none;
     }
 
-    .meta-table th{
-      width:190px;
-      padding-right:18px;
-      font-size:13px;
-      line-height:1.45;
-      letter-spacing:.04em;
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-table td{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.45;
+      line-height:1.55;
       color:#111;
     }
 
@@ -264,38 +257,6 @@
         grid-template-columns:1fr;
       }
 
-      .meta-table,
-      .meta-table tbody,
-      .meta-table tr,
-      .meta-table th,
-      .meta-table td{
-        display:block;
-        width:100%;
-      }
-
-      .meta-table tr{
-        padding:0 0 10px;
-        margin:0 0 10px;
-        border-bottom:1px solid #f1f5f9;
-      }
-
-      .meta-table tr:last-child{
-        padding-bottom:0;
-        margin-bottom:0;
-        border-bottom:none;
-      }
-
-      .meta-table th,
-      .meta-table td{
-        border-bottom:none;
-        padding:0;
-      }
-
-      .meta-table th{
-        margin-bottom:4px;
-        padding-right:0;
-      }
-
       .hero img{
         height:340px;
       }
@@ -340,54 +301,62 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <table class="meta-table">
-          <tbody>
-            <tr>
-              <th scope="row">Year</th>
-              <td>1990</td>
-            </tr>
-            <tr>
-              <th scope="row">Title</th>
-              <td><em>Ron English (FotoFest ’90)</em></td>
-            </tr>
-            <tr>
-              <th scope="row">Venue</th>
-              <td>Thomas V. Robinson / Robinson Galleries</td>
-            </tr>
-            <tr>
-              <th scope="row">Location</th>
-              <td>3733 Westheimer, No. 7, Houston, Texas 77027, USA</td>
-            </tr>
-            <tr>
-              <th scope="row">Telephone</th>
-              <td>(713) 961-5229</td>
-            </tr>
-            <tr>
-              <th scope="row">Entrance</th>
-              <td>Entrance on Westgrove Lane, one block east of Weslayan</td>
-            </tr>
-            <tr>
-              <th scope="row">Dates</th>
-              <td>February 11–March 3, 1990</td>
-            </tr>
-            <tr>
-              <th scope="row">Opening reception</th>
-              <td>Sunday, February 11, 1990, 1:00–6:00 p.m.</td>
-            </tr>
-            <tr>
-              <th scope="row">Gallery hours</th>
-              <td>Tuesday–Saturday, 10:00 a.m. to 5:30 p.m.</td>
-            </tr>
-            <tr>
-              <th scope="row">Festival context</th>
-              <td>FotoFest ’90, The International Month of Photography</td>
-            </tr>
-            <tr>
-              <th scope="row">Material documented here</th>
-              <td>Exhibition showcard (front and reverse), periodical reproductions, catalogue entry, and documented works associated with the exhibition</td>
-            </tr>
-          </tbody>
-        </table>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">1990</dd>
+          </div>
+
+          <div class="detail-item">
+            <dt class="detail-label">Title</dt>
+            <dd class="detail-value"><em>Ron English (FotoFest ’90)</em></dd>
+          </div>
+
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">Thomas V. Robinson / Robinson Galleries</dd>
+          </div>
+
+          <div class="detail-item">
+            <dt class="detail-label">Location</dt>
+            <dd class="detail-value">3733 Westheimer, No. 7, Houston, Texas 77027, USA</dd>
+          </div>
+
+          <div class="detail-item">
+            <dt class="detail-label">Telephone</dt>
+            <dd class="detail-value">(713) 961-5229</dd>
+          </div>
+
+          <div class="detail-item">
+            <dt class="detail-label">Entrance</dt>
+            <dd class="detail-value">Entrance on Westgrove Lane, one block east of Weslayan</dd>
+          </div>
+
+          <div class="detail-item">
+            <dt class="detail-label">Dates</dt>
+            <dd class="detail-value">February 11–March 3, 1990</dd>
+          </div>
+
+          <div class="detail-item">
+            <dt class="detail-label">Opening reception</dt>
+            <dd class="detail-value">Sunday, February 11, 1990, 1:00–6:00 p.m.</dd>
+          </div>
+
+          <div class="detail-item">
+            <dt class="detail-label">Gallery hours</dt>
+            <dd class="detail-value">Tuesday–Saturday, 10:00 a.m. to 5:30 p.m.</dd>
+          </div>
+
+          <div class="detail-item">
+            <dt class="detail-label">Festival context</dt>
+            <dd class="detail-value">FotoFest ’90, The International Month of Photography</dd>
+          </div>
+
+          <div class="detail-item">
+            <dt class="detail-label">Material documented here</dt>
+            <dd class="detail-value">Exhibition showcard (front and reverse), periodical reproductions, catalogue entry, and documented works associated with the exhibition</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
