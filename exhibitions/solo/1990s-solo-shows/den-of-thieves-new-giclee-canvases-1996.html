@@ -75,7 +75,10 @@
       gap:18px;
     }
 
-    .hero, .meta-card, .text-card, .sources-card{
+    .hero,
+    .meta-card,
+    .text-card,
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
       background:#fff;
@@ -100,7 +103,9 @@
       background:#fff;
     }
 
-    .meta-card, .text-card, .sources-card{
+    .meta-card,
+    .text-card,
+    .sources-card{
       margin-top:24px;
     }
 
@@ -120,23 +125,33 @@
     }
 
     .meta-grid{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .meta-row{
       display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+      grid-template-columns:max-content 1fr;
+      gap:18px;
+      align-items:start;
     }
 
     .meta-label{
       font-size:13px;
+      line-height:1.45;
       letter-spacing:.04em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
+      white-space:nowrap;
     }
 
     .meta-value{
       font-size:16px;
-      line-height:1.6;
+      line-height:1.45;
       color:#111;
+      min-width:0;
     }
 
     .card-body p{
@@ -178,9 +193,13 @@
         grid-template-columns:1fr;
       }
 
-      .meta-grid{
+      .meta-row{
         grid-template-columns:1fr;
-        gap:6px 0;
+        gap:4px;
+      }
+
+      .meta-label{
+        white-space:normal;
       }
 
       .hero img{
@@ -218,41 +237,65 @@
       </div>
       <div class="card-body">
         <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1996</div>
+          <div class="meta-row">
+            <div class="meta-label">Year</div>
+            <div class="meta-value">1996</div>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>New Giclee Canvases</em></div>
+          <div class="meta-row">
+            <div class="meta-label">Title</div>
+            <div class="meta-value"><em>New Giclee Canvases</em></div>
+          </div>
 
-          <div class="meta-label">Artist</div>
-          <div class="meta-value">Ron English</div>
+          <div class="meta-row">
+            <div class="meta-label">Artist</div>
+            <div class="meta-value">Ron English</div>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Den of Thieves</div>
+          <div class="meta-row">
+            <div class="meta-label">Venue</div>
+            <div class="meta-value">Den of Thieves</div>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">145 E. Houston St., New York, N.Y., USA</div>
+          <div class="meta-row">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">145 E. Houston St., New York, N.Y., USA</div>
+          </div>
 
-          <div class="meta-label">Telephone</div>
-          <div class="meta-value">477-5005</div>
+          <div class="meta-row">
+            <div class="meta-label">Telephone</div>
+            <div class="meta-value">477-5005</div>
+          </div>
 
-          <div class="meta-label">Date</div>
-          <div class="meta-value">Thursday, April 11, 1996</div>
+          <div class="meta-row">
+            <div class="meta-label">Date</div>
+            <div class="meta-value">Thursday, April 11, 1996</div>
+          </div>
 
-          <div class="meta-label">Time</div>
-          <div class="meta-value">10 p.m.</div>
+          <div class="meta-row">
+            <div class="meta-label">Time</div>
+            <div class="meta-value">10 p.m.</div>
+          </div>
 
-          <div class="meta-label">Presented by</div>
-          <div class="meta-value">Camel &amp; Den of Thieves</div>
+          <div class="meta-row">
+            <div class="meta-label">Presented by</div>
+            <div class="meta-value">Camel &amp; Den of Thieves</div>
+          </div>
 
-          <div class="meta-label">Card text</div>
-          <div class="meta-value">“New Giclee Canvases by Agit-Pop Prophet Ron English”</div>
+          <div class="meta-row">
+            <div class="meta-label">Card text</div>
+            <div class="meta-value">“New Giclee Canvases by Agit-Pop Prophet Ron English”</div>
+          </div>
 
-          <div class="meta-label">Canvas editions by</div>
-          <div class="meta-value">Canvas Imaging, 118 East 59th Street, Suite 403, New York, N.Y. 10022, (212) 980-2984</div>
+          <div class="meta-row">
+            <div class="meta-label">Canvas editions by</div>
+            <div class="meta-value">Canvas Imaging, 118 East 59th Street, Suite 403, New York, N.Y. 10022, (212) 980-2984</div>
+          </div>
 
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Surviving promotional card</div>
+          <div class="meta-row">
+            <div class="meta-label">Material documented here</div>
+            <div class="meta-value">Surviving promotional card</div>
+          </div>
         </div>
       </div>
     </section>
