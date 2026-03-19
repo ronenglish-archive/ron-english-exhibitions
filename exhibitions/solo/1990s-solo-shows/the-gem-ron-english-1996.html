@@ -75,7 +75,9 @@
       gap:18px;
     }
 
-    .hero, .meta-card, .sources-card{
+    .hero,
+    .meta-card,
+    .sources-card{
       border:1px solid var(--border);
       border-radius:var(--radius);
       background:#fff;
@@ -100,7 +102,8 @@
       background:#fff;
     }
 
-    .meta-card, .sources-card{
+    .meta-card,
+    .sources-card{
       margin-top:24px;
     }
 
@@ -119,23 +122,38 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-label{
-      font-size:13px;
-      letter-spacing:.04em;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
+    }
+
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.6;
+      line-height:1.55;
       color:#111;
     }
 
@@ -165,11 +183,6 @@
     @media (max-width:760px){
       .hero-grid{
         grid-template-columns:1fr;
-      }
-
-      .meta-grid{
-        grid-template-columns:1fr;
-        gap:6px 0;
       }
 
       .hero img{
@@ -213,31 +226,47 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1996</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">1996</dd>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Ron English at The Gem</em></div>
+          <div class="detail-item">
+            <dt class="detail-label">Title</dt>
+            <dd class="detail-value"><em>Ron English at The Gem</em></dd>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">The Gem</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">The Gem</dd>
+          </div>
 
-          <div class="meta-label">Presented with</div>
-          <div class="meta-value">Camel Lights / 01 Gallery</div>
+          <div class="detail-item">
+            <dt class="detail-label">Presented with</dt>
+            <dd class="detail-value">Camel Lights / 01 Gallery</dd>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">Melrose Avenue, Los Angeles, California, USA</div>
+          <div class="detail-item">
+            <dt class="detail-label">Location</dt>
+            <dd class="detail-value">Melrose Avenue, Los Angeles, California, USA</dd>
+          </div>
 
-          <div class="meta-label">Date</div>
-          <div class="meta-value">October 18, 1996</div>
+          <div class="detail-item">
+            <dt class="detail-label">Date</dt>
+            <dd class="detail-value">October 18, 1996</dd>
+          </div>
 
-          <div class="meta-label">Program</div>
-          <div class="meta-value">Solo exhibition with DJ performance and Absolut Vodka-sponsored reception</div>
+          <div class="detail-item">
+            <dt class="detail-label">Program</dt>
+            <dd class="detail-value">Solo exhibition with DJ performance and Absolut Vodka-sponsored reception</dd>
+          </div>
 
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Surviving exhibition ephemera</div>
-        </div>
+          <div class="detail-item">
+            <dt class="detail-label">Material documented here</dt>
+            <dd class="detail-value">Surviving exhibition ephemera</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -247,7 +276,7 @@
       </div>
       <div class="card-body">
         <ul>
-          <li>Show card: <em>Ron English at The Gem</em> (Camel Lights / 01 Gallery, Los Angeles, October 18, 1996).</li>
+          <li>Show card for <em>Ron English at The Gem</em> (Camel Lights / 01 Gallery, Los Angeles, October 18, 1996).</li>
         </ul>
       </div>
     </section>
