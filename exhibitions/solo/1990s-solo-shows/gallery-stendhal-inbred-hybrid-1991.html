@@ -126,23 +126,38 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:grid;
-      grid-template-columns:190px 1fr;
-      gap:12px 18px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-label{
-      font-size:13px;
-      letter-spacing:.04em;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
+    }
+
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.6;
+      line-height:1.55;
       color:#111;
     }
 
@@ -246,11 +261,6 @@
         grid-template-columns:1fr;
       }
 
-      .meta-grid{
-        grid-template-columns:1fr;
-        gap:6px 0;
-      }
-
       .hero img{
         height:340px;
       }
@@ -309,25 +319,37 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">1991</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">1991</dd>
+          </div>
 
-          <div class="meta-label">Title</div>
-          <div class="meta-value"><em>Inbred/Hybrid</em></div>
+          <div class="detail-item">
+            <dt class="detail-label">Title</dt>
+            <dd class="detail-value"><em>Inbred/Hybrid</em></dd>
+          </div>
 
-          <div class="meta-label">Venue</div>
-          <div class="meta-value">Gallery Stendhal</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">Gallery Stendhal</dd>
+          </div>
 
-          <div class="meta-label">Location</div>
-          <div class="meta-value">626 Broadway, 3rd Floor, New York, New York, USA</div>
+          <div class="detail-item">
+            <dt class="detail-label">Location</dt>
+            <dd class="detail-value">626 Broadway, 3rd Floor, New York, New York, USA</dd>
+          </div>
 
-          <div class="meta-label">Dates</div>
-          <div class="meta-value">September 14–October 13, 1991</div>
+          <div class="detail-item">
+            <dt class="detail-label">Dates</dt>
+            <dd class="detail-value">September 14–October 13, 1991</dd>
+          </div>
 
-          <div class="meta-label">Material documented here</div>
-          <div class="meta-value">Exhibition card (front and reverse), archival reproduction, printed advertisement, contemporary magazine coverage, and confirmed works exhibited</div>
-        </div>
+          <div class="detail-item">
+            <dt class="detail-label">Material documented here</dt>
+            <dd class="detail-value">Exhibition card (front and reverse), archival reproduction, printed advertisement, contemporary magazine coverage, and confirmed works exhibited</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -437,6 +459,7 @@
       </div>
       <div class="card-body">
         <ul>
+          <li>Exhibition card for <em>Inbred/Hybrid</em>, Gallery Stendhal, 626 Broadway, 3rd Floor, New York, New York, September 14–October 13, 1991.</li>
           <li><em>HYPE Magazine</em>, “applying ENGLISH to POP ART,” text by Mutant, October 1991.</li>
           <li><em>Cover</em>, September 1991, p. 9, full-page advertisement for <em>Inbred/Hybrid</em>.</li>
           <li><em>Cover</em>, October 1991, p. 16, “Ron English,” by Eric Monder, under “Gallery Stendhal.”</li>
