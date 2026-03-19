@@ -126,34 +126,39 @@
       padding:18px;
     }
 
-    .meta-grid{
-      display:flex;
-      flex-direction:column;
-      gap:12px;
+    .details-list{
+      margin:0;
     }
 
-    .meta-row{
-      display:grid;
-      grid-template-columns:max-content 1fr;
-      gap:18px;
-      align-items:start;
+    .detail-item{
+      padding:12px 0;
+      border-bottom:1px solid #f1f5f9;
     }
 
-    .meta-label{
-      font-size:13px;
-      line-height:1.45;
-      letter-spacing:.04em;
+    .detail-item:first-child{
+      padding-top:0;
+    }
+
+    .detail-item:last-child{
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .detail-label{
+      margin:0 0 4px;
+      font-size:12px;
+      line-height:1.2;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color:#6b7280;
       font-weight:700;
-      white-space:nowrap;
     }
 
-    .meta-value{
+    .detail-value{
+      margin:0;
       font-size:16px;
-      line-height:1.45;
+      line-height:1.55;
       color:#111;
-      min-width:0;
     }
 
     .card-body p{
@@ -252,15 +257,6 @@
         grid-template-columns:1fr;
       }
 
-      .meta-row{
-        grid-template-columns:1fr;
-        gap:4px;
-      }
-
-      .meta-label{
-        white-space:normal;
-      }
-
       .hero img{
         height:340px;
       }
@@ -298,47 +294,47 @@
         <h2>Exhibition Details</h2>
       </div>
       <div class="card-body">
-        <div class="meta-grid">
-          <div class="meta-row">
-            <div class="meta-label">Year</div>
-            <div class="meta-value">1992</div>
+        <dl class="details-list">
+          <div class="detail-item">
+            <dt class="detail-label">Year</dt>
+            <dd class="detail-value">1992</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Title used here</div>
-            <div class="meta-value"><em>Ron English at Clark &amp; Company</em></div>
+          <div class="detail-item">
+            <dt class="detail-label">Title used here</dt>
+            <dd class="detail-value"><em>Ron English at Clark &amp; Company</em></dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Venue</div>
-            <div class="meta-value">Clark &amp; Company / Galleries 1054</div>
+          <div class="detail-item">
+            <dt class="detail-label">Venue</dt>
+            <dd class="detail-value">Clark &amp; Company / Galleries 1054</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Location</div>
-            <div class="meta-value">Washington, D.C., USA</div>
+          <div class="detail-item">
+            <dt class="detail-label">Location</dt>
+            <dd class="detail-value">Washington, D.C., USA</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Published notice</div>
-            <div class="meta-value"><em>The Georgetowner</em>, November 19–December 2, 1992, p. 15</div>
+          <div class="detail-item">
+            <dt class="detail-label">Published notice</dt>
+            <dd class="detail-value"><em>The Georgetowner</em>, November 19–December 2, 1992, p. 15</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Closing date</div>
-            <div class="meta-value">On view until December 17, 1992</div>
+          <div class="detail-item">
+            <dt class="detail-label">Closing date</dt>
+            <dd class="detail-value">On view until December 17, 1992</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Gallery hours</div>
-            <div class="meta-value">11:00 a.m.–5:00 p.m., Tuesday through Saturday</div>
+          <div class="detail-item">
+            <dt class="detail-label">Gallery hours</dt>
+            <dd class="detail-value">11:00 a.m.–5:00 p.m., Tuesday through Saturday</dd>
           </div>
 
-          <div class="meta-row">
-            <div class="meta-label">Material documented here</div>
-            <div class="meta-value">Published exhibition notice and documented painting associated with the exhibition</div>
+          <div class="detail-item">
+            <dt class="detail-label">Material documented here</dt>
+            <dd class="detail-value">Published exhibition notice and documented painting associated with the exhibition</dd>
           </div>
-        </div>
+        </dl>
       </div>
     </section>
 
